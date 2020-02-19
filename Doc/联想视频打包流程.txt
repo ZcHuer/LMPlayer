@@ -1,0 +1,7 @@
+1、需要安装7z压缩
+2、修改Config.ini Ver.ini 需要修改的版本号
+3、工程编译到release，用签名目录下面的脚本进行签名，
+4、用7z压缩为LePlayer.7z ,放到Linstall/app 目录下面。
+5、执行Linstall/NSIS 目录下makeinstallw.exe
+6、把打包脚本进去（makeinstallw.exe）编译执行,生成stup安装包。
+7、把生成的setup 安装包进行签名。

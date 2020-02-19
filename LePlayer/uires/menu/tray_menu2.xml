@@ -1,0 +1,5 @@
+<menu arrowSkin="menu_arrow" maxWidth="100" itemSkin="menu_item" colorText="#a7acbc" cororTextGray="#999999" colorBg="#1b1e2a">
+  <item id="4">设置</item>
+  <item id="1">关于联想视频</item>
+  <item id="999">退出</item>
+</menu>

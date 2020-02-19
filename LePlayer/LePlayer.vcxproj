@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{10BE23E1-2EF0-4F7A-93E0-5B5BE8972790}</ProjectGuid>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>lmp</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\Debug\run</OutDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\Release\run</OutDir>
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>lmp</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>..\SOUI\config;..\SOUI\components;..\SOUI\SOUI\include;..\SOUI\utilities\include;..\SDK\cryptopp700;..\SDK\WTL\WTL10_7336\Include;..\Include;..\baseclass;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;STRICT;_DEBUG;_CRT_NONSTDC_NO_DEPRECATE;_WIN32_WINNT_MAXVER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BrowseInformation>true</BrowseInformation>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\Lib\Debug;..\SOUI\bin;.\xml;..\SDK\cryptopp700\Win32\Output\Debug;..\SDK\ffmpeg\ffmpeg-4.0-win32-dev\lib;..\SDK\sdl\SDL2-devel-2.0.8-VC\SDL2-2.0.8\lib\x86;..\Debug\run;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>utilitiesd.lib;souid.lib;tinyxml.lib;cryptlib.lib;uafxcwd.lib;LIBCMTD.lib;Player.lib;Update.lib;LeDB.lib;LeTools.lib;LeReport.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <IgnoreSpecificDefaultLibraries>LIBCMTD.lib;uafxcwd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
+      <OutputFile>$(OutDir)lmp.exe</OutputFile>
+    </Link>
+    <Manifest>
+      <AdditionalManifestFiles>compatibility.xml</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>..\SOUI\config;..\SOUI\components;..\SOUI\SOUI\include;..\SOUI\utilities\include;..\SDK\cryptopp700;..\SDK\WTL\WTL10_7336\Include;..\Include;..\baseclass;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_NONSTDC_NO_DEPRECATE;_WIN32_WINNT_MAXVER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <Optimization>Disabled</Optimization>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <MinimalRebuild>true</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\Lib\Release;..\SOUI\bin;.\xml;..\SDK\cryptopp700\Win32\Output\Release;..\SDK\ffmpeg\ffmpeg-4.0-win32-dev\lib;..\SDK\sdl\SDL2-devel-2.0.8-VC\SDL2-2.0.8\lib\x86;..\Release\run;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>utilities.lib;soui.lib;tinyxml.lib;cryptlib.lib;uafxcw.lib;LIBCMT.lib;Player.lib;Update.lib;LeDB.lib;LeTools.lib;LeReport.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <EnableUAC>true</EnableUAC>
+      <UACUIAccess>false</UACUIAccess>
+      <IgnoreSpecificDefaultLibraries>LIBCMT.lib;uafxcw.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <AdditionalOptions>/SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
+      <ProgramDatabaseFile>..\PDB\$(TargetName).pdb</ProgramDatabaseFile>
+      <OutputFile>$(OutDir)lmp.exe</OutputFile>
+    </Link>
+    <Manifest>
+      <AdditionalManifestFiles>compatibility.xml</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Baseclass\CommandParse.cpp" />
+    <ClCompile Include="..\SDK\cryptopp700\rsa.cpp" />
+    <ClCompile Include="..\SDK\Flog\FileLog.cpp" />
+    <ClCompile Include="..\SDK\http\Constants.cpp" />
+    <ClCompile Include="..\SDK\http\Http.cpp" />
+    <ClCompile Include="..\SDK\http\Network.cpp" />
+    <ClCompile Include="AboutDlg.cpp" />
+    <ClCompile Include="Aes_encryptor.cpp" />
+    <ClCompile Include="base641.cpp" />
+    <ClCompile Include="ClearDlg.cpp" />
+    <ClCompile Include="CMDParser.cpp" />
+    <ClCompile Include="ctrl\gif\SGifPlayer.cpp" />
+    <ClCompile Include="ctrl\gif\SSkinAPNG.cpp" />
+    <ClCompile Include="ctrl\gif\SSkinGif.cpp" />
+    <ClCompile Include="ctrl\ImageHeader.cpp" />
+    <ClCompile Include="ctrl\SAreaButton.cpp" />
+    <ClCompile Include="ctrl\SCheckBoxEx.cpp" />
+    <ClCompile Include="ctrl\SFadeFrame.cpp" />
+    <ClCompile Include="ctrl\SFlyWnd.cpp" />
+    <ClCompile Include="ctrl\SImageButton1.cpp" />
+    <ClCompile Include="ctrl\SItemWnd.cpp" />
+    <ClCompile Include="ctrl\SLineCtrl.cpp" />
+    <ClCompile Include="ctrl\SListTitle.cpp" />
+    <ClCompile Include="ctrl\SListWnd.cpp" />
+    <ClCompile Include="ctrl\SWndBtn.cpp" />
+    <ClCompile Include="FeedbackDlg.cpp" />
+    <ClCompile Include="InstallingGif.cpp" />
+    <ClCompile Include="json\json_reader.cpp" />
+    <ClCompile Include="json\json_value.cpp" />
+    <ClCompile Include="json\json_writer.cpp" />
+    <ClCompile Include="LePlayer.cpp" />
+    <ClCompile Include="MainDlg.cpp" />
+    <ClCompile Include="MainSetDlg.cpp" />
+    <ClCompile Include="md5.cpp" />
+    <ClCompile Include="PlayData.cpp" />
+    <ClCompile Include="PlayerDlg.cpp" />
+    <ClCompile Include="Playfailed.cpp" />
+    <ClCompile Include="SCtrlDlg.cpp" />
+    <ClCompile Include="SetDlg.cpp" />
+    <ClCompile Include="ShortcutHint.cpp" />
+    <ClCompile Include="SListDlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SwitchNewVer.cpp" />
+    <ClCompile Include="trayicon\SShellNotifyIcon.cpp" />
+    <ClCompile Include="Update\CUpdateHelper.cpp" />
+    <ClCompile Include="Update\NewVerDlg.cpp" />
+    <ClCompile Include="Update\UpdateDlg.cpp" />
+    <ClCompile Include="Update\UserChoiceDlg.cpp" />
+    <ClCompile Include="util\base64.cpp" />
+    <ClCompile Include="util\blowfish.cpp" />
+    <ClCompile Include="util\util.cpp" />
+    <ClCompile Include="WMIInfo.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="LePlayer.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Baseclass\RegisterExt.h" />
+    <ClInclude Include="..\Baseclass\CommandParse.h" />
+    <ClInclude Include="..\Baseclass\MiniDump.h" />
+    <ClInclude Include="..\Include\CommonDefine.h" />
+    <ClInclude Include="..\Include\CommonStruct.h" />
+    <ClInclude Include="..\Include\Data_OffLine.h" />
+    <ClInclude Include="..\Include\Data_RealTime.h" />
+    <ClInclude Include="..\SDK\cryptopp700\rsa.h" />
+    <ClInclude Include="..\SDK\Flog\FileLog.h" />
+    <ClInclude Include="..\SDK\http\Common.h" />
+    <ClInclude Include="..\SDK\http\Constants.h" />
+    <ClInclude Include="..\SDK\http\Http.h" />
+    <ClInclude Include="..\SDK\http\Network.h" />
+    <ClInclude Include="AboutDlg.h" />
+    <ClInclude Include="Aes_encryptor.h" />
+    <ClInclude Include="base641.h" />
+    <ClInclude Include="CefMsgDlg.h" />
+    <ClInclude Include="ClearDlg.h" />
+    <ClInclude Include="CMDParser.h" />
+    <ClInclude Include="ctrl\gif\SAniImgFrame.h" />
+    <ClInclude Include="ctrl\gif\SGifPlayer.h" />
+    <ClInclude Include="ctrl\gif\SSkinAPNG.h" />
+    <ClInclude Include="ctrl\gif\SSkinGif.h" />
+    <ClInclude Include="ctrl\ImageHeader.h" />
+    <ClInclude Include="ctrl\SAdapterBase.h" />
+    <ClInclude Include="ctrl\SAnimator.h" />
+    <ClInclude Include="ctrl\SAreaButton.h" />
+    <ClInclude Include="ctrl\SCheckBoxEx.h" />
+    <ClInclude Include="ctrl\SFadeFrame.h" />
+    <ClInclude Include="ctrl\SFlyWnd.h" />
+    <ClInclude Include="ctrl\SImageButton1.h" />
+    <ClInclude Include="ctrl\SItemWnd.h" />
+    <ClInclude Include="ctrl\SLineCtrl.h" />
+    <ClInclude Include="ctrl\SListTitle.h" />
+    <ClInclude Include="ctrl\SListWnd.h" />
+    <ClInclude Include="ctrl\SWndBtn.h" />
+    <ClInclude Include="FeedbackDlg.h" />
+    <ClInclude Include="FilesFormat.h" />
+    <ClInclude Include="InstallingGif.h" />
+    <ClInclude Include="json\assertions.h" />
+    <ClInclude Include="json\autolink.h" />
+    <ClInclude Include="json\config.h" />
+    <ClInclude Include="json\features.h" />
+    <ClInclude Include="json\forwards.h" />
+    <ClInclude Include="json\json.h" />
+    <ClInclude Include="json\json_tool.h" />
+    <ClInclude Include="json\reader.h" />
+    <ClInclude Include="json\value.h" />
+    <ClInclude Include="json\version.h" />
+    <ClInclude Include="json\writer.h" />
+    <ClInclude Include="MainDlg.h" />
+    <ClInclude Include="MainSetDlg.h" />
+    <ClInclude Include="md5.h" />
+    <ClInclude Include="MyHttp.h" />
+    <ClInclude Include="PlayData.h" />
+    <ClInclude Include="PlayerDlg.h" />
+    <ClInclude Include="Playfailed.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SCtrlDlg.h" />
+    <ClInclude Include="SetDlg.h" />
+    <ClInclude Include="ShortcutHint.h" />
+    <ClInclude Include="SListDlg.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SwitchNewVer.h" />
+    <ClInclude Include="SysAlive.h" />
+    <ClInclude Include="trayicon\SShellNotifyIcon.h" />
+    <ClInclude Include="Update\CUpdateHelper.h" />
+    <ClInclude Include="Update\NewVerDlg.h" />
+    <ClInclude Include="Update\UpdateDlg.h" />
+    <ClInclude Include="Update\UserChoiceDlg.h" />
+    <ClInclude Include="util\aes.h" />
+    <ClInclude Include="util\base64.h" />
+    <ClInclude Include="util\blowfish.h" />
+    <ClInclude Include="util\blowfish.hpp" />
+    <ClInclude Include="util\buffer.h" />
+    <ClInclude Include="util\util.h" />
+    <ClInclude Include="WMIInfo.h" />
+    <ClInclude Include="xml\tinystr.h" />
+    <ClInclude Include="xml\tinyxml.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="json\json_valueiterator.inl" />
+    <None Include="res\soui_res.rc2" />
+    <CustomBuild Include="uires\uires.idx">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(SOUIPATH)\tools\uiresbuilder.exe" -i "%(FullPath)" -p uires -r .\res\soui_res.rc2 -h .\res\resource.h idtable</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building SoUI Resource</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\res\soui_res.rc2;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(SOUIPATH)\tools\uiresbuilder.exe" -i "%(FullPath)" -p uires -r .\res\soui_res.rc2 -h .\res\resource.h idtable</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building SoUI Resource</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\res\soui_res.rc2;%(Outputs)</Outputs>
+      <SubType>Designer</SubType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="uires\menuex\add_menuex.xml" />
+    <Xml Include="uires\menuex\logo_menuex.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+    <Xml Include="uires\menuex\resolution_menuex.xml" />
+    <Xml Include="uires\menu\list_menu.xml" />
+    <Xml Include="uires\menu\logo_menu.xml" />
+    <Xml Include="uires\menu\player_menu.xml" />
+    <Xml Include="uires\menu\right_menu.xml" />
+    <Xml Include="uires\menu\sx_menu.xml" />
+    <Xml Include="uires\menu\tray_menu.xml" />
+    <Xml Include="uires\uidef\init.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+    <Xml Include="uires\values\color.xml" />
+    <Xml Include="uires\values\skin.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+    <Xml Include="uires\values\string.xml" />
+    <Xml Include="uires\xml\dlg_about.xml" />
+    <Xml Include="uires\xml\dlg_browser.xml" />
+    <Xml Include="uires\xml\dlg_cefbrowser.xml" />
+    <Xml Include="uires\xml\dlg_cefMsg.xml" />
+    <Xml Include="uires\xml\dlg_clear.xml" />
+    <Xml Include="uires\xml\dlg_ctrlwnd.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+    <Xml Include="uires\xml\dlg_feedbackwnd.xml" />
+    <Xml Include="uires\xml\dlg_Installing.xml" />
+    <Xml Include="uires\xml\dlg_list.xml" />
+    <Xml Include="uires\xml\dlg_login.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+    <Xml Include="uires\xml\dlg_loginok.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+    <Xml Include="uires\xml\dlg_main.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+    <Xml Include="uires\xml\dlg_mainset.xml" />
+    <Xml Include="uires\xml\dlg_migu.xml" />
+    <Xml Include="uires\xml\dlg_msg.xml" />
+    <Xml Include="uires\xml\dlg_msg2.xml" />
+    <Xml Include="uires\xml\dlg_newver.xml" />
+    <Xml Include="uires\xml\dlg_onlineupdate.xml" />
+    <Xml Include="uires\xml\dlg_player.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+    <Xml Include="uires\xml\dlg_playfailed.xml" />
+    <Xml Include="uires\xml\dlg_poplist.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+    <Xml Include="uires\xml\dlg_popmsg.xml" />
+    <Xml Include="uires\xml\dlg_popup.xml" />
+    <Xml Include="uires\xml\dlg_popvip.xml" />
+    <Xml Include="uires\xml\dlg_searchlist.xml" />
+    <Xml Include="uires\xml\dlg_set.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+    <Xml Include="uires\xml\dlg_shortcuthint.xml" />
+    <Xml Include="uires\xml\dlg_switchnewver.xml" />
+    <Xml Include="uires\xml\dlg_teleplay.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+    <Xml Include="uires\xml\dlg_updateing.xml" />
+    <Xml Include="uires\xml\dlg_userchoise.xml" />
+    <Xml Include="uires\xml\dlg_vlcwnd.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico" />
+    <Image Include="uires\image\soui.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

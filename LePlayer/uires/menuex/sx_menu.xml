@@ -1,0 +1,7 @@
+<menu itemSkin="menu_item" colorText="#ffffff" cororTextGray="#999999" colorBg="#1e1e1e" iconSize="10,10" checkSkin="menu_check">
+  <item id="80" radio="0">顺序播放</item>
+  <item id="81" radio="0">随机播放</item>
+  <item id="82" radio="0">单个播放</item>
+  <item id="83" radio="0">单个循环</item>
+  <item id="84" radio="0">列表循环</item>
+</menu>

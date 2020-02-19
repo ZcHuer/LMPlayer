@@ -1,0 +1,16 @@
+﻿<SOUI name="popup" title="下载管理" width="400" height="160" resizable="0" appWnd="0" toolWindow="1" translucent="0">
+  <root colorBkgnd="#40c2fd" cache="1">
+    <caption pos="0,0,-0,36">
+      <text pos="20,|0" offset="0,-0.5" colorText="#ffffff" font="size:13">提示</text>
+      <imgbtn1 name="btn_close" pos="-20,|0" offset="-1,-0.5" skin="skin_close"/>
+    </caption>
+    <window name="min_wnd" pos="0,36,-0,-0" colorBkgnd="#ffffff" show="1">
+      <text pos="20,20">有下载任务正在执行，确认要退出吗？</text>
+      <window pos="-20,-14,@88,@30" offset="-1,-1" colorBorder="#40c2fd" margin-x="1" margin-y="1">
+        <imgbtn1 name="btn_cancel" pos="0,0,-0,-0" colorBkgnd="#ffffff" colorText="#40c2fd" font="size:12">最小化到托盘</imgbtn1>
+      </window>
+      <imgbtn1 name="btn_sure" pos="{-8,-14,@88,@30" offset="-1,-1" colorBkgnd="#40c2fd" colorText="#ffffff" font="size:12"">确定退出</imgbtn1>
+      <check name="chk_rmb" pos="20,-14" offset="0,-1" skin="check1" class="cls_set_check">记住选择</check>
+    </window>
+  </root>
+</SOUI>

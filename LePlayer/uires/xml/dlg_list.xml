@@ -1,0 +1,16 @@
+﻿<SOUI name="WndList" title="" width="220" height="642" resizable="0" toolWindow="1"
+      sendWheel2Hover="1" translucent="0">
+  <root colorBkgnd="#24262B" cache="1">
+    <window pos="0,0,-0,-0" name="list">
+      <window pos="0,0,-0,30" show="1">
+        <!--listtitle id="102" pos="14,|0" offset="0,-0.5" class="cls_lt_text">本地</listtitle-->
+        <imgbtn1 name="btn_clear" pos="-20,|0" offset="-1,-0.5" skin="ls_del1" focusSkin="ls_del2" tip="清空"/>
+		<imgbtn1 name="btn_sx" pos="{-14,|0" offset="-1,-0.5" skin="loop_sequentialplay" tip="播放顺序"/>
+        <imgbtn1 name="btn_add" pos="{-14,|0" offset="-1,-0.5" skin="ls_add1" focusSkin="ls_add2" tip="添加"/>
+      </window>
+      <listwnd pos="0,[0,-0,-0" sbSkin="scrollbar2" viewSize="-1,-1">
+        <window name="play_list" pos="0,0,-0,-0"/>
+      </listwnd>
+    </window>
+  </root>
+</SOUI>

@@ -1,0 +1,18 @@
+; FileAssociate.def : Declares the module parameters.
+
+LIBRARY      "extfa.dll"
+
+EXPORTS
+	IsHasFileAssociate			@1
+	AssociateFile				@2
+	Apply						@3
+	DiscAssociateDVD			@4
+	DiscAssociateDVDAutoplay	@5
+	DiscAssociateUsbAutoplay	@6
+	GetFileIcon					@7
+	FastAssociateFile			@8
+	DllRegisterServer PRIVATE
+	DllUnregisterServer PRIVATE
+	UACFileAssociate
+	InstallFileAssociate
+	SaveTempAssociateItem	

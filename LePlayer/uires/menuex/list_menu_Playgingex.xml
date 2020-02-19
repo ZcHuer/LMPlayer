@@ -1,0 +1,28 @@
+<menuRoot itemSkin="menu_item" class="cls_menuex_nohot" cororTextGray="#999999" arrwOffset="13" colorBg="#1e1e1e" iconSize="10,10" iconSkin="menu_check" minWidth="144" arrowSkin="menu_arrow" checkSkin="menu_check">
+  <menuItem id="21" bshowHead ="0" class="cls_menuex_nohot"  textleft="10" radio="0">暂停</menuItem>
+  <menuItem id="14" bshowHead ="0" class="cls_menuex_nohot"  textleft="10" radio="0">删除</menuItem>
+  <sep/>
+  <menuItem headSkin="sequence1" headSkinFocus="sequence2" headSkinCheck="sequence3" bshowHead ="0" class="cls_menuex_nohot"  textleft="10" radio="0">
+  添加到播放列表
+    <menuItem id="10" bshowHead ="0" class="cls_menuex_nohot" radio="0">添加文件 Ctrl+O</menuItem>
+    <menuItem id="11" bshowHead ="0" class="cls_menuex_nohot" radio="0">添加文件夹 Ctrl+F</menuItem>
+  </menuItem>
+  <menuItem id="16" bshowHead ="0" class="cls_menuex_nohot"  textleft="10" radio="0" disable="1">清空列表</menuItem>
+  <menuItem id="200" bshowHead ="0" class="cls_menuex_nohot"  textleft="10" radio="0" disable="1">删除无效文件</menuItem>
+  <menuItem bshowHead ="0" class="cls_menuex_nohot"  textleft="10" radio="0">
+    循环模式
+    <menuItem id="80" bshowHead ="0" class="cls_menuex_nohot" radio="0">顺序播放</menuItem>
+    <menuItem id="81" bshowHead ="0" class="cls_menuex_nohot" radio="0">随机播放</menuItem>
+    <menuItem id="82" bshowHead ="0" class="cls_menuex_nohot" radio="0">单个播放</menuItem>
+    <menuItem id="83" bshowHead ="0" class="cls_menuex_nohot" radio="0">单个循环</menuItem>
+    <menuItem id="84" bshowHead ="0" class="cls_menuex_nohot" radio="0">列表循环</menuItem>
+  </menuItem>
+  <sep/>
+  <menuItem bshowHead ="0" class="cls_menuex_nohot"  textleft="10" radio="0">
+    无痕设置
+    <menuItem id="18" bshowHead ="0" class="cls_menuex_nohot" radio="0">无痕播放</menuItem>
+    <menuItem id="19" bshowHead ="0" class="cls_menuex_nohot" radio="0">取消无痕播放</menuItem>
+  </menuItem>
+  <sep/>
+  <menuItem id="17" bshowHead ="0" class="cls_menuex_nohot" textleft="10">打开文件位置</menuItem>
+</menuRoot>

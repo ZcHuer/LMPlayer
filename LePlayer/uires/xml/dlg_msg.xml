@@ -1,0 +1,20 @@
+﻿<SOUI name="popupmsg" title="提示" width="300" height="160" resizable="0" appWnd="0" toolWindow="1" translucent="0">
+  <root colorBkgnd="#40c2fd" cache="1">
+    <caption pos="0,0,-0,36">
+      <text pos="20,|0" offset="0,-0.5" colorText="#ffffff" font="size:13">提示</text>
+      <imgbtn1 name="btn_close" pos="-20,|0" offset="-1,-0.5" skin="skin_close"/>
+    </caption>
+    <window name="torrent" pos="0,36,-0,-0" colorBkgnd="#ffffff" show="0">
+      <text pos="20,20" colorText="#333333" font="size:16">任务已存在</text>
+      <imgbtn1 name="btn_sure" pos="-20,-14,@78,@30" offset="-1,-1" colorBkgnd="#40c2fd" colorText="#ffffff" font="size:13">确定</imgbtn1>
+    </window>
+    <window name="torrent_error" pos="0,36,-0,-0" colorBkgnd="#ffffff" show="0">
+      <text pos="20,30" colorText="#333333" font="size:16">种子获取失败</text>
+      <imgbtn1 name="btn_sure" pos="-20,-14,@78,@30" offset="-1,-1" colorBkgnd="#40c2fd" colorText="#ffffff" font="size:13">确定</imgbtn1>
+    </window>
+    <window name="task_error" pos="0,36,-0,-0" colorBkgnd="#ffffff" show="0">
+      <text pos="20,30" colorText="#333333" font="size:16">任务已达到上限，无法继续添加！</text>
+      <imgbtn1 name="btn_sure" pos="-20,-14,@78,@30" offset="-1,-1" colorBkgnd="#40c2fd" colorText="#ffffff" font="size:13">确定</imgbtn1>
+    </window>
+  </root>
+</SOUI>

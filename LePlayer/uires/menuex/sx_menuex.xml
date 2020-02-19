@@ -1,0 +1,7 @@
+<menuRoot itemSkin="menu_item" class="cls_menuex_nohot" colorText="#ffffff" cororTextGray="#999999" arrwOffset="13" colorBg="#1e1e1e" iconSize="10,10" iconSkin="menu_check" minWidth="100" arrowSkin="menu_arrow" checkSkin="menu_check">
+  <menuItem id="80" headSkin="sequence1" headSkinFocus="sequence2" headSkinCheck="sequence3" bshowHead ="1" class="cls_menuex_nohot" textleft="38" radio="0">顺序播放</menuItem>
+  <menuItem id="81" headSkin="rand1" headSkinFocus="rand2" headSkinCheck="rand3" bshowHead ="1" class="cls_menuex_nohot" textleft="38" radio="0">随机播放</menuItem>
+  <menuItem id="82" headSkin="single1" headSkinFocus="single2" headSkinCheck="single3" bshowHead ="1" class="cls_menuex_nohot" textleft="38" radio="0">单个播放</menuItem>
+  <menuItem id="83" headSkin="singleloop1" headSkinFocus="singleloop2" headSkinCheck="singleloop3" bshowHead ="1" class="cls_menuex_nohot" textleft="38" radio="0">单个循环</menuItem>
+  <menuItem id="84" headSkin="listloop1" headSkinFocus="listloop2" headSkinCheck="listloop3" bshowHead ="1" class="cls_menuex_nohot" textleft="38" radio="0">列表循环</menuItem>
+</menuRoot>

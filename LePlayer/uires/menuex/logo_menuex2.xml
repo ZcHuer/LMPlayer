@@ -1,0 +1,7 @@
+﻿<menuRoot itemSkin="menu_item" class="cls_menuex_nohot"  colorText="#ffffff" cororTextGray="#999999" arrwOffset="13" colorBg="#1e1e1e" iconSize="10,10" iconSkin="menu_check" minWidth="140" arrowSkin="menu_arrow" checkSkin="menu_check">
+  <menuItem id="10" class="cls_logo_menuex">播放本地文件</menuItem>
+  <menuItem id="1" class="cls_logo_menuex">关于联想视频</menuItem>
+  <menuItem id="3" class="cls_logo_menuex">我要吐槽</menuItem>
+  <menuItem id="4" class="cls_logo_menuex">设置</menuItem>
+  <menuItem id="6" class="cls_logo_menuex">退出</menuItem>
+</menuRoot>

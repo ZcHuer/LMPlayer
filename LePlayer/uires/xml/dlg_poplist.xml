@@ -1,0 +1,25 @@
+﻿<SOUI name="POPLIST" title="LIST" width="270"
+      height="284" resizable="1" margin="0,0,0,0"
+      appWnd="0" toolWindow="1" translucent="1">
+  <root cache="1">
+  <window pos="0,0,-0,-0" skin="pop_listbg">
+	<window pos="15,15,-15,-15">
+	  <imgbtn1 name="btn_record" pos="|0,14" offset="-1,0" skin="btnrecord1" tip="播放记录"/>
+	  <imgbtn1 name="btn_favourite" pos="|0,14" offset="0,0" skin="btnfavourite1" tip="收藏记录"/>
+	  
+      <window name="wnd_nocoll" pos="0,[0,-0,-15" show="0">
+        <img name="img_no" pos="|0,|-20" offset="-0.5,-0.5" skin="pop_nocoll"/>
+        <text name="notext" pos="|0,[0" offset="-0.5,0" font="size:14" show="0" colorText="#63697b">暂无收藏记录</text>
+      </window>
+      <window name="wnd_record" pos="0,{0,-0,-15" show="0">
+        <window name="wnd_list" pos="0,0,-0,-32"/>
+      </window>
+      <window name="wnd_collection" pos="0,{0,-0,-15" show="0">
+        <window name="wnd_c_list" pos="0,19,-0,-32"/>
+      </window>
+	  
+	  <imgbtn1 name="btn_more"  pos="|0,[-30" offset="-0.5,0" show="0" focusSkin="btnmore1" skin="btnmore2" />
+    </window>
+  </window>
+  </root>
+</SOUI>

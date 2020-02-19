@@ -1,0 +1,11 @@
+﻿<SOUI name="POPWND" title="选集" width="506" height="246" resizable="0" appWnd="0" toolWindow="1" translucent="0">
+  <root cache="1">
+    <window pos="0,0,-0,-0" colorBkgnd="#2d2d2d">
+      <imgbtn1 id="990" pos="10,10,@72,@24" colorFocus="#0296ff" font="size:12" colorText="#a7acbc" show="0"/>
+      <imgbtn1 id="991" pos="[2,{0,@72,@24" colorFocus="#0296ff" font="size:12" colorText="#a7acbc" show="0"/>
+      <imgbtn1 id="992" pos="[2,{0,@72,@24" colorFocus="#0296ff" font="size:12" colorText="#a7acbc" show="0"/>
+      <imgbtn1 id="993" pos="[2,{0,@72,@24" colorFocus="#0296ff" font="size:12" colorText="#a7acbc" show="0"/>
+      <window name="Wnd_List" pos="10,44,-10,-10"/>
+    </window>
+  </root>
+</SOUI>

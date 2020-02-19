@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FileAssociate>
+  <FileType text="windows media媒体文件" icon="asf">
+    <SubType text=".asf-Windows Media视频" icon="asf" state="1" type="video"/>
+    <SubType text=".wm-Windows Media视频" icon="wm" state="1" type="video"/>
+    <SubType text=".wmp-Windows Media视频" icon="wmp" state="1" type="video"/>
+    <SubType text=".wmv-Windows Media视频" icon="wmv" state="1" type="video"/>
+    <SubType text=".wma-Windows Media音频" icon="wma" state="1" type="audio"/>
+  </FileType>
+  <FileType text="real媒体文件" icon="real">
+    <SubType text=".ram-Real视频" icon="ram" state="1" type="video"/>
+    <SubType text=".rm-Real视频" icon="rm" state="1" type="video"/>
+    <SubType text=".rmvb-Real视频" icon="rmvb" state="1" type="video"/>
+    <SubType text=".rpm-Real视频" icon="rpm" state="1" type="video"/>
+    <SubType text=".scm-视频" icon="scm" state="0" type="video"/>
+    <SubType text=".ra-Real音频" icon="ra" state="1" type="audio"/>
+    <SubType text=".rp-Rp视频" icon="rp" state="0" type="video"/>
+    <SubType text=".rt-RealText/realText 3D" icon="rt" state="1" type="video"/>
+    <SubType text=".smi-SMIL脚本文件" icon="smi" state="1" type="other"/>
+    <SubType text=".smil-SMIL脚本文件" icon="smil" state="1" type="other"/>
+  </FileType>
+  <FileType text="VCD/DVD视频" icon="dat">
+    <SubType text=".dat-VCD视频" icon="dat" state="0" type="video"/>
+    <SubType text=".evo-HD-DVD视频" icon="evo" state="1" type="video"/>
+    <SubType text=".vob-MPEG视频" icon="vob" state="1" type="video"/>
+    <SubType text=".ifo-DVD媒体文件" icon="ifo" state="1" type="video"/>
+  </FileType>
+  <FileType text="QuickTime媒体文件" icon="qt">
+    <SubType text=".mov-QuickTime视频" icon="mov" state="1" type="video"/>
+    <SubType text=".qt-QuickTime视频" icon="qt" state="1" type="video"/>
+    <SubType text=".aif-Mac音频" icon="aif" state="1" type="audio"/>
+    <SubType text=".aiff-Mac音频" icon="aiff" state="1" type="audio"/>
+    <SubType text=".3g2-手机/随身听视频" icon="3g2" state="1" type="video"/>
+    <SubType text=".3gp-手机/随身听视频" icon="3gp" state="1" type="video"/>
+    <SubType text=".3gp2-手机/随身听视频" icon="3gp2" state="1" type="video"/>
+    <SubType text=".3gpp-手机/随身听视频" icon="3gpp" state="1" type="video"/>
+    <SubType text=".amr-手机/随身听音频" icon="amr" state="1" type="audio"/>
+  </FileType>
+
+  <FileType text="其他视频" icon="bf">
+    <SubType text=".BHD-联想高清视频" icon="bhd" state="1" type="video"/>
+    <SubType text=".GHD-联想手机高清视频" icon="ghd" state="1" type="video"/>
+    <SubType text=".amv-手机/随身听视频" icon="amv" state="1" type="video"/>
+    <SubType text=".avi-视频" icon="avi" state="1" type="video"/>
+    <SubType text=".bik-Bink视频" icon="bik" state="1" type="video"/>
+    <SubType text=".csf视频文件" icon="csf" state="1" type="video"/>
+    <SubType text=".d2v-DVD2AVI Project视频" icon="d2v" state="1" type="video"/>
+    <SubType text=".dsm-NDS视频" icon="dsm" state="1" type="video"/>
+    <SubType text=".dsv-dsv文件" icon="dsv" state="1" type="video"/>
+    <SubType text=".ivf-Indeo视频" icon="ivf" state="1" type="video"/>
+    <SubType text=".m1v-视频" icon="m1v" state="1" type="video"/>
+    <SubType text=".m2p-视频" icon="m2p" state="1" type="video"/>
+    <SubType text=".m2ts-m2ts视频" icon="m2ts" state="1" type="video"/>
+    <SubType text=".m2v-视频" icon="m2v" state="1" type="video"/>
+    <SubType text=".m4b-MPEG-4视频" icon="m4b" state="1" type="video"/>
+    <SubType text=".m4p-MPEG-4视频" icon="m4p" state="1" type="video"/>
+    <SubType text=".m4v-MPEG-4视频" icon="m4v" state="1" type="video"/>
+    <SubType text=".mkv-matroska视频" icon="mkv" state="1" type="video"/>
+    <SubType text=".mp4-MPEG-4视频" icon="mp4" state="1" type="video"/>
+    <SubType text=".mpe-MPEG视频" icon="mpe" state="1" type="video"/>
+    <SubType text=".mpeg-MPEG视频" icon="mpeg" state="1" type="video"/>
+    <SubType text=".mpg-MPEG视频" icon="mpg" state="1" type="video"/>
+    <SubType text=".mts-摄像机视频" icon="mts" state="1" type="video"/>
+    <SubType text=".ogm-ogg影片视频" icon="ogm" state="1" type="video"/>
+    <SubType text=".pmp-psp视频文件" icon="pmp" state="1" type="video"/>
+    <SubType text=".pmp2-视频" icon="pmp2" state="1" type="video"/>
+    <SubType text=".pss-MPEG视频" icon="pss" state="1" type="video"/>
+    <SubType text=".pva-MPEG视频" icon="pva" state="1" type="video"/>
+    <SubType text=".ratDVD-ratDVD视频" icon="ratDVD" state="1" type="video"/>
+    <SubType text=".smk-视频" icon="smk" state="1" type="video"/>
+    <SubType text=".tp-MPEG2视频" icon="tp" state="1" type="video"/>
+    <SubType text=".tpr-MPEG视频" icon="tpr" state="1" type="video"/>
+    <SubType text=".ts-MPEG2视频" icon="ts" state="1" type="video"/>
+    <SubType text=".vg2-xvd视频" icon="vg2" state="1" type="video"/>
+    <SubType text=".vid-Mp4手机/随身听无声视频" icon="vid" state="0" type="video"/>
+    <SubType text=".vp6-VP6视频" icon="vp6" state="1" type="video"/>
+    <SubType text=".vp7-VP7视频" icon="vp7" state="1" type="video"/>
+    <SubType text=".wv-MPEG视频" icon="wv" state="1" type="video"/>
+    <SubType text=".asm-AVS Streaming Media视频" icon="asm" state="1" type="video"/>
+    <SubType text=".avsts-AVS Transport Stream视频" icon="avsts" state="1" type="video"/>
+    <SubType text=".divx-DivX视频" icon="divx" state="1" type="video"/>
+    <SubType text=".webm-VP8视频" icon="webm" state="1" type="video"/>
+  </FileType>
+
+  <FileType text="其他音频" icon="bf">
+    <SubType text=".aac-MPEG4音频" icon="aac" state="0" type="audio"/>
+    <SubType text=".ac3-音频" icon="ac3" state="1" type="audio"/>
+    <SubType text=".acc-音频" icon="acc" state="1" type="audio"/>
+    <SubType text=".act-音频" icon="act" state="1" type="audio"/>
+    <SubType text=".ape-APE无损音频" icon="ape" state="0" type="audio"/>
+    <SubType text=".au-Sun压缩音频" icon="au" state="1" type="audio"/>
+    <SubType text=".cda-CD音频" icon="cda" state="0" type="audio"/>
+    <SubType text=".dsa-dsa文件" icon="dsa" state="1" type="audio"/>
+    <SubType text=".dss-dss文件" icon="dss" state="1" type="audio"/>
+    <SubType text=".dts-DVD音频" icon="dts" state="1" type="audio"/>
+    <SubType text=".flac-FLAC音频" icon="flac" state="0" type="audio"/>
+    <SubType text=".m4a-MPEG4音频" icon="m4a" state="0" type="audio"/>
+    <SubType text=".mac-APE无损音频" icon="mac" state="0" type="audio"/>
+    <SubType text=".mid-mid音频" icon="mid" state="0" type="audio"/>
+    <SubType text=".midi-mid音频" icon="midi" state="0" type="audio"/>
+    <SubType text=".mp2-mp2/mpa音频" icon="mp2" state="1" type="audio"/>
+    <SubType text=".mp3-音频" icon="mp3" state="0" type="audio"/>
+    <SubType text=".mp5-音频" icon="mp5" state="0" type="audio"/>
+    <SubType text=".mpa-mpeg音频" icon="mpa" state="0" type="audio"/>
+    <SubType text=".mpga-mp3音频" icon="mpga" state="1" type="audio"/>
+    <SubType text=".mod-摄像机音频" icon="mod" state="1" type="audio"/>
+    <SubType text=".ogg-OGG Vorbis音频" icon="ogg" state="0" type="audio"/>
+    <SubType text=".ofr-音频" icon="ofr" state="0" type="audio"/>
+    <SubType text=".rmi-mid音频" icon="rmi" state="0" type="audio"/>
+    <SubType text=".tak-音频" icon="tak" state="0" type="audio"/>
+    <SubType text=".tta-TTA音频" icon="tta" state="0" type="audio"/>
+    <SubType text=".wav-音频" icon="wav" state="0" type="audio"/>
+    <SubType text=".aifc-音频" icon="aifc" state="0" type="audio"/>
+  </FileType>
+
+  <FileType text="动画文件" icon="flv">
+    <SubType text=".swf-Shockwave Flash" icon="swf" state="0" type="other"/>
+    <SubType text=".flv-Shockwave video Flash" icon="flv" state="1" type="video"/>
+    <SubType text=".flic-AutoDesk动画" icon="flic" state="1" type="video"/>
+    <SubType text=".fli-AutoDesk动画" icon="fli" state="1" type="video"/>
+    <SubType text=".flc-AutoDesk动画" icon="flc" state="1" type="video"/>
+  </FileType>
+
+  <FileType text="播放列表" icon="lisi">
+    <SubType text=".asx-播放列表" icon="asx" state="1" type="playlist"/>
+    <SubType text=".m3u-播放列表" icon="m3u" state="1" type="playlist"/>
+    <SubType text=".mpcpl-播放列表" icon="mpcpl" state="1" type="playlist"/>
+    <SubType text=".pls-播放列表" icon="pls" state="1" type="playlist"/>
+    <SubType text=".smpl-播放列表" icon="smpl" state="1" type="playlist"/>
+    <SubType text=".wax-播放列表" icon="wax" state="1" type="playlist"/>
+    <SubType text=".wmx-播放列表" icon="wmx" state="1" type="playlist"/>
+    <SubType text=".wvx-播放列表" icon="wvx" state="1" type="playlist"/>
+  </FileType>
+
+  <FileType text="字幕文件" icon="srt">
+    <SubType text=".srt-字幕文件" icon="srt" state="1" type="subtitle"/>
+    <SubType text=".ssa-字幕文件" icon="ssa" state="1" type="subtitle"/>
+    <SubType text=".ass-字幕文件" icon="ass" state="1" type="subtitle"/>
+	<SubType text=".sup-字幕文件" icon="sup" state="1" type="subtitle"/>
+  </FileType>
+</FileAssociate>

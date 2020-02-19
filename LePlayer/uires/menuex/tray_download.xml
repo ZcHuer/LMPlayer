@@ -1,0 +1,4 @@
+<menu itemSkin="menu_item" maxWidth="110" colorText="#ffffff" cororTextGray="#999999" colorBg="#1e1e1e">
+  <item id="1">打开下载管理</item>
+  <item id="2">退出</item>
+</menu>

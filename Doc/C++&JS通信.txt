@@ -1,0 +1,10 @@
+联想视频  -  H5&C++通信协议
+C++和Js通信，为双向单工通信
+
+一、C++调用 JS
+ 函数：CplusToJs(int type, string jsonStr)
+ 参数：type值和jsonStr，需要双方共同定义一致。
+
+二、JS调用C++方法
+ 函数：JsToCplus(int type, string jsonStr)
+参数：type值和jsonStr，需要双方共同定义一致。

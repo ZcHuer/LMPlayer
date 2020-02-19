@@ -1,0 +1,25 @@
+一 安装路径接口 
+存放联想视频应用程序exe的注册表路径
+计算机\HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\App Paths\LenovoVideo
+绿色版，在管家帮我们安装之后，我们会将路径写入这1处注册表键值中；
+安装版，我们会在安装程序中，将路径写入这注册表键值中。
+
+说明：win10下写machine会遇到问题，目前只写了HKEY_CURRENT_USER；
+服务程序启动安装时，会将安装路径写入注册表中。
+
+
+二 调用接口
+ 路径\\LePlayer\\LeLaunch.exe  (后跟命令行，因为涉及到统计，需要讨论定一个字符串来标识启动方式)
+
+三 绿色版程序，服务程序安装方法
+服务程序
+1 服务程序的安装方法：开始-》运行，输入cmd，拖拽入 LePlayerService.exe 文件，增加命令行：/install，回车，弹出权限申请框，点击是，安装成功。
+2 服务程序的卸载方法：开始-》运行，输入cmd，拖拽入 LePlayerService.exe 文件，增加命令行：/uninstall，回车，弹出权限申请框，点击是，卸载成功。
+3 服务程序的启动方法：开始-》运行，输入cmd，拖拽入 LePlayerService.exe 文件，增加命令行：/start，回车，弹出权限申请框，点击是，启动成功。
+
+静默安装时，可以直接 运行 指定路径下的 LePlayerService.exe，后跟命令行 /install 即可。
+
+四 程序启动方法
+	点击 LeLaunch.exe，或者命令行启动此exe，可以带命令参数  -pcm标识管家启动。
+
+

@@ -1,0 +1,10 @@
+<SOUI width="330" height="200" resizable="0" appWnd="0" translucent="1">
+  <root skin="skin_feedback" cache="1">    
+    <window pos="0,[0,-0,-0">		
+		<text pos="|-76,50" offset="0,-0.5" colorText="#333333" font="size:20">创建桌面快捷方式</text>
+		<wndbtn name="btn_Cancel" pos="|-115,|0,@90,@34"  offset="0,0" skin="FeedCancel1" focusSkin="FeedCancel2" font="size:16" colorText="#1BA6FF" colorTextPush="#1BA6FF" colorTextHover="#1BA6FF" cursor="hand" >取消</wndbtn>
+		<wndbtn name="btn_exit" pos="|25,{0,@90,@34" skin="FeedOK1" focusSkin="FeedOK2"  font="size:16" colorText="#ffffff" colorTextPush="#ffffff" colorTextHover="#ffffff" cursor="hand">创建</wndbtn>
+		<check1 id="2000" pos="|-115,[20" check="1" font="size:12" class="cls_login_check1">不再提示</check1>      
+    </window>
+  </root>
+</SOUI>

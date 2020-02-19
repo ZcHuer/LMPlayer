@@ -1,0 +1,5 @@
+<menuRoot textOffset="15"  itemHeight="32" itemSkin="menu_item" colorBkgnd="#FF0000"
+          colorSep="#000000" sepHeight="2" minWidth="160">
+    <menuItem id="10" class="cls_menuex" hotkeyText="Ctrl+O">打开文件</menuItem>
+    <menuItem id="11" class="cls_menuex" hotkeyText="Ctrl+F">打开文件夹</menuItem>
+</menuRoot>

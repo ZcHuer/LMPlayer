@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{72f59e43-a8d5-43b0-b47c-86441025306a}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{7b6ae2cf-f83b-4005-bb9b-8a9e8059ea88}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{09b279b3-a67d-45ca-9c53-d6e3dcc520af}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="FileAssociateIcon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LibraryIcon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LibraryIcon.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="sicon\asf.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\audio.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\avi.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\dat.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\dvd.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\flash.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\m4b.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\M4P.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\m4v.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\mkv.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\MP3.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\MP4.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\mpeg.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\mpg.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\ogm.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\playlist.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\pss.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\pva.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\qt.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\real.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\tp.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\tpr.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\ts.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\vob.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\wm.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\wma.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\wmp.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\wmv.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\ass.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\asx.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\cue.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\idx.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\m3u.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\mpcpl.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\smpl.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\srt.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\ssa.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\sub.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\wax.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\wmx.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\wvx.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\superplayer.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\xml1.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="xmlres\FileAssociate.xml" />
+    <None Include="xmlres\HotKeyList.xml" />
+    <None Include="xmlres\DownloadNetwork.xml" />
+    <None Include="sicon\bitmap1.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="snapres\snap-camera.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="snapres\snap-logo.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="snapres\snap-headbg.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="snapres\sanp-lefttop.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="snapres\snap-leftbottom.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="snapres\snap-rightbottom.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="snapres\snap-righttop.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\normal.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\bhd.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\divx.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\ifo.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\vid.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\bov.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\bfp.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\ghd.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sicon\sup.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="LibraryIcon.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FileAssociateIcon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

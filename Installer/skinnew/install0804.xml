@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Window size="600,430" caption="0,0,0,80" bkcolor="#FF004700" roundcorner="5,5" borderround="5,5,5,5" bordersize="4" sizebox="0,0,0,0">
+	<Font id="1" name="微软雅黑" size="13" bold="true" />
+    
+	<VerticalLayout width="600" height="430">
+	
+	<TabLayout name="wizardTab" float="true" pos="0,0,600,430" width="600" height="430" bkcolor="#FF444749">
+	<!-- 开始安装---->
+	 <VerticalLayout name="startInstall" pos="0,0,600,430" width="600" height="430" bkcolor="#FF444749">
+		<Label width="600" height="300" bkimage="installPage.png"/>
+		<Control height="8"/>
+		<HorizontalLayout height="40">
+			<Control width="220"/>
+			<Button  name="QuickInstall" normalimage="quickInstall1.png" hotimage="quickInstall2.png" disabledimage="quickInstall3.png"/>
+			<Control width="220"/>
+		</HorizontalLayout>
+		<Control height="50"/>
+		<HorizontalLayout name="pathLayout" height="14">
+			<CheckBox name="Agree" float="true" pos="20,0,32,14" font="1" text="" selected="true" normalimage="file='BTN_Check.png' source='0,0,12,12' dest='0,2,12,14'" normalhotimage="file='BTN_Check.png' source='0,0,12,12' dest='0,2,12,14'" selectedimage="file='BTN_Check2.png' source='0,0,12,12' dest='0,2,12,14'" selectedhotimage="file='BTN_Check2.png' source='0,0,12,12' dest='0,2,12,14'" />
+			<Button  name="btnAgree" float="true" pos="39,0,200,14" text="同意联想视频的使用条款" textcolor="#999999" align="left"/>
+			<Button  name="DIYInstall" float="true" pos="-107,0,-20,14" normalimage="GoSelectPathPage1.png" hotimage="GoSelectPathPage2.png" />
+		</HorizontalLayout>
+		
+		<Control />
+	 </VerticalLayout>
+	 
+	 <!-- 选择安装目录---->
+	 <VerticalLayout name="installPath" width="600" height="430" bkcolor="#FF444749">
+			<VerticalLayout>
+				<Label width="600" height="300" bkimage="installPage.png"/>
+				<Control height="38"/>
+				
+				<HorizontalLayout bkcolor="#FF444749" height="40" >
+				
+					<Label  text="安装路径" align="center" float="true" pos="20,12,70,24" textcolor="#ffCCCCCC"/>
+					
+					<RichEdit name="editDir" float="true" pos="77,5,403,30"  multiline="false" align="left"  bordersize ="1" inset="11,5,0,0" bkcolor="#FFCCCCCC" bordercolor="#FFCCCCCC" readonly="true" textcolor="#ff565656" text="C:\\"/>
+					<Control width="12"/>
+					
+					<Button name="btnSelectDir" float="true" pos="413,5,493,30" normalimage="btnchangepath_nor.png" hotimage="btnchangepath_hor.png" pushedimage="btnchangepath_hor.png"/>
+					<Button name="btnInstall" float="true" pos="500,5,580,30" normalimage="page2btnInstall1.png" hotimage="page2btnInstall2.png" disabledimage="page2btnInstall3.png"/>
+					
+				</HorizontalLayout>
+				<Control height="20"/>
+				<HorizontalLayout height="14">
+				<CheckBox name="Agree2" float="true" pos="20,0,32,14" font="1" text="" selected="true" normalimage="file='BTN_Check.png' source='0,0,12,12' dest='0,2,12,14'" normalhotimage="file='BTN_Check.png' source='0,0,12,12' dest='0,2,12,14'" selectedimage="file='BTN_Check2.png' source='0,0,12,12' dest='0,2,12,14'" selectedhotimage="file='BTN_Check2.png' source='0,0,12,12' dest='0,2,12,14'" />
+				<Button  name="btnAgree" float="true" pos="39,0,200,14" text="同意联想视频的使用条款" textcolor="#999999" align="left"/>
+				<Button  name="DIYInstallBack" float="true" pos="-67,0,-20,14" normalimage="back1.png" hotimage="back2.png" />
+				</HorizontalLayout>
+				<Control />
+				
+			</VerticalLayout>
+			
+	 </VerticalLayout>
+	 <!-- 安装过程中---->
+	 <VerticalLayout name="installing" width="600" height="430" bkcolor="#FF444749">
+			<VerticalLayout>
+				<TabLayout name="showPic" width="600" height="330">
+				<VerticalLayout>
+				<Label  name="ShowPic0" width="600" height="330" bkimage="file='ShowPic0.png' fade='255'"/>
+				</VerticalLayout>
+				<VerticalLayout>
+				<Label  name="ShowPic1" width="600" height="330" bkimage="file='ShowPic1.png' fade='255'"/>
+				</VerticalLayout>
+				<VerticalLayout>
+				<Label  name="ShowPic2" width="600" height="330" bkimage="file='ShowPic2.png' fade='255'"/>
+				</VerticalLayout>
+				</TabLayout>
+				<HorizontalLayout height="54">
+					<Control width="30"/>
+					<Label  text="正在安装..." align="left" textcolor="#FFCCCCCC"/>
+				</HorizontalLayout>
+				
+				<HorizontalLayout height="56">
+					<Control width="30"/>
+					<Slider name ="slrProgress" foreimage="forceImage.png" thumbimage="sliter.png" thumbhotimage="sliter.png" thumbpushedimage="sliter.png" thumbsize="10,10" bordercolor="#ff8d959b" bordersize="1" height="6" min="0" max="100" value="50" />
+					<Control width="30"/>
+				</HorizontalLayout>
+				<Control />
+			</VerticalLayout>
+	 </VerticalLayout>
+	 
+	 <!-- 安装完成---->
+	 <VerticalLayout name="finisshInstall" width="600" height="436" bkcolor="#FF444749">
+			<VerticalLayout>
+				<Label width="600" height="300" bkimage="installEnd.png"/>
+				<Control height="5"/>
+				<HorizontalLayout height="40">
+					<Control width="220"/>
+					<Button name="btnfinish" width ="160" normalimage="finishInstall1.png" hotimage="finishInstall2.png" pushedimage="finishInstall2.png"/>
+					<Control />
+				</HorizontalLayout>
+				<Control />
+			</VerticalLayout>
+	 </VerticalLayout>
+	 
+	 
+	</TabLayout>
+		
+		<Label float="true" pos="15,15,75,16" height="16" width="75"  bkimage="PB_Logo.png"/>
+		<Button  normalimage="btn_close.png" hotimage="btn_close1.png" float="true" pos="-29,15,-15,39" name="btnClose" height="14" width="14" />
+		<Button  normalimage="btn_min.png" hotimage="btn_min1.png" float="true" pos="-55,15,-41,39" name="btnMin" height="14" width="14" />
+	</VerticalLayout>
+	
+	
+ 
+</Window>

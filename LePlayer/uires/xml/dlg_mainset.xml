@@ -1,0 +1,347 @@
+﻿<SOUI name="WndSet" title="LMPlayer设置" width="620" height="480" resizable="0" appWnd="0" sendWheel2Hover="1" translucent="1">
+  <root cache="1">
+    <window pos="15,15,-15,-15" skin="skin_setbg">
+      <caption pos="0,0,-0,40">
+        <!--colorBkgnd="#343333"  colorBkgnd="#292929" colorBkgnd="#252525"-->
+		<img pos="19,|0" offset="0,-0.5" skin="mainSet"/>
+        <text pos="[5,|0" offset="0,-0.5" font="size:18" colorText="#CCCCCC">设置</text>
+        <imgbtn1 name="btn_close" pos="-33,16" skin="pop_close" focusSkin="pop_close1"/>
+        <!--imgbtn1 name="btn_min" pos="{-20,|0" offset="-1,-0.5"  skin="ng_min1" focusSkin="ng_min2"/-->
+      </caption>
+      <window pos="0,[0,114,-0" colorBkgnd="#47494B">
+        <listview pos="0,0,-0,-0" name="pagelist" sbSkin="scrollbar">
+          <template itemHeight="30" colorHover="#04A8FF" colorSelected="#04A8FF" trackMouseEvent="1">
+            <text name="page" pos="20,|0" offset="0,-0.5" colorText="#CCCCCC" font="size:13"/>
+          </template>
+        </listview>
+      </window>
+      <window pos="[0,{0,-0,-130">
+        <!--常规-->
+        <window id="1000" pos="0,0,-0,-0" show="1">
+          <text pos="20,16" class="cls_set_text">启动时</text>
+        <check1 id="2000" pos="38,[15"  class="cls_login_check1">开机时自动启动联想播放器</check1>
+          <text pos="20,[20" class="cls_set_text">关闭时</text>
+          <group pos="38,[15" headerHeight="0">
+            <radio id="2001" pos="0,{0" skin="radio2" class="cls_login_check1">最小化到托盘</radio>
+            <radio id="2002" pos="0,[15" skin="radio2" class="cls_login_check1">退出程序</radio>
+          </group>
+        </window>
+        <!--播放-->
+        <scrollview id="1001" pos="0,0,-0,-0" sbSkin="scrollbar2" viewSize="-1,-1" show="0">
+          <text pos="20,16" class="cls_set_text">打开视频时窗口</text>
+          <group pos="38,[15" headerHeight="0">
+            <radio id="2010" pos="0,{0" skin="radio2" class="cls_login_check1">窗口适应视频原始尺寸</radio>
+            <radio id="2011" pos="0,[15" skin="radio2" checked="1" class="cls_login_check1">视频适应窗口</radio>
+            <radio id="2012" pos="0,[15" skin="radio2" class="cls_login_check1">自动全屏</radio>
+          </group>
+          <text pos="20,[20" class="cls_set_text">播放时</text>
+          <!--check id="2020" pos="38,[15"  class="cls_login_check1">始终跳过片头片尾</check-->
+          <check1 id="2025" pos="38,[15"  class="cls_login_check1">点击屏幕暂停播放</check1>
+          <text pos="20,[20" class="cls_set_text">视频最小化时</text>
+          <check1 id="2021" pos="38,[15"  class="cls_login_check1">自动暂停</check1>
+          <!--text pos="20,[20" class="cls_set_text">播放记忆</text>
+        <check1 id="2022" pos="38,[15"  class="cls_login_check1">专辑播放时从已播放文件开始</check1>
+        <check1 id="2023" pos="38,[15"  class="cls_login_check1">记录在线播放进度</check1>
+        <check1 id="2024" pos="38,[15"  class="cls_login_check1">记录本地文件播放进度</check-->
+          <text pos="20,[20" class="cls_set_text">快进快退</text>
+          <text pos="38,[15" class="cls_set_text">快进一次</text>
+          <combobox name="cmbx_forward" pos="[5,{0,@42,@18" class="cls_set_combox" skin="combo_bg1" btnSkin="combo_dropbtn1" curSel="4" dropHeight="102">
+            <liststyle class="cls_combo_liststyle" colorBkgnd="#FF0000" sbSkin="scrollbar2"/>
+          </combobox>
+          <text pos="[5,{0" class="cls_set_text">秒</text>
+          <text pos="[20,{0" class="cls_set_text">快退一次</text>
+          <combobox name="cmbx_rewind" pos="[5,{0,@42,@18" class="cls_set_combox" skin="combo_bg1" btnSkin="combo_dropbtn1"  curSel="4" dropHeight="102">
+            <liststyle class="cls_combo_liststyle" colorBkgnd="#252525" sbSkin="scrollbar2"/>
+          </combobox>
+          <text pos="[5,{0" class="cls_set_text">秒</text>
+          <!--text pos="20,[20" class="cls_set_text">播放模式</text>
+        <group pos="38,[15,@300,@60" headerHeight="0">
+          <radio id="2030" pos="0,0" skin="radio2" class="cls_login_check1">顺序播放</radio>
+          <radio id="2031" pos="{80,0" skin="radio2" class="cls_login_check1">随机播放</radio>
+          <radio id="2032" pos="{80,0" skin="radio2" class="cls_login_check1">单个播放</radio>
+          <radio id="2033" pos="0,[15" skin="radio2" class="cls_login_check1">单个循环</radio>
+          <radio id="2034" pos="{80,{0" skin="radio2" class="cls_login_check1">列表循环</radio>
+        </group-->
+        </scrollview>
+        <!--声音/画面-->
+        <window id="1002" pos="0,0,-0,-0" show="0">
+          <text pos="20,16" class="cls_set_text">画面比例</text>
+          <group pos="38,[15" headerHeight="0">
+            <radio id="2045" pos="0,0" skin="radio2" class="cls_login_check1">原始</radio>
+            <radio id="2046" pos="{100,0" skin="radio2" class="cls_login_check1">16:9</radio>
+            <radio id="2047" pos="{100,0" skin="radio2" class="cls_login_check1">4:3</radio>
+            <radio id="2048" pos="{100,0" skin="radio2" class="cls_login_check1">铺满</radio>
+          </group>
+          <text pos="20,[20" class="cls_set_text">声道选择</text>
+          <group pos="38,[15" headerHeight="0">
+            <radio id="2040" pos="0,0" skin="radio2" checked="1" class="cls_login_check1">原始声道</radio>
+            <radio id="2041" pos="{100,0" skin="radio2" class="cls_login_check1">左声道</radio>
+            <radio id="2042" pos="{100,0" skin="radio2" class="cls_login_check1">右声道</radio>
+            <radio id="2043" pos="{100,0" skin="radio2" class="cls_login_check1">反转立体声道</radio>
+            <radio id="2044" pos="0,[15" skin="radio2" class="cls_login_check1">左右混合声道</radio>
+          </group>
+          <!--text pos="20,[20" class="cls_set_text">输出模式</text>
+        <group pos="38,[15" headerHeight="0">
+          <radio id="2050" pos="0,0" skin="radio2" class="cls_login_check1">立体声</radio>
+          <radio id="2051" pos="{100,0" skin="radio2" class="cls_login_check1">单声道</radio>
+          <radio id="2052" pos="{100,0" skin="radio2" class="cls_login_check1">5.1声道</radio>
+          <radio id="2053" pos="{100,0" skin="radio2" class="cls_login_check1">SPDIF声道</radio>
+        </group>
+        <text pos="20,[20" class="cls_set_text">色彩</text>
+        <window pos="38,[10,-0,@20">
+          <text pos="0,|0" offset="0,-0.5" class="cls_set_text">亮度</text>
+          <sliderbar name="brightness" pos="[10,|0" offset="0,-0.5" bkgndSkin="pgb_bg3" posSkin="pgb_pos3" thumbSkin="pgb_thumb3" max="100"/>
+        </window>
+        <window pos="38,[10,-0,@20">
+          <text pos="0,|0" offset="0,-0.5" class="cls_set_text">对比度</text>
+          <sliderbar name="contrastratio" offset="0,-0.5" pos="[10,|0" bkgndSkin="pgb_bg3" posSkin="pgb_pos3" thumbSkin="pgb_thumb3" max="100"/>
+        </window>
+        <window pos="38,[10,-0,@20">
+          <text pos="0,|0" offset="0,-0.5" class="cls_set_text">饱和度</text>
+          <sliderbar name="saturation" pos="[10,|0" offset="0,-0.5" bkgndSkin="pgb_bg3" posSkin="pgb_pos3" thumbSkin="pgb_thumb3" thumbInRail="0" max="100"/>
+        </window>
+        <text pos="20,[20" class="cls_set_text">渲染模式</text>
+        <combobox name="cmbo_rendermode" pos="38,[15,@279,@26" class="cls_set_combox" skin="combo_bg2" btnSkin="combo_dropbtn2" curSel="4" dropHeight="102">
+          <liststyle class="cls_combo_liststyle" colorBkgnd="#252525" sbSkin="scrollbar1"/>
+          <items>
+            <item text="未渲染模式(Rendedess)"/>
+            <item text="增强型(EVR)"/>
+            <item text="覆盖模式(Overlay)"/>
+            <item text="增强自渲染(EVRCP)"/>
+          </items>
+        </combobox-->
+        </window>
+        <!--隐私设置-->
+        <window id="1003" pos="0,0,-0,-0" show="0">
+          <text pos="20,16" class="cls_set_text">隐私设置</text>
+          <check1 id="2078" pos="38,[15"  class="cls_login_check1">退出时清空播放记录</check1>
+          <check1 id="2079" pos="38,[15"  class="cls_login_check1">开启无痕浏览模式</check1>
+          <link name="btn_clearlist" pos="38,[20" colorText="#3184a9" font="size:12">立即清除隐私记录</link>
+        </window>
+        <!--快捷键-->
+        <window id="1004" pos="0,0,-0,-0" show="0">
+		<scrollview pos="0,0,-0,-0" sbSkin="scrollbar2" viewSize="-1,-1">
+          <text pos="20,16" class="cls_set_text">快捷键</text>
+          <text pos="38,[20,@60,@24" class="cls_set_text">打开文件</text>
+          <window pos="100,{0,@102,@24" colorBorder="#5d5d5d" margin-x="1" margin-y="1">
+            <edit id="1500" pos="1,1,-1,-1" readOnly="1" class="cls_set_edit"/>
+          </window>
+          <text pos="[50,{0,@60,@24" align="right" class="cls_set_text">打开文件夹</text>
+          <window pos="[10,{0,@102,@24" colorBorder="#5d5d5d" margin-x="1" margin-y="1">
+            <edit id="1501" pos="1,1,-1,-1" readOnly="1" class="cls_set_edit"/>
+          </window>
+          <!--text pos="38,[18,@60,@24" class="cls_set_text">打开URL</text>
+          <window pos="100,{0,@102,@24" colorBorder="#5d5d5d" margin-x="1" margin-y="1">
+            <edit id="1502" pos="1,1,-1,-1" readOnly="1" class="cls_set_edit"/>
+          </window-->
+          <text pos="38,[18,@60,@24" class="cls_set_text">暂停/播放</text>
+          <window pos="100,{0,@102,@24" colorBorder="#5d5d5d" margin-x="1" margin-y="1">
+            <edit id="1503" pos="1,1,-1,-1" readOnly="1" class="cls_set_edit"/>
+          </window>
+          <text pos="[50,{0,@60,@24" align="right" class="cls_set_text">停止</text>
+          <window pos="[10,{0,@102,@24" colorBorder="#5d5d5d" margin-x="1" margin-y="1">
+            <edit id="1504" pos="1,1,-1,-1" readOnly="1" class="cls_set_edit"/>
+          </window>
+          <text pos="38,[18,@60,@24" class="cls_set_text">退出</text>
+          <window pos="100,{0,@102,@24" colorBorder="#5d5d5d" margin-x="1" margin-y="1">
+            <edit id="1505" pos="1,1,-1,-1" readOnly="1" class="cls_set_edit"/>
+          </window>
+          <text pos="38,[18,@60,@24" class="cls_set_text">快进</text>
+          <window pos="100,{0,@102,@24" colorBorder="#5d5d5d" margin-x="1" margin-y="1">
+            <edit id="1506" pos="1,1,-1,-1" readOnly="1" class="cls_set_edit"/>
+          </window>
+          <text pos="[50,{0,@60,@24" align="right" class="cls_set_text">快退</text>
+          <window pos="[10,{0,@102,@24" colorBorder="#5d5d5d" margin-x="1" margin-y="1">
+            <edit id="1507" pos="1,1,-1,-1" readOnly="1" class="cls_set_edit"/>
+          </window>
+          <text pos="38,[18,@60,@24" class="cls_set_text">快进30秒</text>
+          <window pos="100,{0,@102,@24" colorBorder="#5d5d5d" margin-x="1" margin-y="1">
+            <edit id="1508" pos="1,1,-1,-1" readOnly="1" class="cls_set_edit"/>
+          </window>
+          <text pos="[50,{0,@60,@24" align="right" class="cls_set_text">快退30秒</text>
+          <window pos="[10,{0,@102,@24" colorBorder="#5d5d5d" margin-x="1" margin-y="1">
+            <edit id="1509" pos="1,1,-1,-1" readOnly="1" class="cls_set_edit"/>
+          </window>
+          <text pos="38,[18,@60,@24" class="cls_set_text">提高音量</text>
+          <window pos="100,{0,@102,@24" colorBorder="#5d5d5d" margin-x="1" margin-y="1">
+            <edit id="1510" pos="1,1,-1,-1" readOnly="1" class="cls_set_edit"/>
+          </window>
+          <text pos="[50,{0,@60,@24" align="right" class="cls_set_text">降低音量</text>
+          <window pos="[10,{0,@102,@24" colorBorder="#5d5d5d" margin-x="1" margin-y="1">
+            <edit id="1511" pos="1,1,-1,-1" readOnly="1" class="cls_set_edit"/>
+          </window>
+          <text pos="38,[18,@60,@24" class="cls_set_text">静音</text>
+          <window pos="100,{0,@102,@24" colorBorder="#5d5d5d" margin-x="1" margin-y="1">
+            <edit id="1512" pos="1,1,-1,-1" readOnly="1" class="cls_set_edit"/>
+          </window>
+          <text pos="38,[18,@60,@24" class="cls_set_text">全屏/普通</text>
+          <window pos="100,{0,@102,@24" colorBorder="#5d5d5d" margin-x="1" margin-y="1">
+            <edit id="1513" pos="1,1,-1,-1" readOnly="1" class="cls_set_edit"/>
+          </window>
+		  </scrollview>
+		  <text name="hk_tip" pos="38,[5" offset="0,0" colorText="#d93737" font="size:14"/>
+        </window>
+        <!--文件关联-->
+        <window id ="1005" pos="0,0,-0,-0" show="0">
+          <scrollview pos="0,0,-0,-30" sbSkin="scrollbar2" viewSize="-1,-1">
+            <text pos="20,16" class="cls_set_text">文件关联</text>
+            <check1 name="WindowsMedia" pos="20,[18"  class="cls_login_check1">WindowsMedia媒体</check1>
+            <check1 id="4000" pos="38,[18"  class="cls_login_check1">.asf</check1>
+            <check1 id="4001" pos="{80,{0"  class="cls_login_check1">.avi</check1>
+            <check1 id="4002" pos="{80,{0"  class="cls_login_check1">.wmv</check1>
+            <check1 id="4003" pos="{80,{0"  class="cls_login_check1">.wmp</check1>
+            <check1 id="4004" pos="{80,{0"  class="cls_login_check1">.dvr-ms</check1>
+
+            <check1 name="RealMedia" pos="20,[18"  class="cls_login_check1">Real媒体文件</check1>
+            <check1 id="4005" pos="38,[18"  class="cls_login_check1">.rmvb</check1>
+            <check1 id="4006" pos="{80,{0"  class="cls_login_check1">.ram</check1>
+            <check1 id="4007" pos="{80,{0"  class="cls_login_check1">.rm</check1>
+            <check1 id="4008" pos="{80,{0"  class="cls_login_check1">.rpm</check1>
+            <check1 id="4009" pos="{80,{0"  class="cls_login_check1">.scm</check1>
+            <check1 id="4010" pos="38,[14"  class="cls_login_check1">.rp</check1>
+            <check1 id="4011" pos="{80,{0"  class="cls_login_check1">.rt</check1>
+            <check1 id="4012" pos="{80,{0"  class="cls_login_check1">.smil</check1>
+
+            <check1 name="QuickTime" pos="20,[18"  class="cls_login_check1">QuickTime媒体文件</check1>
+            <check1 id="4013" pos="38,[18"  class="cls_login_check1">.mov</check1>
+            <check1 id="4014" pos="{80,{0"  class="cls_login_check1">.qt</check1>
+
+            <check1 name="mpeg" pos="20,[18"  class="cls_login_check1">MPEG1/2媒体</check1>
+            <check1 id="4015" pos="38,[18"  class="cls_login_check1">.dat</check1>
+            <check1 id="4016" pos="{80,{0"  class="cls_login_check1">.m1v</check1>
+            <check1 id="4017" pos="{80,{0"  class="cls_login_check1">.m2v</check1>
+            <check1 id="4018" pos="{80,{0"  class="cls_login_check1">.m2p</check1>
+            <check1 id="4019" pos="{80,{0"  class="cls_login_check1">.m2ts</check1>
+            <check1 id="4020" pos="38,[14"  class="cls_login_check1">.mp2v</check1>
+            <check1 id="4021" pos="{80,{0"  class="cls_login_check1">.mpe</check1>
+            <check1 id="4022" pos="{80,{0"  class="cls_login_check1">.mpeg</check1>
+            <check1 id="4023" pos="{80,{0"  class="cls_login_check1">.mpeg1</check1>
+            <check1 id="4024" pos="{80,{0"  class="cls_login_check1">.mpeg2</check1>
+            <check1 id="4025" pos="38,[14"  class="cls_login_check1">.mpg</check1>
+            <check1 id="4026" pos="{80,{0"  class="cls_login_check1">.mpv2</check1>
+            <check1 id="4027" pos="{80,{0"  class="cls_login_check1">.pss</check1>
+            <check1 id="4028" pos="{80,{0"  class="cls_login_check1">.pva</check1>
+            <check1 id="4029" pos="{80,{0"  class="cls_login_check1">.tp</check1>
+            <check1 id="4031" pos="38,[14"  class="cls_login_check1">.ts</check1>
+
+            <check1 name="mpeg4" pos="20,[18"  class="cls_login_check1">MPEG4媒体</check1>
+            <check1 id="4032" pos="38,[18"  class="cls_login_check1">.mp4</check1>
+            <check1 id="4033" pos="{80,{0"  class="cls_login_check1">.m4b</check1>
+            <check1 id="4034" pos="{80,{0"  class="cls_login_check1">.m4r</check1>
+            <check1 id="4035" pos="{80,{0"  class="cls_login_check1">.m4v</check1>
+            <check1 id="4036" pos="{80,{0"  class="cls_login_check1">.mpeg4</check1>
+
+            <check1 name="3gpp" pos="20,[18"  class="cls_login_check1">3GPP媒体</check1>
+            <check1 id="4037" pos="38,[18"  class="cls_login_check1">.3g2</check1>
+            <check1 id="4038" pos="{80,{0"  class="cls_login_check1">.3gp</check1>
+            <check1 id="4039" pos="{80,{0"  class="cls_login_check1">.3gp2</check1>
+            <check1 id="4040" pos="{80,{0"  class="cls_login_check1">.3gpp</check1>
+
+            <check1 name="flash" pos="20,[18"  class="cls_login_check1">flash媒体</check1>
+            <check1 id="4041" pos="38,[18"  class="cls_login_check1">.flv</check1>
+            <check1 id="4096" pos="{80,{0"  class="cls_login_check1">.fli</check1>
+            <check1 id="4097" pos="{80,{0"  class="cls_login_check1">.flc</check1>
+            <check1 id="4042" pos="{80,{0"  class="cls_login_check1">.f4v</check1>
+            <check1 id="4043" pos="{80,{0"  class="cls_login_check1">.swf</check1>
+
+            <check1 name="vcd/dvd" pos="20,[18"  class="cls_login_check1">VCD/DVD视频</check1>
+            <!--check id="4044" pos="38,[18"  class="cls_login_check1">.ifo</check-->
+            <check1 id="4044" pos="38,[18"  class="cls_login_check1">.vob</check1>
+
+            <check1 name="other" pos="20,[18"  class="cls_login_check1">其他视频格式文件</check1>
+            <check1 id="4046" pos="38,[18"  class="cls_login_check1">.amv</check1>
+            <!--check id="4047" pos="{80,{0"  class="cls_login_check1">.csf</check-->
+            <check1 id="4070" pos="{80,{0"  class="cls_login_check1">.wtv</check1>
+            <check1 id="4048" pos="{80,{0"  class="cls_login_check1">.divx</check1>
+            <check1 id="4049" pos="{80,{0"  class="cls_login_check1">.evo</check1>
+            <check1 id="4050" pos="{80,{0"  class="cls_login_check1">.mkv</check1>
+            <check1 id="4051" pos="38,[14"  class="cls_login_check1">.mod</check1>
+            <check1 id="4052" pos="{80,{0"  class="cls_login_check1">.pmp</check1>
+            <check1 id="4053" pos="{80,{0"  class="cls_login_check1">.vp6</check1>
+            <check1 id="4054" pos="{80,{0"  class="cls_login_check1">.bik</check1>
+            <check1 id="4055" pos="{80,{0"  class="cls_login_check1">.mts</check1>
+            <check1 id="4056" pos="38,[14"  class="cls_login_check1">.xvx</check1>
+            <check1 id="4057" pos="{80,{0"  class="cls_login_check1">.xv</check1>
+            <check1 id="4058" pos="{80,{0"  class="cls_login_check1">.xlmv</check1>
+            <check1 id="4059" pos="{80,{0"  class="cls_login_check1">.ogm</check1>
+            <check1 id="4060" pos="{80,{0"  class="cls_login_check1">.ogv</check1>
+            <check1 id="4061" pos="34,[14"  class="cls_login_check1">.ogx</check1>
+            <!--check id="4062" pos="{80,{0"  class="cls_login_check1">.m2t</check-->
+            <check1 id="4063" pos="{80,{0"  class="cls_login_check1">.h264</check1>
+            <check1 id="4064" pos="{80,{0"  class="cls_login_check1">.k3g</check1>
+            <check1 id="4065" pos="{80,{0"  class="cls_login_check1">.nsv</check1>
+            <check1 id="4066" pos="{80,{0"  class="cls_login_check1">.pmf</check1>
+            <check1 id="4067" pos="38,[18"  class="cls_login_check1">.tod</check1>
+            <check1 id="4068" pos="{80,{0"  class="cls_login_check1">.vp7</check1>
+            <check1 id="4069" pos="{80,{0"  class="cls_login_check1">.webm</check1>
+            <!--check id="4100" pos="{80,{0"  class="cls_login_check1">.dpg</check-->
+
+            <check1 name="audio" pos="20,[18"  class="cls_login_check1">音频文件</check1>
+            <check1 id="4071" pos="38,[18"  class="cls_login_check1">.aac</check1>
+            <check1 id="4072" pos="{80,{0"  class="cls_login_check1">.ac3</check1>
+            <check1 id="4073" pos="{80,{0"  class="cls_login_check1">.acc</check1>
+            <check1 id="4074" pos="{80,{0"  class="cls_login_check1">.aiff</check1>
+            <check1 id="4075" pos="{80,{0"  class="cls_login_check1">.amr</check1>
+            <check1 id="4076" pos="38,[14"  class="cls_login_check1">.ape</check1>
+            <check1 id="4077" pos="{80,{0"  class="cls_login_check1">.au</check1>
+            <check1 id="4078" pos="{80,{0"  class="cls_login_check1">.cda</check1>
+            <check1 id="4079" pos="{80,{0"  class="cls_login_check1">.dts</check1>
+            <check1 id="4080" pos="{80,{0"  class="cls_login_check1">.flac</check1>
+            <check1 id="4081" pos="38,[14"  class="cls_login_check1">.m4a</check1>
+            <check1 id="4082" pos="{80,{0"  class="cls_login_check1">.mka</check1>
+            <check1 id="4083" pos="{80,{0"  class="cls_login_check1">.mp2</check1>
+            <check1 id="4084" pos="{80,{0"  class="cls_login_check1">.mp3</check1>
+            <check1 id="4085" pos="{80,{0"  class="cls_login_check1">.mpc</check1>
+            <check1 id="4086" pos="38,[14"  class="cls_login_check1">.ra</check1>
+            <check1 id="4087" pos="{80,{0"  class="cls_login_check1">.tta</check1>
+            <check1 id="4088" pos="{80,{0"  class="cls_login_check1">.wav</check1>
+            <check1 id="4089" pos="{80,{0"  class="cls_login_check1">.wma</check1>
+            <check1 id="4090" pos="{80,{0"  class="cls_login_check1">.wv</check1>
+            <check1 id="4091" pos="38,[14"  class="cls_login_check1">.mid</check1>
+            <check1 id="4092" pos="{80,{0"  class="cls_login_check1">.ogg</check1>
+            <check1 id="4093" pos="{80,{0"  class="cls_login_check1">.oga</check1>
+            <check1 id="4094" pos="{80,{0"  class="cls_login_check1">.rmi</check1>
+            <check1 id="4095" pos="{80,{0"  class="cls_login_check1">.aif</check1>
+            <check1 id="4098" pos="38,[14"  class="cls_login_check1">.arm</check1>
+            <check1 id="4099" pos="{80,{0"  class="cls_login_check1">.aifc</check1>
+            <check1 id="4100" pos="{80,{0"  class="cls_login_check1">.caf</check1>
+            <check1 id="4101" pos="{80,{0"  class="cls_login_check1">.opus</check1>
+            <check1 id="4102" pos="{80,{0"  class="cls_login_check1">.spx</check1>
+            <check1 id="4103" pos="38,[14"  class="cls_login_check1">.gsm</check1>
+          </scrollview>
+
+          <window pos="20,-10,@58,@24" offset="0,-0.5" colorBorder="#ececec">
+			<imgbtn1 name="all_check"  pos="0,0,-0,-0" skin="AllSelect1" focusSkin="AllSelect2"/>
+          </window>
+          <window pos="[20,-10,@58,@24" offset="0,-0.5" colorBorder="#ececec">
+			<imgbtn1 name="no_check"  pos="0,0,-0,-0" skin="NoAllSelect1" focusSkin="NoAllSelect2"/>
+          </window>
+          <window pos="[20,-10,@58,@24" offset="0,-0.5" colorBorder="#ececec">
+            <imgbtn1 name="default_check"  pos="0,0,-0,-0" skin="DefaultSelect1" focusSkin="DefaultSelect2"/>
+		  </window>
+
+          <!--group pos="20,-30" headerHeight="0">
+          <radio name="all_check" pos="0,15" offset="0,-0.5"  class="cls_login_check1">全选</radio>
+          <radio name="no_check" pos="[40,15" offset="0,-0.5"  class="cls_login_check1">全不选</radio>
+          <radio name="default_check" pos="[40,15" offset="0,-0.5"  checked="1" class="cls_login_check1">默认</radio>
+        </group-->
+        </window>
+        <!--升级与更新-->
+        <window id="1006" pos="0,0,-0,-0" show="0">
+          <text pos="20,16" class="cls_set_text">升级与更新</text>
+          <group pos="38,[15" headerHeight="0">
+            <radio id="2080" pos="0,{0" skin="radio2" class="cls_login_check1">自动更新版本</radio>
+            <radio id="2081" pos="0,[15" skin="radio2" checked="1" class="cls_login_check1">有更新时提醒</radio>
+          </group>
+        </window>
+      </window>
+      <window pos="114,[0,-0,-0">
+	  
+        <imgbtn1 name="btn_sure" pos="20,-48" offset="0,-1" skin="cb_save1" focusSkin="cb_save2"/>
+        <!--<imgbtn1 name="btn_use" pos="[20,-48" offset="0,-1" skin="cb_use1" focusSkin="cb_use2" enableSkin="cb_use3" show="0"/>-->
+        <imgbtn1 name="btn_cancel" pos="[20,-48" offset="0,-1" skin="cb_cancel1" focusSkin="cb_cancel2"/>
+		<imgbtn1 name="btn_defaults" pos="-30,-48" offset="-1,-1" skin="defaultSet1" focusSkin="defaultSet2" tip="恢复默认设置"/>
+      </window>
+    </window>
+  </root>
+</SOUI>

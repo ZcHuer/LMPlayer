@@ -1,0 +1,179 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 5,33,123,0
+ PRODUCTVERSION 5,33,123,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "CompanyName", ""
+            VALUE "FileDescription", "基础组件(关联图标资源)"
+            VALUE "FileVersion", "1.0.0.11"
+            VALUE "InternalName", "LibraryIcon"
+            VALUE "LegalCopyright", "Copyright (C) 2007-2013 "
+            VALUE "OriginalFilename", "LibraryIcon.dll"
+            VALUE "ProductName", ""
+            VALUE "ProductVersion", "1.0.0.11"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_WMA                 ICON                    "sicon\\wma.ico"
+IDI_BOV                 ICON                    "sicon\\bov.ico"
+IDI_TS                  ICON                    "sicon\\ts.ico"
+IDI_TPR                 ICON                    "sicon\\tpr.ico"
+IDI_TP                  ICON                    "sicon\\tp.ico"
+IDI_PVA                 ICON                    "sicon\\pva.ico"
+IDI_PSS                 ICON                    "sicon\\pss.ico"
+IDI_OGM                 ICON                    "sicon\\ogm.ico"
+IDI_VOB                 ICON                    "sicon\\vob.ico"
+IDI_MPG                 ICON                    "sicon\\mpg.ico"
+IDI_MP4                 ICON                    "sicon\\mp4.ico"
+IDI_MKV                 ICON                    "sicon\\mkv.ico"
+IDI_M4V                 ICON                    "sicon\\m4v.ico"
+IDI_M4P                 ICON                    "sicon\\m4p.ico"
+IDI_M4B                 ICON                    "sicon\\m4b.ico"
+IDI_DAT                 ICON                    "sicon\\dat.ico"
+IDI_ASF                 ICON                    "sicon\\asf.ico"
+IDI_AVI                 ICON                    "sicon\\avi.ico"
+IDI_DVD                 ICON                    "sicon\\dvd.ico"
+IDI_MP3                 ICON                    "sicon\\mp3.ico"
+IDI_MPEG                ICON                    "sicon\\mpeg.ico"
+IDI_QT                  ICON                    "sicon\\qt.ico"
+IDI_REAL                ICON                    "sicon\\real.ico"
+IDI_WM                  ICON                    "sicon\\wm.ico"
+IDI_WMP                 ICON                    "sicon\\wmp.ico"
+IDI_WMV                 ICON                    "sicon\\wmv.ico"
+IDI_FLASH               ICON                    "sicon\\flash.ico"
+IDI_SUPL                ICON                    "sicon\\playlist.ico"
+IDI_AUDIO               ICON                    "sicon\\audio.ico"
+IDI_ASS                 ICON                    "sicon\\ass.ico"
+IDI_ASX                 ICON                    "sicon\\asx.ico"
+IDI_CUE                 ICON                    "sicon\\cue.ico"
+IDI_IDX                 ICON                    "sicon\\idx.ico"
+IDI_M3U                 ICON                    "sicon\\m3u.ico"
+IDI_MPCPL               ICON                    "sicon\\mpcpl.ico"
+IDI_SMPL                ICON                    "sicon\\smpl.ico"
+IDI_SRT                 ICON                    "sicon\\srt.ico"
+IDI_SSA                 ICON                    "sicon\\ssa.ico"
+IDI_SUB                 ICON                    "sicon\\sub.ico"
+IDI_WAX                 ICON                    "sicon\\wax.ico"
+IDI_WMX                 ICON                    "sicon\\wmx.ico"
+IDI_WVX                 ICON                    "sicon\\wvx.ico"
+IDI_DEFAULT             ICON                    "sicon\\normal.ico"
+IDI_BHD                 ICON                    "sicon\\bhd.ico"
+IDI_DIVX                ICON                    "sicon\\divx.ico"
+IDI_IFO                 ICON                    "sicon\\ifo.ico"
+IDI_VID                 ICON                    "sicon\\vid.ico"
+IDI_BFP                 ICON                    "sicon\\bfp.ico"
+IDI_GHD                 ICON                    "sicon\\ghd.ico"
+IDI_SUP                 ICON                    "sicon\\sup.ico"
+/////////////////////////////////////////////////////////////////////////////
+//
+// XML
+//
+
+IDR_FILEASS_XML         XML                     "xmlres\\FileAssociate.xml"
+IDR_HOTKEY_XML          XML                     "xmlres\\HotKeyList.xml"
+IDR_NETWORK_XML         XML                     "xmlres\\DownloadNetwork.xml"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_SNAP_CAMERA         BITMAP                  "snapres\\snap-camera.bmp"
+IDB_SNAP_LOGO           BITMAP                  "snapres\\snap-logo.bmp"
+IDB_SNAP_HEADBG         BITMAP                  "snapres\\snap-headbg.bmp"
+IDB_SNAP_LEFTTOP        BITMAP                  "snapres\\sanp-lefttop.bmp"
+IDB_SNAP_LEFTBOTTOM     BITMAP                  "snapres\\snap-leftbottom.bmp"
+IDB_SNAP_RIGHTBOTTOM    BITMAP                  "snapres\\snap-rightbottom.bmp"
+IDB_SNAP_RIGHTTOP       BITMAP                  "snapres\\snap-righttop.bmp"
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,32 @@
+一、应用程序名：LeLaunch.exe
+二、应用服务名：LePlayerService.exe
+三、命令行示例：
+1、激活
+/active
+2、激活并播放优酷
+/active:{\"cpId\":119,\"videoid\":\"123\",\"fsp2\":\"iku://|play|lenovo-cms|videoid|home|XMzk2MDkwNDkzMg==||\",\"url\":\"\"}	
+3、激活并播放风行
+/active:{\"cpId\":118,\"videoid\":\"123\",\"fsp2\":\"\",\"url\":\"https://leplayer.vgs.lenovo.com.cn/#/detail?vid=90719&moduleType=MDA&channelId=289&cpId=118&moduleId=2443&category1=12658\"}
+
+4、播放优酷
+/lmplay:{\"cpId\":119,\"videoid\":\"123\",\"fsp2\":\"iku://|play|lenovo-cms|videoid|home|XMzk2MDkwNDkzMg==||\",\"url\":\"\"}
+
+5、播放风行
+/lmplay:{\"cpId\":118,\"videoid\":\"123\",\"fsp2\":\"\",\"url\":\"https://leplayer.vgs.lenovo.com.cn/#/detail?vid=90719&moduleType=MDA&channelId=289&cpId=118&moduleId=2443&category1=12658\"}
+
+6、激活并调起，不播放 
+/active:
+
+
+
+四、激活成功判断标准，依次执行
+1.创建桌面快捷方式  		AppData\Roaming\LePlayer\LeLaunch.exe -desktop.lnk
+2.创建开始菜单快捷方式		AppData\Roaming\LePlayer\LeLaunch.exe -startMenu.lnk
+3.创建控制面板卸载快捷方式	
+4.注册表写入安装路径
+·计算机\HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\App Paths\LenovoVideo  （悬浮球调用）
+·计算机\HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\App Paths\LePlayer      （乐窗调用）
+5.启动服务（LePlayerService.exe）
+
+
+

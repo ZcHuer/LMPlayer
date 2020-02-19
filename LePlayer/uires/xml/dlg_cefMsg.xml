@@ -1,0 +1,7 @@
+﻿<SOUI name="cef" title="cef" width="300" height="50" resizable="1" margin="0,0,0,0" appWnd="1" translucent="1">
+  <root cache="1">
+    <window pos="0,0,-0,-0"  skin="transebg">
+      <text name="TextTip" pos="|0,|0,@300,@50" colorText="#FFFFFF" font="size:16" offset="-0.5,-0.5">正在为您跳转到第三方网站播放...</text>
+    </window>
+  </root>
+</SOUI>

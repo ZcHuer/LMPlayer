@@ -1,0 +1,56 @@
+﻿<SOUI name="Ctrl" title="Ctrl" width="600" height="46" minsize="100,36" toolWindow="1" resizable="1" translucent="1">
+  <root cache="1">
+    <window pos="0,0,-0,-0">
+	<caption pos="0,0,-0,-0"/>
+      <flywnd name="head_fly" pos="0,0,-0,30" skin="defalut" posEnd="0,0,-0,40" alpha="150" offsetEnd="0,-1" layeredWindow="1" show="0">
+        <window colorBkgnd="#202020">
+          <caption name="movectrl" pos="0,0,0,0"/>
+          <text name="head_path" pos="10,0,-200,-0" dotted="1" font="size:14" colorText="#a7acbc"/>
+          <window name="minimode" pos="-120,0,-0,-0" show="0">
+            <imgbtn1 name="btn_close" pos="-10,|0" offset="-1,-0.5" skin="ng_close1" focusSkin="ng_close2" tip="关闭"/>
+            <!--imgbtn1 name="btn_max" pos="{-20,|0" offset="-1,-0.5" skin="ng_max1" focusSkin="ng_max2" tip="最大化"/-->
+            <!--imgbtn1 name="btn_restore" pos="{0,|0" offset="0,-0.5" skin="ng_restore1" focusSkin="ng_restore2" show="0" tip="还原"/-->
+            <imgbtn1 name="btn_min" pos="{-20,|0" offset="-1,-0.5" skin="ng_min1" focusSkin="ng_min2" tip="最小化"/>
+          </window>
+          <imgbtn1 name="btn_favorites" pos="-70,|0,@60,@20" offset="0,-0.5" skin="skin_teleplay" colorText="#a7acbc" startAlign="right" textOffset="5" show="0">收藏</imgbtn1>
+        </window>
+      </flywnd>
+      <!--window name="wnd_lnk" pos="0,0,-0,-0" show="0">
+        <text pos="10,0" colorText="#ffffff" font="size:14">您可以免费观看前6分钟，完整观看请</text>
+        <link name="lnk_huiyuan" pos="[0,0" colorText="#fdc52c" font="size:14,underline:1" cursor="hand">立即购买</link>
+      </window-->
+      <flywnd name="ctrl_fly" pos="0,-46,-0,-0" skin="defalut" posEnd="0,-66,-0,-0" alpha="200" offsetEnd="0,1" layeredWindow="1" show="0">
+        <window pos="0,10,-0,-0" colorBkgnd="#222124" cache="1">
+		<caption pos="0,0,-0,-0"/>
+			<imgbtn1 name="btn_play" pos="|-10,|0,@20,@20" offset="0,-0.5" skin="ctrl_play1" focusSkin="ctrl_play2" tip="播放/暂停"/>
+			<imgbtn1 name="btn_last" pos="|-38,|0,@12,@12" offset="0,-0.5" skin="ctrl_last1" focusSkin="ctrl_last2" tip="前一个"/> 
+			<!--imgbtn1 name="btn_stop" pos="|-66,|0,@12,@12" offset="0,-0.5" skin="ctrl_stop1" focusSkin="ctrl_stop2" tip="停止"/-->
+			<imgbtn1 name="btn_next" pos="|26,|0,@12,@12" offset="0,-0.5" skin="ctrl_next1" focusSkin="ctrl_next2" tip="后一个"/>
+			<text name="showtime" pos="|-182,|0" offset="0,-0.5" colorText="#a7acbc" font="size:12">00:00:00/00:00:00</text>
+			<!--imgbtn name="btn_stop" pos="0,|0" offset="0,-0.5" skin="ctrl_stop" enable="0"/-->			
+			<!--<imgbtn1 name="btn_mini" pos="{-20,|0,@24,@24" offset="-1,-0.5" skin="ctrl_min1" focusSkin="ctrl_min2" enable="1" tip="精简模式"/>-->
+			<!--imgbtn1 name="btn_set" pos="{-20,|0,@24,@24" offset="-1,-0.5" skin="ctrl_set1" focusSkin="ctrl_set2" tip="设置"/-->
+			<imgbtn1 name="btn_volume" pos="|54,|0,@12,@12" offset="0,-0.5" skin="ctrl_volume1" focusSkin="ctrl_volume2" tip="调节音量"/>
+			<sliderbar name="slider_volume" pos="|134,|0" offset="-1,-0.5" vertical="0" bkgndSkin="pg_vbg_v" posSkin="pg_pos_v" thumbSkin="pg_thumb_v" max="100" value="0" cursor="hand"/>			
+			<imgbtn1 name="btn_fullscreen" pos="-20,|0,@14,@14" offset="-1,-0.5" skin="ctrl_full1" focusSkin="ctrl_full2" tip="全屏"/>		
+			<imgbtn1 name="btn_nomal" pos="-50,|0,@14,@14" offset="-1,-0.5" skin="ctrl_recover1" focusSkin="ctrl_recover2" enable="1" tip="正常模式"/>
+        </window>
+        <sliderbar name="slider_player" focusChange="1" pos="0,0,-0,@14"
+                   bkgndSkin="pgb_bg1" posSkin="pgb_pos1"
+                   thumbSkin="pgb_thumb2" thumbResize="5" font="size:10" thiumbZero="0" max="1"
+                   colorAB="#ffff00" show="0" cursor="hand"/>
+      </flywnd>
+      <window name="wnd_voice" pos="8,-66,@45,@138" skin="pg_wndbg" offset="0,-1" layeredWindow="1" show="0">
+        <text name="voice" pos="|0,3" offset="-0.5,0" colorText="#a7acbc"/>
+        <sliderbar name="slider_volume1" vertical="1" reversal="1" pos="|0,28,@30,-10" offset="-0.5,0" bkgndSkin="pg_vbg" posSkin="pg_pos"
+                   thumbSkin="pg_thumb" max="100" value="50" cursor="hand"/>
+      </window>
+      <!--window name="wnd_definition" pos="-105,-66,@88,@122" skin="ctrl_popbg" layeredWindow="1" show="0">
+        <imgbtn1 id="883" bgColorex="#1b1d1d" pos="0,0,-0,@40" class="cls_definition">超清</imgbtn1>
+        <imgbtn1 id="882" bgColorex="#1b1d1d" pos="0,[0,-0,@40" class="cls_definition">高清</imgbtn1>
+        <imgbtn1 id="881" bgColorex="#1b1d1d" pos="0,[0,-0,@40" class="cls_definition">标清</imgbtn1>
+      </window-->
+      <imgbtn1 name="btn_tig" pos="-0,|0" offset="-1,-0.5" skin="skin_tag4" focusSkin="skin_tag3" show="0"/>
+    </window>
+  </root>
+</SOUI>

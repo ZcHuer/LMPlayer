@@ -1,0 +1,9 @@
+﻿<SOUI name="SEARCH_LIST" title="搜索" width="206"
+      height="414" alpha="255" resizable="1" appWnd="0"
+      toolWindow="1" translucent="1">
+  <root cache="1">
+    <window pos="16,12,-16,-12">
+      <window name="wnd_list" pos="0,0,-0,-0"/>
+    </window>
+  </root>
+</SOUI>

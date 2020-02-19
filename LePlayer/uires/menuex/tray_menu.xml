@@ -1,0 +1,10 @@
+<menu arrowSkin="menu_arrow" maxWidth="100" itemSkin="menu_item" colorText="#ffffff" cororTextGray="#999999" colorBg="#1e1e1e">
+  <item id="1">设置</item>
+  <item>
+    帮助
+    <!--menuItem id="2" class="cls_menuex">帮助</menuItem-->
+    <item id="3">关于</item>
+    <item id="4">检查更新</item>
+  </item>
+  <item id="999">退出</item>
+</menu>

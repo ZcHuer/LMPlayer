@@ -1,0 +1,44 @@
+﻿<SOUI width="870" height="597" minsize="500,300" resizable="1" margin="0,0,0,0" sendWheel2Hover="1" appWnd="1" translucent="0">
+  <root cache="1">
+    <window pos="0,0,-0,-0" colorBkgnd="#2F3238" cache="1">	
+      <window name="wnd_playbg" pos="0,0,-0,-0" cache="1">
+	      <caption name="playCaption" pos="0,0,-0,-0"/>
+          <img name="audio" pos="|0,|-100" offset="-0.5,0" skin="skin_player_audio" show="0"/>
+          <window name="player" pos="0,0,-0,-0" colorBkgnd="#191B20">
+            <!--img name="logo_img" pos="|0,|-113" offset="-0.5,0" skin="skin_player_vedio" show="1"/-->
+            <window name="menu_btn" pos="0,|-93,-0,-0">
+              <imgbtn1 name="btn_player_menu" pos="|0,100" offset="-0.5,-0.5" skin="player_sz" cursor="hand"/>
+              <img pos="{10,100" offset="0,-0.5" skin="player_dk"/>
+              <text pos="[10,100" offset="0,-0.5" colorText="#ffffff">打开本地文件</text>
+              <window pos="[14,100,@1,@26" offset="0,-0.5" colorBkgnd="#151515"/>
+              <img pos="[11,100" offset="0,-0.5" skin="player_dk1"/>
+            </window>
+          </window>
+        <gifplayer pos="|-40,|0" offset="-0.5,-0.5" skin="gif_loading" show="0" name="gif_load"/>
+        <text name="load_text" pos="[10,|0" offset="0,-0.5" font="size:13" colorText="#40c2fd" show="0">正在加载资源...</text>
+        <flash name="flash_player" pos="0,0,-0,-0" delay="1" show="0"/>
+      </window>
+      <window name="wnd_ctrl" pos="0,-46,-0,-0" colorBkgnd="#191B20">
+        <window pos="0,10,-0,-0" colorBkgnd="#222124" cache="1">
+			<imgbtn1 name="btn_play" pos="|-10,|0,@20,@20" offset="0,-0.5" skin="ctrl_play1" focusSkin="ctrl_play2" tip="播放/暂停"/>
+			<imgbtn1 name="btn_last" pos="|-38,|0,@12,@12" offset="0,-0.5" skin="ctrl_last1" focusSkin="ctrl_last2" tip="前一个"/> 
+			<imgbtn1 name="btn_stop" pos="|-66,|0,@12,@12" offset="0,-0.5" skin="ctrl_stop1" focusSkin="ctrl_stop2" tip="停止"/>
+			<imgbtn1 name="btn_next" pos="|26,|0,@12,@12" offset="0,-0.5" skin="ctrl_next1" focusSkin="ctrl_next2" tip="后一个"/>
+			<text name="showtime" pos="|-182,|0" offset="0,-0.5" colorText="#a7acbc" font="size:12">00:00:00/00:00:00</text>
+			<!--imgbtn name="btn_stop" pos="0,|0" offset="0,-0.5" skin="ctrl_stop" enable="0"/-->
+          <imgbtn1 name="btn_fullscreen" pos="-20,|0,@14,@14" offset="-1,-0.5" skin="ctrl_full1" focusSkin="ctrl_full2" tip="全屏"/>
+          <!--<imgbtn1 name="btn_mini" pos="{-20,|0,@24,@24" offset="-1,-0.5" skin="ctrl_min1" focusSkin="ctrl_min2" enable="1" tip="精简模式"/>-->
+          <!--imgbtn1 name="btn_set" pos="{-20,|0,@24,@24" offset="-1,-0.5" skin="ctrl_set1" focusSkin="ctrl_set2" tip="设置"/-->
+		  <imgbtn1 name="btn_volume" pos="|54,|0,@12,@12" offset="0,-0.5" skin="ctrl_volume1" focusSkin="ctrl_volume2" tip="调节音量"/>
+		  <sliderbar name="slider_volume" pos="|134,|0" offset="-1,-0.5" vertical="0" bkgndSkin="pg_vbg_v" posSkin="pg_pos_v" thumbSkin="pg_thumb_v" max="100" value="0" cursor="hand"/>		  
+		  <!--imgbtn1 name="btn_open" pos="{-30,|0" offset="0,-0.5" skin="player_dk" focusSkin="player_dk" tip="打开本地文件"/-->
+		  <!--link name="btn_open" pos="{-45,|0" offset="-0,-0.5" colorText="#92959e" colorTextHover="#ffffff" font="size:16" show="1">本地</link-->		  
+		  <!--<imgbtn1 name="btn_xuanji" pos="{-20,|0" offset="-1,-0.5" skin="ctrl_drama1" focusSkin="ctrl_drama2" show="1"/>-->
+          <!--link name="btn_resolution1" pos="{-20,|0,@24,@24" offset="-1,-0.5" algin="center" colorText="#92959e" colorTextHover="#ffffff" font="size:14" show="0">选集</link-->
+		  <!--link name="btn_resolution2" pos="{-20,|0,@24,@24" offset="-1,-0.5" algin="center" colorText="#92959e" colorTextHover="#ffffff" font="size:14" show="0">高清</link-->
+        </window>
+        <sliderbar name="slider_player" focusChange="1" pos="0,0,-0,@14" bkgndSkin="pgb_bg1" posSkin="pgb_pos1" thumbSkin="pgb_thumb2" thumbResize="5" font="size:10" thiumbZero="0" max="1" colorAB="#ffff00" show="0" cursor="hand"/>
+      </window>
+    </window>
+  </root>
+</SOUI>

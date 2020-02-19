@@ -1,0 +1,54 @@
+<SOUI name="FEEDBACKWND" title="关于" width="655" height="515" minsize="655,515" resizable="0" appWnd="0" translucent="1">
+  <root skin="skin_feedback" cache="1">
+    
+    <window pos="15,15,-15,-15" >
+		<caption pos="0,0,-0,40">
+			<text pos="25,16" offset="0,-0.5" colorText="#CCCCCC" font="size:16">LMPlayer反馈与建议</text>
+			<imgbtn1 name="btn_close" pos="-55,|8" offset="0,-0.5" skin="ng_close1" focusSkin="ng_close2" show="0"/>
+		</caption>
+		<img name="line" pos="25,[0,-25,@1}" skin="skin_line" show="1"/>
+		<text pos="47,{33" offset="0,-0.5" colorText="#CCCCCC" font="size:16">我要投诉</text>
+		
+		
+		<check1 name="ch1" pos="125,{0" class="cls_login_check1" colorText="#CCCCCC">一直在缓冲，不能播放</check1>
+		<check1 name="ch2" pos="300,{0" class="cls_login_check1" colorText="#CCCCCC">影片内容不丰富</check1>
+		<check1 name="ch3" pos="450,{0" class="cls_login_check1" colorText="#CCCCCC">界面不美观</check1>
+		
+		
+		<check1 name="ch4" pos="125,[19" class="cls_login_check1" colorText="#CCCCCC">播放不流畅，卡</check1>
+		<check1 name="ch5" pos="300,{0" class="cls_login_check1" colorText="#CCCCCC">频道列表无法展示</check1>
+		<check1 name="ch6" pos="450,{0" class="cls_login_check1" colorText="#CCCCCC">广告问题</check1>
+		
+		
+		<check1 name="ch7" pos="125,[19" class="cls_login_check1" colorText="#CCCCCC">图像声音不同步</check1>
+		<check1 name="ch8" pos="300,{0" class="cls_login_check1" colorText="#CCCCCC">软件崩溃无反应</check1>
+		<check1 name="ch9" pos="450,{0" class="cls_login_check1" colorText="#CCCCCC">其他</check1>
+		
+		<text pos="47,{40" offset="0,-0.5" colorText="#CCCCCC" font="size:16">意见反馈</text>
+		<img id="11" pos="125,{0" skin="FeedInfo"/>
+        <richedit name="FeedInfoEdit" pos="{0,{0,@446,@121" cueText="" inset="5,5,5,5" multiLines="1" wordWrap="1" maxBuf="5400" autoSel="0" multiLines="1" autoWordSel="0" vscrollBar="1" wordWrap="1"  autoVscroll="1" hscrollBar="0" wantReturn="1" cursor="" password="0" class="cls_lg_edit"/>
+		
+		
+		<text pos="47,{150" offset="0,-0.5" colorText="#CCCCCC" font="size:16">联系方式</text>
+		<img id="11" pos="125,{-12" skin="FeedPhone"/>
+        <edit name="FeedInfoEditPhone" pos="{0,{0,@446,@40" cueText="电话/邮箱/QQ" password="0" class="cls_lg_edit"/>
+         
+		<text pos="125,[20" offset="0,-0.5" colorText="#CCCCCC" font="size:15">遇到问题请联系</text>
+		<link name="lnk_Customer" pos="[0,{0" colorText="#CCCCCC" font="size:15,underline:0">客服</link>
+		<text pos="[0,{0" colorText="#CCCCCC" font="size:15">。也可以加入我们的QQ反馈问题。</text>
+		<text pos="125,[10" offset="0,-0.5" colorText="#CCCCCC" font="size:15" show="1">QQ群：</text>
+		<link name="lnk_QQ" pos="[0,{0" colorText="#0296ff" font="size:15,underline:0">
+		</link>
+		
+		<text pos="125,[5" offset="0,-0.5" colorText="#CCCCCC" font="size:15" show="0">客服电话：</text>
+		<link name="lnk_CustomerPhone" pos="[0,{0" colorText="#0296ff" font="size:15,underline:0" show="0">123</link>
+		
+        <imgbtn1 name="btn_Feed" pos="|-120,[20,@90,@34" skin="cb_save1" focusSkin="cb_save2" class="cls_login" colorText="#FFFFFF"/>
+		<imgbtn1 name="btn_FeedConcel" pos="|30,{0,@90,@34" skin="cb_cancel1" focusSkin="cb_cancel2" class="cls_login" colorText="#1BA6FF"/>
+		<window name ="MsgSec" pos="197,207,@260,@100" colorText="#FFFFFF" colorBkgnd="#000000" show="0">
+		<img pos="20,37,@26,@26" skin="msgSucess"/>
+		<text pos="[10,{0" class="cls_lg_edit" colorText="#FFFFFF" font="size:16" >提交成功，感谢您的反馈！</text>
+		</window>
+    </window>
+  </root>
+</SOUI>

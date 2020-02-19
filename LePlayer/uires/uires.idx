@@ -1,0 +1,520 @@
+﻿<resource>
+  <UIDEF>
+    <file name="XML_INIT" path="uidef\init.xml"/>
+  </UIDEF>
+  <LAYOUT>
+    <file name="XML_MAINWND" path="xml\dlg_main.xml"/>
+    <file name="XML_PLAYERWND" path="xml\dlg_player.xml"/>
+    <file name="XML_SETWND" path="xml\dlg_set.xml"/>
+    <file name="XML_CLEARWND" path="xml\dlg_clear.xml"/>
+    <file name="XML_ABOUTWND" path="xml\dlg_about.xml"/>
+    <file name="XML_MAINSETWND" path="xml\dlg_mainset.xml"/>
+    <file name="XML_POPUP" path="xml\dlg_popup.xml"/>
+    <file name="XML_TELEPLAY" path="xml\dlg_teleplay.xml"/>
+    <file name="XML_POPLIST" path="xml\dlg_poplist.xml"/>
+    <file name="XML_LOGIN" path="xml\dlg_login.xml"/>
+    <file name="XML_SEARCH_LIST" path="xml\dlg_searchlist.xml"/>
+    <file name="XML_LOGIN_OK" path="xml\dlg_loginok.xml"/>
+    <file name="XML_LIST" path="xml\dlg_list.xml"/>
+    <file name="XML_MIGU" path="xml\dlg_migu.xml"/>
+    <file name="XML_CEF" path="xml\dlg_cefbrowser.xml"/>
+    <file name="XML_CEFMSGWND" path="xml\dlg_cefMsg.xml"/>
+    <file name="XML_CTRLWND" path="xml\dlg_ctrlwnd.xml"/>
+    <file name="XML_FEEDBACK" path="xml\dlg_feedbackwnd.xml"/>
+	<file name="XML_SHORTCUTHINT" path="xml\dlg_shortcuthint.xml"/>
+    <file name="XML_SWITCHNEWVER" path="xml\dlg_switchnewver.xml"/>
+    <file name="XML_PLAYFAILED" path="xml\dlg_playfailed.xml"/>
+	<file name="XML_NEWVER" path="xml\dlg_newver.xml"/>
+    <file name="XML_USERCHOISE" path="xml\dlg_userchoise.xml"/>
+    <file name="XML_ONLINEUPDATEWND" path="xml\dlg_onlineupdate.xml"/>
+    <file name="XML_MSGWND2" path="xml\dlg_msg2.xml"/>
+	<file name="XML_POPVIP" path="xml\dlg_popvip.xml"/>
+    <file name="XML_INTALLING" path="xml\dlg_Installing.xml"/>
+  </LAYOUT>
+
+  <values>
+    <file name="string" path="values\string.xml"/>
+    <file name="color" path="values\color.xml"/>
+    <file name="skin" path="values\skin.xml"/>
+  </values>
+
+  <IMG>
+    <file name="defalut" path="image\default.png"/>
+    <file name="taskbg" path="image\taskbg.png"/>
+    <file name="loginbg" path="image\loginbg.png"/>
+    <file name="radio1" path="image\radio1.png"/>
+    <file name="radio2" path="image\radio2.png"/>
+    <file name="check1" path="image\check1.png"/>
+    <file name="check2" path="image\check2.png"/>
+    <file name="scrollbar" path="image\scrollbar.png"/>
+    <file name="scrollbar1" path="image\scrollbar1.png"/>
+    <file name="scrollbar2" path="image\scrollbar2.png"/>
+    <file name="scrollbar3" path="image\scrollbar3.png"/>
+    <file name="scrollbar4" path="image\scrollbar4.png"/>
+    <file name="tig1" path="image\tig1.png"/>
+    <file name="tig2" path="image\tig2.png"/>
+    <file name="minsetbg" path="image\minsetbg.png"/>
+    <file name="setbg" path="image\setbg.png"/>
+    <file name="tag1" path="image\tag1.png"/>
+    <file name="tag2" path="image\tag2.png"/>
+    <file name="tag3" path="image\tag3.png"/>
+    <file name="tag4" path="image\tag4.png"/>
+    <file name="mainSet" path="image\mainSet.png"/>
+
+    <file name="teledefault" path="image\teledefault.png"/>
+	
+	<!--file 更新模块  /-->
+	<file name="close" path="image\close.png"/>
+    <file name="close1" path="image\close1.png"/>
+    <file name="close2" path="image\close2.png"/>
+    <file name="progress_bg" path="image\prg.png"/>
+    <file name="progress_pos" path="image\prp.png"/>
+    
+    <file name="btnUpdate1" path="image\btnUpdate1.png"/>
+    <file name="btnUpdate2" path="image\btnUpdate2.png"/>
+    
+    <file name="background" path="image\update_background.png"/>
+    <file name="updatebk" path="image\updatebk.png"/>
+    <file name="img_default" path="image\img_default.png"/>
+    <file name="ok1" path="image\ok1.png"/>
+    <file name="ok2" path="image\ok2.png"/>
+  </IMG>
+  <ab>
+    <file name="aboutbg" path="image\about\aboutbg.png"/>
+    <file name="close1" path="image\about\close1.png"/>
+    <file name="close2" path="image\about\close2.png"/>
+  </ab>
+
+  <Login>
+    <file name="close" path="image\login\btn_close.png"/>
+    <file name="close1" path="image\login\btn_close1.png"/>
+    <file name="back" path="image\login\back.png"/>
+    <file name="edit1" path="image\login\edit1.png"/>
+    <file name="editfocus" path="image\login\editfocus.png"/>
+    <file name="edit2" path="image\login\edit2.png"/>
+    <file name="edit2foucs" path="image\login\edit2foucs.png"/>
+    <file name="code" path="image\login\code.png"/>
+    <file name="code0" path="image\login\code0.png"/>
+    <file name="code1" path="image\login\code1.png"/>
+    <file name="btn" path="image\login\btn.png"/>
+    <file name="btn2" path="image\login\btn2.png"/>
+    <file name="adimg" path="image\login\ad.png"/>
+    <file name="login_Le" path="image\login\login_Le.png"/>
+    <file name="check1" path="image\login\check1.png"/>
+    <file name="check2" path="image\login\check2.png"/>
+    <file name="check3" path="image\login\check3.png"/>
+    <file name="update" path="image\login\update.png"/>
+    <file name="update1" path="image\login\update1.png"/>
+    <file name="loginok_bg" path="image\login\loginok_bg.png"/>
+    <file name="btnquitlogin" path="image\login\btnquitlogin.png"/>
+    <file name="btnquitloginhor" path="image\login\btnquitloginhor.png"/>
+    <file name="default" path="image\login\default.png"/>
+    <file name="default1" path="image\login\default1.png"/>
+    <file name="line" path="image\login\line.png"/>
+    <file name="goback" path="image\login\goback.png"/>
+    <file name="goback1" path="image\login\goback1.png"/>
+    <file name="headimg" path="image\login\head.png"/>
+    <file name="xl1" path="image\login\xl1.png"/>
+    <file name="xl2" path="image\login\xl2.png"/>
+    <file name="btnlogin1" path="image\login\btnlogin1.png"/>
+    <file name="btnlogin2" path="image\login\btnlogin2.png"/>
+    <file name="btnlogin11" path="image\login\btnlogin11.png"/>
+    <file name="btnlogin22" path="image\login\btnlogin22.png"/>
+    <file name="ID_ICON_MASK" path="image\login\avatar_mask.png"/>
+    
+    <file name="loginRegFinish1" path="image\login\loginRegFinish1.png"/>
+    <file name="loginRegFinish2" path="image\login\loginRegFinish2.png"/>
+    
+    <file name="loginBind1" path="image\login\loginBind1.png"/>
+    <file name="loginBind2" path="image\login\loginBind2.png"/>
+
+    <file name="loginBtnNext1" path="image\login\loginBtnNext1.png"/>
+    <file name="loginBtnNext2" path="image\login\loginBtnNext2.png"/>
+
+  </Login>
+  
+  <Msgbox>
+    <file name="msgbk" path="image\msgbox\msgbk.png"/>
+    
+    <file name="MsgCancel1" path="image\msgbox\MsgCancel1.png"/>
+    <file name="MsgCancel2" path="image\msgbox\MsgCancel2.png"/>
+  </Msgbox>
+
+  <Navigation>
+    <file name="tag" path="image\navigation\tag.png"/>
+    <file name="logoxl" path="image\navigation\logoxl.png"/>
+    <file name="record" path="image\navigation\record.png"/>
+    <file name="record1" path="image\navigation\record1.png"/>
+    <file name="refresh" path="image\navigation\refresh.png"/>
+    <file name="refresh1" path="image\navigation\refresh1.png"/>
+    <file name="collection" path="image\navigation\collection.png"/>
+    <file name="collection1" path="image\navigation\collection1.png"/>
+    <file name="search" path="image\navigation\search.png"/>
+    <file name="search_1" path="image\navigation\search_1.png"/>
+    <file name="search_2" path="image\navigation\search_2.png"/>
+    <file name="search_3" path="image\navigation\search_3.png"/>
+    <file name="search_4" path="image\navigation\search_4.png"/>
+    <file name="search1" path="image\navigation\search1.png"/>
+    <file name="search2" path="image\navigation\search2.png"/>
+    <file name="search3" path="image\navigation\search3.png"/>
+    <file name="search_1000" path="image\navigation\search_1000.png"/>
+    <file name="search_1920" path="image\navigation\search_1920.png"/>
+    <file name="search_2500" path="image\navigation\search_2500.png"/>
+    <file name="search_3000" path="image\navigation\search_3000.png"/>
+    <file name="search_list" path="image\navigation\searchlist.png"/>
+    <file name="search_list1" path="image\navigation\searchlist1.png"/>
+    <file name="close1" path="image\navigation\close1.png"/>
+    <file name="close2" path="image\navigation\close2.png"/>
+    <file name="maxsize1" path="image\navigation\maxsize1.png"/>
+    <file name="maxsize2" path="image\navigation\maxsize2.png"/>
+    <file name="minsize1" path="image\navigation\minsize1.png"/>
+    <file name="minsize2" path="image\navigation\minsize2.png"/>
+    <file name="restore1" path="image\navigation\restore1.png"/>
+    <file name="restore2" path="image\navigation\restore2.png"/>
+    <file name="zhiding1" path="image\navigation\zhiding1.png"/>
+    <file name="zhiding2" path="image\navigation\zhiding2.png"/>
+    <file name="buzhiding1" path="image\navigation\buzhiding1.png"/>    
+    <file name="buzhiding2" path="image\navigation\buzhiding2.png"/>
+    <file name="minimode1" path="image\navigation\minimode1.png"/>
+    <file name="minimode2" path="image\navigation\minimode2.png"/>
+    <file name="clearsearch1" path="image\navigation\clearsearch1.png"/>
+    <file name="clearsearch2" path="image\navigation\clearsearch2.png"/>
+    <file name="clearsearch3" path="image\navigation\clearsearch3.png"/>
+    <file name="clearsearch4" path="image\navigation\clearsearch4.png"/>
+    <file name="logo" path="image\navigation\logo.png"/>
+    <file name="logo1" path="image\navigation\logo1.png"/>
+    <file name="line" path="image\navigation\line.png"/>
+	  <file name="ID_ICON_MASK" path="image\navigation\avatar_mask.png"/>
+    <file name="ID_ICON_MASK_HORVER" path="image\navigation\avatar_mask_hover.png"/>
+
+    <file name="ID_ICON_MASKVIP" path="image\navigation\avatar_maskVIP.png"/>
+    <file name="ID_ICON_MASK_HORVERVIP" path="image\navigation\avatar_mask_hoverVIP.png"/>
+    
+    <file name="menu1" path="image\navigation\menu1.png"/>
+	  <file name="menu2" path="image\navigation\menu2.png"/>
+	
+	<file name="ng_vip" path="image\navigation\ng_vip.png"/>
+	<file name="ng_vip_hor" path="image\navigation\ng_vip_hor.png"/>
+	<file name="btn_openvip1" path="image\navigation\btn_openvip1.png"/>
+	<file name="btn_openvip2" path="image\navigation\btn_openvip2.png"/>
+	
+	<file name="btn_Renewvip1" path="image\navigation\btn_Renewvip1.png"/>
+	<file name="btn_Renewvip2" path="image\navigation\btn_Renewvip2.png"/>
+	
+	<file name="infoBack" path="image\navigation\infoBack.png"/>
+	<file name="infoRefresh" path="image\navigation\infoRefresh.png"/>
+    <file name="default1" path="image\navigation\default1.png"/>
+    <file name="default2" path="image\navigation\default2.png"/>
+  </Navigation>
+
+  <popwnd>
+    <file name="pop_vipbg" path="image\popwnd\pop_vipbg.png"/>
+    <file name="listbg" path="image\popwnd\listbg.png"/>
+    <file name="listbg1" path="image\popwnd\listbg1.png"/>
+    <file name="norecord" path="image\popwnd\norecord.png"/>
+    <file name="norecord1" path="image\popwnd\norecord1.png"/>
+    <file name="dayicon" path="image\popwnd\dayicon.png"/>
+    <file name="listitem" path="image\popwnd\item.png"/>
+    <file name="close" path="image\popwnd\close.png"/>
+    <file name="close1" path="image\popwnd\close1.png"/>
+    <file name="btn" path="image\popwnd\btn.png"/>
+    <file name="nocoll" path="image\popwnd\nocoll.png"/>
+
+    <file name="btn1" path="image\popwnd\btn1.png"/>
+    <file name="btn2" path="image\popwnd\btn2.png"/>
+    <file name="btn3" path="image\popwnd\btn3.png"/>
+    <file name="btn4" path="image\popwnd\btn4.png"/>
+
+    <file name="pc1" path="image\popwnd\pc1.png"/>
+    <file name="pc2" path="image\popwnd\pc2.png"/>
+    <file name="pad1" path="image\popwnd\pad1.png"/>
+    <file name="pad2" path="image\popwnd\pad2.png"/>
+    
+    <file name="searchlist_260X414" path="image\popwnd\searchlist_260X414.png"/>
+    <file name="searchlist_320X414" path="image\popwnd\searchlist_320X414.png"/>
+    <file name="searchlist_490X414" path="image\popwnd\searchlist_490X414.png"/>
+    
+    <file name="btnfavourite1" path="image\popwnd\btnfavourite1.png"/>
+    <file name="btnfavourite2" path="image\popwnd\btnfavourite2.png"/>
+  
+    <file name="btnrecord1" path="image\popwnd\btnrecord1.png"/>
+    <file name="btnrecord2" path="image\popwnd\btnrecord2.png"/>
+
+    <file name="btnmore1" path="image\popwnd\btnmore1.png"/>
+    <file name="btnmore2" path="image\popwnd\btnmore2.png"/>
+  </popwnd>
+  
+  <MenuSkin>
+    <!--file name="back" path="image\menu\back.png"/-->
+    <file name="item" path="image\menu\item.png"/>
+    <file name="arrow" path="image\menu\arrow.png"/>
+    <file name="sep" path="image\menu\sep.jpg"/>
+    <file name="check" path="image\menu\check.png"/>
+  </MenuSkin>
+
+  <pg>
+    <file name="vbg" path="image\pg\vbg.png"/>
+    <file name="pos" path="image\pg\pos.png"/>
+	<file name="vbg_v" path="image\pg\vbg_v.png"/>
+    <file name="pos_v" path="image\pg\pos_v.png"/>
+	<file name="thumb_v" path="image\pg\thumb_v.png"/>
+    <file name="thumb" path="image\pg\thumb.png"/>
+    <file name="wndbg" path="image\pg\wndbg.png"/>
+  </pg>
+  
+  <Progressbar>
+    <file name="bg1" path="image\progressbar\bg1.png"/>
+    <file name="pos1" path="image\progressbar\pos1.png"/>
+    <file name="thumb1" path="image\progressbar\thumb1.png"/>
+    <file name="bg2" path="image\progressbar\bg2.png"/>
+    <file name="pos2" path="image\progressbar\pos2.png"/>
+    <file name="thumb2" path="image\progressbar\thumb2.png"/>
+    <file name="bg3" path="image\progressbar\bg3.png"/>
+    <file name="pos3" path="image\progressbar\pos3.png"/>
+    <file name="thumb3" path="image\progressbar\thumb3.png"/>
+    <file name="bg4" path="image\progressbar\bg4.png"/>
+    <file name="pos4" path="image\progressbar\pos4.png"/>
+    <file name="thumb4" path="image\progressbar\thumb4.png"/>
+  </Progressbar>
+
+  <Loop>
+    <file name="listcycle" path="image\loop\listcycle.png"/>
+    <file name="randomcycle" path="image\loop\randomcycle.png"/>
+    <file name="sequentialplay" path="image\loop\sequentialplay.png"/>
+    <file name="singlecycle" path="image\loop\singlecycle.png"/>
+    <file name="singleplay" path="image\loop\singleplay.png"/>
+  </Loop>
+  <Combobox>
+    <file name="dropbtn1" path="image\combox\combo_drop1.png"/>
+    <file name="combobg2" path="image\combox\combo_bg2.png"/>
+    <file name="dropbtn2" path="image\combox\combo_drop2.png"/>
+    <file name="combobg1" path="image\combox\combo_bg1.png"/>
+  </Combobox>
+
+  <Player>
+    <file name="bg" path="image\player\bg.png"/>
+    <file name="vedio" path="image\player\vedio.png"/>
+    <file name="audio" path="image\player\audio.png"/>
+    <file name="sz" path="image\player\sz_69.png"/>
+    <file name="dk" path="image\player\dk_.png"/>
+    <file name="dk1" path="image\player\dk_1.png"/>
+    <file name="collect" path="image\player\icon_collect.png"/>
+    <file name="teleplay" path="image\player\icon_teleplay.png"/>
+    <file name="collect2" path="image\player\icon_collect_2.png"/>
+    <file name="teleplay2" path="image\player\icon_teleplay_2.png"/>
+  </Player>
+  <MainSet>
+    <file name="AllSelect1" path="image\MainSet\AllSelect1.png"/>
+    <file name="AllSelect2" path="image\MainSet\AllSelect2.png"/>
+    
+    <file name="NoAllSelect1" path="image\MainSet\NoAllSelect1.png"/>
+    <file name="NoAllSelect2" path="image\MainSet\NoAllSelect2.png"/>
+    
+    <file name="DefaultSelect1" path="image\MainSet\DefaultSelect1.png"/>
+    <file name="DefaultSelect2" path="image\MainSet\DefaultSelect2.png"/>
+    
+  </MainSet>
+  
+  <pCtrl>
+    <file name="volume1" path="image\playerctrl\volume1.png"/>
+    <file name="volume2" path="image\playerctrl\volume2.png"/>
+    <file name="jy1" path="image\playerctrl\jy1.png"/>
+    <file name="jy2" path="image\playerctrl\jy2.png"/>
+    <file name="full1" path="image\playerctrl\full1.png"/>
+    <file name="full2" path="image\playerctrl\full2.png"/>
+    <file name="recover1" path="image\playerctrl\recover1.png"/>
+    <file name="recover2" path="image\playerctrl\recover2.png"/>
+    <file name="set1" path="image\playerctrl\set1.png"/>
+    <file name="set2" path="image\playerctrl\set2.png"/>
+    <file name="next1" path="image\playerctrl\next1.png"/>
+    <file name="next2" path="image\playerctrl\next2.png"/>
+    <file name="last1" path="image\playerctrl\last1.png"/>
+    <file name="last2" path="image\playerctrl\last2.png"/>
+    <file name="play1" path="image\playerctrl\play1.png"/>
+    <file name="play2" path="image\playerctrl\play2.png"/>
+    <file name="pause1" path="image\playerctrl\pause1.png"/>
+    <file name="pause2" path="image\playerctrl\pause2.png"/>
+    <file name="popbg" path="image\playerctrl\popbg.png"/>
+    <file name="drama1" path="image\playerctrl\drama1.png"/>
+    <file name="drama2" path="image\playerctrl\drama2.png"/>
+    <file name="min1" path="image\playerctrl\min1.png"/>
+    <file name="min2" path="image\playerctrl\min2.png"/>
+    <file name="min3" path="image\playerctrl\min3.png"/>
+    <file name="min4" path="image\playerctrl\min4.png"/>
+	<file name="stop1" path="image\playerctrl\stop1.png"/>
+    <file name="stop2" path="image\playerctrl\stop2.png"/>
+	<file name="exitFull1" path="image\playerctrl\exitFull1.png"/>
+	<file name="exitFull2" path="image\playerctrl\exitFull2.png"/>
+  </pCtrl>
+  
+  <btn>
+    <file name="cancel1" path="image\btn\cancel1.png"/>
+    <file name="cancel2" path="image\btn\cancel2.png"/>
+    <file name="save1" path="image\btn\save1.png"/>
+    <file name="save2" path="image\btn\save2.png"/>
+    <file name="sure1" path="image\btn\sure1.png"/>
+    <file name="sure2" path="image\btn\sure2.png"/>
+    <file name="use1" path="image\btn\use1.png"/>
+    <file name="use2" path="image\btn\use2.png"/>
+    <file name="use3" path="image\btn\use3.png"/>
+	
+	<file name="findtag1" path="image\btn\findtag1.png"/>
+	<file name="findtag2" path="image\btn\findtag2.png"/>
+	<file name="findtag3" path="image\btn\findtag3.png"/>
+    
+	<file name="playtag1" path="image\btn\playtag1.png"/>
+	<file name="playtag2" path="image\btn\playtag2.png"/>
+	<file name="playtag3" path="image\btn\playtag3.png"/>
+    
+  <file name="faxiantag1" path="image\btn\faxiantag1.png"/>
+  <file name="faxiantag2" path="image\btn\faxiantag2.png"/>
+  <file name="faxiantag3" path="image\btn\faxiantag3.png"/>
+
+  <file name="youkutag1" path="image\btn\youkutag1.png"/>
+  <file name="youkutag2" path="image\btn\youkutag2.png"/>
+
+    <file name="defaultSet1" path="image\btn\defaultSet1.png"/>
+    <file name="defaultSet2" path="image\btn\defaultSet2.png"/>
+  </btn>
+  
+  <GIF>
+    <file name="gif_loading" path="image\loading.gif"/>
+    <file name="gif_Installing" path="image\Installing.gif"/>
+  </GIF>
+  
+  <List>
+    <file name="add1" path="image\list\add1.png"/>
+    <file name="add2" path="image\list\add2.png"/>
+    <file name="del1" path="image\list\del1.png"/>
+    <file name="del2" path="image\list\del2.png"/>
+    <file name="bfsx1" path="image\list\bfsx1.png"/>
+    <file name="bfsx2" path="image\list\bfsx2.png"/>
+    <file name="continue1" path="image\list\continue1.png"/>
+    <file name="continue2" path="image\list\continue2.png"/>
+	<file name="playing" path="image\list\playing.png"/>
+  </List>
+  
+  <migu>
+    <file name="vimg" path="image\migu\vimg.png"/>
+    <file name="himg" path="image\migu\himg.png"/>
+    <file name="open1" path="image\migu\open1.png"/>
+    <file name="open2" path="image\migu\open2.png"/>
+    <file name="packup1" path="image\migu\packup1.png"/>
+    <file name="packup2" path="image\migu\packup2.png"/>
+    <file name="vip1" path="image\migu\vip1.png"/>
+    <file name="vip2" path="image\migu\vip2.png"/>
+    <file name="more1" path="image\migu\more1.png"/>
+    <file name="more2" path="image\migu\more2.png"/>
+    <file name="invalid" path="image\migu\invalid.png"/>
+  </migu>
+  
+  <SMENU>
+    <file name="logo_menu" path="menu\logo_menu.xml"/>
+    <file name="add_menu" path="menu\add_menu.xml"/>
+    <file name="list_menu" path="menu\list_menu.xml"/>
+    <file name="list_menu_Playging" path="menu\list_menu_Playging.xml"/>
+    <file name="sx_menu" path="menu\sx_menu.xml"/>
+    <file name="tray_menu" path="menu\tray_menu.xml"/>
+    <file name="tray_menu2" path="menu\tray_menu2.xml"/>
+    <file name="right_menu" path="menu\right_menu.xml"/>
+    <file name="player_menuex" path="menu\player_menu.xml"/>
+  </SMENU>
+  <SMENUEX>
+    <file name="resolution_menuex" path="menuex\resolution_menuex.xml"/>
+    <file name="logo_menuex" path="menuex\logo_menuex.xml"/>
+    <file name="logo_menuex2" path="menuex\logo_menuex2.xml"/>
+    <file name="add_menuex" path="menuex\add_menuex.xml"/>
+	<file name="sx_menuex" path="menuex\sx_menuex.xml"/>
+	<file name="right_menuex" path="menuex\right_menuex.xml"/>
+    <file name="list_menuex" path="menuex\list_menuex.xml"/>
+    <file name="list_menu_Playgingex" path="menuex\list_menu_Playgingex.xml"/>
+  </SMENUEX>
+
+  <ICON>
+    <file name="ICON_LOGO" path="image\logo.ico"/>
+    <file name="ICON_LOGO2" path="image\logo2.ico"/>
+  </ICON>
+  <FeedBack>
+	<file name="back" path="image\feedback.png"/>
+	<file name ="line" path="image\feedback\line.png"/>
+	<file name="FeedInfo" path="image\feedback\FeedInfo.png"/>
+	<file name="FeedInfoFocuse" path="image\feedback\FeedInfoFocuse.png"/>
+	<file name="FeedPhone" path="image\feedback\FeedPhone.png"/>
+	<file name="FeedPhoneFocuse" path="image\feedback\FeedPhoneFocuse.png"/>
+	
+	<file name="okbtn1" path="image\feedback\FeedOk.png"/>
+	<file name="okbtn2" path="image\feedback\FeedOkFocuse.png"/>
+	<file name="cancelbtn1" path="image\feedback\FeedCancel.png"/>
+	<file name="cancelbtn2" path="image\feedback\FeedCancelFocuse.png"/>
+	<file name="msgSucess" path="image\feedback\msgSucess.png"/>
+  </FeedBack>
+  <ListMenu>
+      <file name="sequence1" path="image\menu\list\sequence1.png"/>
+      <file name="sequence2" path="image\menu\list\sequence2.png"/>
+      <file name="sequence3" path="image\menu\list\sequence3.png"/>
+      
+      <file name="rand1" path="image\menu\list\rand1.png"/>
+      <file name="rand2" path="image\menu\list\rand2.png"/>
+      <file name="rand3" path="image\menu\list\rand3.png"/>
+      
+      <file name="single1" path="image\menu\list\single1.png"/>
+      <file name="single2" path="image\menu\list\single2.png"/>
+      <file name="single3" path="image\menu\list\single3.png"/>
+      
+      <file name="singleloop1" path="image\menu\list\singleloop1.png"/>
+      <file name="singleloop2" path="image\menu\list\singleloop2.png"/>
+      <file name="singleloop3" path="image\menu\list\singleloop3.png"/>
+      
+      <file name="listloop1" path="image\menu\list\listloop1.png"/>
+      <file name="listloop2" path="image\menu\list\listloop2.png"/>
+      <file name="listloop3" path="image\menu\list\listloop3.png"/>
+      </ListMenu>
+      <PlayerMenu>
+      <file name="playCtl1" path="image\menu\play\playCtl1.png"/>
+      <file name="playCtl2" path="image\menu\play\playCtl2.png"/>
+      <file name="playCtl3" path="image\menu\play\playCtl3.png"/>
+      
+      <file name="fullScren1" path="image\menu\play\fullScren1.png"/>
+      <file name="fullScren2" path="image\menu\play\fullScren2.png"/>
+      <file name="fullScren3" path="image\menu\play\fullScren3.png"/>
+      
+      <file name="minMode1" path="image\menu\play\minMode1.png"/>
+      <file name="minMode2" path="image\menu\play\minMode2.png"/>
+      <file name="minMode3" path="image\menu\play\minMode3.png"/>
+      
+      <file name="normalMode1" path="image\menu\play\normalMode1.png"/>
+      <file name="normalMode2" path="image\menu\play\normalMode2.png"/>
+      <file name="normalMode3" path="image\menu\play\normalMode3.png"/>
+      
+      <file name="pictureScale1" path="image\menu\play\pictureScale1.png"/>
+      <file name="pictureScale2" path="image\menu\play\pictureScale2.png"/>
+      <file name="pictureScale3" path="image\menu\play\pictureScale3.png"/>
+      
+      <file name="topMostSet1" path="image\menu\play\topMostSet1.png"/>
+      <file name="topMostSet2" path="image\menu\play\topMostSet2.png"/>
+      <file name="topMostSet3" path="image\menu\play\topMostSet3.png"/>
+      
+      <file name="silentSet1" path="image\menu\play\silentSet1.png"/>
+      <file name="silentSet2" path="image\menu\play\silentSet2.png"/>
+      <file name="silentSet3" path="image\menu\play\silentSet3.png"/>
+      <file name="subtitleSet1" path="image\menu\play\subtitleSet1.png"/>
+      <file name="subtitleSet2" path="image\menu\play\subtitleSet2.png"/>
+      <file name="subtitleSet3" path="image\menu\play\subtitleSet3.png"/>
+  </PlayerMenu>
+  <WebPlayer>
+    <file name="btnleft1" path="image\WebPlayer\btnleft1.png"/>
+    <file name="btnleft2" path="image\WebPlayer\btnleft2.png"/>
+    <file name="btnright1" path="image\WebPlayer\btnright1.png"/>
+    <file name="btnright2" path="image\WebPlayer\btnright2.png"/>
+    
+    <file name="EditBk" path="image\WebPlayer\EditBk.png"/>
+    <file name="EditUrlLeft" path="image\WebPlayer\EditUrlLeft.png"/>
+    <file name="EditUrlRight" path="image\WebPlayer\EditUrlRight.png"/>
+
+    <file name="btnIE1" path="image\WebPlayer\btnIE1.png"/>
+    <file name="btnIE2" path="image\WebPlayer\btnIE2.png"/>
+    <file name="transebg" path="image\WebPlayer\transebg.png"/>
+    
+  </WebPlayer>
+  
+</resource>

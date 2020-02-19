@@ -1,0 +1,4 @@
+<menu itemSkin="menu_item" iconLeft="0" cororTextGray="#999999" colorBg="#444648" colorBkgnd="#FF0000" colorHover="#0000FF">
+  <item id="10" class="cls_menuex" hotkeyText="Ctrl+O">添加文件</item>
+  <item id="11" class="cls_menuex" hotkeyText="Ctrl+F">添加文件夹</item>
+</menu>

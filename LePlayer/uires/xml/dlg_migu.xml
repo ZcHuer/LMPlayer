@@ -1,0 +1,23 @@
+﻿<SOUI name="MiGuList" title="MiGuList" width="291" height="642" resizable="0" toolWindow="1"
+      sendWheel2Hover="1" translucent="0">
+  <root colorBkgnd="#1d1f2b" cache="1">
+    <window pos="0,0,-0,-0" name="migu_list" show="0">
+      <scrollview pos="0,0,-0,-0" sbSkin="scrollbar4" viewSize="-1,-1">
+        <img name="img_play" pos="10,10,@120,@170" skin="migu_himg"/>
+        <window pos="[10,{0,@142,@170">
+          <text name="title" pos="0,10,-0,@40" colorText="#ffffff" dotted="1" font="size:16" multiLines="1">飞跃老人院</text>
+          <text name="play_type" pos="0,[15" dotted="1" colorText="#9a9a9a" font="size:14">类型：</text>
+          <text name="director" dotted="1" pos="0,[10" colorText="#9a9a9a" font="size:14">导演：</text>
+          <text name="star" pos="0,[10,-0,-20" valign="top" colorText="#9a9a9a" interHeight="5" font="size:14" multiLines="1" dotted="1">主演：</text>
+        </window>
+        <text name="detail" pos="10,[20,-10,@50" dotted="1" font="size:14" multiLines="1" interHeight="0" valign="top" colorText="#9a9a9a"/>
+        <imgbtn1 name="btn_zhankai" pos="245,[20" skin="migu_open1" focusSkin="migu_open2" show="0"/>
+        <imgbtn1 name="btn_vip" pos="10,[20" skin="migu_vip1" focusSkin="migu_vip2"/>
+        <text pos="10,[20" colorText="#ffffff" font="size:16">猜你喜欢</text>
+        <imgbtn1 name="btn_more" pos="217,[0" offset="0,-1" skin="migu_more1" focusSkin="migu_more2" show="0"/>
+        <window name="wnd_guess" pos="10,[20,@272,-0"/>
+      </scrollview>
+      <caption pos="0,0,-0,50"/>
+    </window>
+  </root>
+</SOUI>

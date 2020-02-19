@@ -1,0 +1,9 @@
+﻿<SOUI name="install" title="安装" width="300" height="160" resizable="0" appWnd="0" toolWindow="1" translucent="1">
+  <root cache="1">
+    <caption pos="0,0,-0,-0">
+    </caption>
+    <window name="installing" pos="0,0,-0,-0" show="1">
+		 <gifplayer pos="0,0" skin="gif_Installing" show="1" name="gif_installing" bloop="1"/>
+    </window>
+  </root>
+</SOUI>

@@ -1,0 +1,18 @@
+﻿<SOUI name="POPLISTVIP" title="LIST" width="296"
+      height="289" resizable="1" margin="0,0,0,0"
+      appWnd="0" toolWindow="1" translucent="1">
+  <root cache="1">
+    <window pos="0,0,-0,-0" skin="pop_vipbg">
+      <window name="wnd_vip" pos="15,15,-15,-15">
+        <text name="tipLebel1" float="true" pos="|0,[20" offset="-1,0" font="size:16" show="0" colorText="#E4BE82">VIP到期时间:</text>
+		
+		<imgbtn1 name="btn_refresh" float="true" pos="[4,{3" skin="infoRefresh" focusSkin="infoRefresh" tip="到期时间"/>
+		<text name="tipTimeInfor" float="true" pos="[4,{0" font="size:16" show="0" colorText="#E4BE82">2018-11-01</text>
+		
+		<imgbtn1 name="btn_open" float="true" pos="14,22" skin="btn_openvip1" focusSkin="btn_openvip2" show="1" tip="开通VIP"/>
+		<imgbtn1 name="btn_Renewal" float="true" pos="14,22" skin="btn_Renewvip1" focusSkin="btn_Renewvip2" show="0" tip="续费VIP"/>
+		<img name="VipBk" pos="14,[22" skin="infoBack"/>
+      </window>
+    </window>
+  </root>
+</SOUI>

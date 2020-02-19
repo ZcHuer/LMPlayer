@@ -1,0 +1,30 @@
+<menu maxWidth="150" itemSkin="menu_item" sepSkin="menu_sep"
+      colorText="#ffffff" cororTextGray="#999999" colorBg="#1e1e1e" iconSize="10,10" arrowSkin="menu_arrow" checkSkin="menu_check">
+  <item id="20" disable="1">播放</item>
+  <item id="14" disable="1">删除</item>
+  <!--item id="15" disable="1">下载</item-->
+  <sep/>
+  <item>
+    添加到播放列表
+    <item id="10" hotkeyText="Ctrl+O">添加文件</item>
+    <item id="11" hotkeyText="Ctrl+F">添加文件夹</item>
+  </item>
+  <item id="16" disable="1">清空列表</item>
+  <item id="200" disable="1">删除无效文件</item>
+  <item>
+    循环模式
+    <item id="80" radio="0">顺序播放</item>
+    <item id="81" radio="0">随机播放</item>
+    <item id="82" radio="0">单个播放</item>
+    <item id="83" radio="0">单个循环</item>
+    <item id="84" radio="0">列表循环</item>
+  </item>
+  <sep/>
+  <item class="cls_menuex">
+    无痕设置
+    <item id="18" radio="0">无痕播放</item>
+    <item id="19" radio="0">取消无痕播放</item>
+  </item>
+  <sep/>
+  <item id="17" disable="1">打开文件位置</item>
+</menu>

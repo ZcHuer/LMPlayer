@@ -1,0 +1,7 @@
+LIBRARY "LibraryIcon"
+
+EXPORTS
+	GetAssociateIconId   
+	GetAssociateIcon     
+	EnumFileExt          
+	IsDefaultAss

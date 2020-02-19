@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Window size="600,435" caption="0,0,0,80"  borderround="5,5,5,5" sizebox="0,0,0,0">
+	<Font id="1" name="微软雅黑" size="13" bold="true" default="true"/>
+	<Font id="2" name="微软雅黑" size="11" bold="true"/>
+	<Font id="3" name="微软雅黑" size="18" bold="true"/>
+	<Font id="4" name="微软雅黑" size="14" bold="true"/>
+    <VerticalLayout width="600" height="435" bkcolor="#FF444749">
+	
+	
+	<!--uninstall page1-->
+	<TabLayout name="wizardTab" float="true" pos="0,0,340,232" width="600" height="430" bkcolor="##FF444749">
+		<VerticalLayout name="uninstall1" width="600" height="430" bkcolor="##FF444749">
+				<VerticalLayout>
+					<VerticalLayout width="600" height="346" bkimage="unInstallback.png">
+						<Control height="235"/>
+						<HorizontalLayout height="74">
+							<Control width="30"/>
+							<HorizontalLayout width="260" bkimage="reptabSelect.png">
+							</HorizontalLayout>
+							<Control width="20"/>
+							<Button  name="btnPage11" width="260" normalimage="uninstaltab1.png" hotimage="uninstaltab2.png"/>
+							<Control width=""/>
+						</HorizontalLayout>
+						<Control height=""/>
+					</VerticalLayout>
+					
+					<Control height="3"/>
+					<HorizontalLayout height="40">
+						<Control width="120"/>
+						<Button  name="btnUnInstallRep" normalimage="btnRep1.png" hotimage="btnRep2.png" disabledimage="btnRep1.png"/>
+						<Control width="40"/>
+						<Button  name="btnUninstallCancel" normalimage="btnCancel1.png" hotimage="btnCancel2.png" disabledimage="btnCancel1.png"/>
+						<Control width="120"/>
+					</HorizontalLayout>
+					<Control />
+				</VerticalLayout>
+		 </VerticalLayout>
+	<!--uninstall page2-->
+	 <VerticalLayout name="uninstall2" width="600" height="430" bkcolor="##FF444749">
+			<VerticalLayout>
+					<VerticalLayout width="600" height="346" bkimage="unInstallback.png">
+						<Control height="235"/>
+						<HorizontalLayout height="74">
+						<Control width="30"/>
+						<Button  name="btnGoPage1" width="260" normalimage="RepBtn1_page2.png" hotimage="RepBtn2_page2.png"/>
+						<Control width="20"/>
+						<VerticalLayout  bkimage="blueframe.png" width="260">
+								<Control height="44"/>
+								<CheckBox font="1" height="12" name="chkReserveData" float="true" pos="10,46,210,24" padding="0,0,0,0" text="删除设置、看单、看过等功能数据" textcolor="#FF04A8FF" selected="false" normalimage="file='BtnCheckDel1.png' source='0,0,12,12' dest='0,2,12,14'" normalhotimage="file='BtnCheckDel1.png' source='0,0,12,12' dest='0,2,12,14'" selectedimage="file='BtnCheckDel2.png' source='0,0,12,12' dest='0,2,12,14'" selectedhotimage="file='BtnCheckDel2.png' source='0,0,12,12' dest='0,2,12,14'"/>
+						</VerticalLayout>
+						<Control width=""/>
+						</HorizontalLayout>
+						<Control height=""/>
+					</VerticalLayout>
+					<Control height="3"/>
+					<HorizontalLayout height="40">
+						<Control width="120"/>
+						<Button  name="btnUnInstallGo" normalimage="btnUninstall1.png" hotimage="btnUninstall2.png" disabledimage="btnUninstall2.png"/>
+						<Control width="40"/>
+						<Button  name="btnUninstallCancel" normalimage="btnCancel1.png" hotimage="btnCancel2.png" disabledimage="btnCancel2.png"/>
+						<Control width="120"/>
+					</HorizontalLayout>
+					<Control />
+			</VerticalLayout>
+	 </VerticalLayout>
+	 
+	 
+	 <!--uninstall page3-->
+	 <VerticalLayout name="uninstall2" width="600" height="430" bkcolor="##FF444749">
+			<VerticalLayout>
+					<VerticalLayout width="600" height="346" bkimage="unInstallback3.png">
+					<Control height="59"/>
+					<Label text="现在留下，院线大片等你来看~" padding="20,0,0,0" align="left" font="3" textcolor="#ffCCCCCC"/>
+					<Control height="19"/>
+					<Label  text="更多惊喜即将上线" align="left" font="4" padding="20,0,0,0" textcolor="#ffCCCCCC"/>
+					<Control height="10"/>
+					<HorizontalLayout height="180">
+						<Control width="20"/>
+						<Button name="ShowPic0" width="130" bkimage=""/>
+						<Control width="12"/>
+						<Button name="ShowPic1" width="130" bkimage=""/>
+						<Control width="12"/>
+						<Button name="ShowPic2" width="270" bkimage=""/>
+					</HorizontalLayout>
+					<Control />
+					</VerticalLayout>
+					<Control height="22"/>
+					<HorizontalLayout height="40">
+						<Control width="130"/>
+						<Button name="btnUnInstall" normalimage="btnUninstall1.png" hotimage="btnUninstall2.png" disabledimage="btnUninstall2.png"/>
+						<Control width="32"/>
+						<Button  name="btnbtnSave1" normalimage="btnSave1.png" hotimage="btnSave2.png" disabledimage="btnSave1.png"/>
+						<Control />
+					</HorizontalLayout>
+					<Control />
+			</VerticalLayout>
+	 </VerticalLayout>
+	 <!--uninstall page4-->
+	 <!-- 卸载过程中---->
+	 <VerticalLayout name="installing" width="600" height="430" bkcolor="##FF444749">
+			<VerticalLayout>
+				<Label width="600" height="346" bkimage="uninstallPage2.png"/>
+				<HorizontalLayout height="34">
+					<Control width="30"/>
+					<Label  text="卸载中...." align="left" textcolor="#ffCCCCCC"/>
+					<Control width="30"/>
+				</HorizontalLayout>
+				
+				<Control height="17"/>
+				<HorizontalLayout height="34">
+					<Control width="30"/>
+					<Slider name ="slrProgress" foreimage="forceImage.png" thumbimage="sliter.png" thumbhotimage="sliter.png" thumbpushedimage="sliter.png" thumbsize="10,10" bordercolor="#ff8d959b" bordersize="1" height="6" min="0" max="100" value="50" />
+					<Control width="30"/>
+				</HorizontalLayout>
+				<Control />
+			</VerticalLayout>
+	 </VerticalLayout>
+	 <!--uninstall page5-->
+	 <!-- 卸载完成---->
+	 <VerticalLayout name="finisshInstall" width="600" height="430" bkcolor="##FF444749">
+			<VerticalLayout>
+				<Label width="600" height="346" bkimage="uninstallPage3.png"/>
+				<HorizontalLayout height="40">
+					<Control width="220"/>
+					<Button name="btnUninstallFinished" width="160" normalimage="btnUninstallfinish1.png" hotimage="btnUninstallfinish2.png" pushedimage="btnUninstallfinish2.png"/>
+					<Control />
+				</HorizontalLayout>
+				<Control />
+			</VerticalLayout>
+	 </VerticalLayout>
+	 
+	 
+	</TabLayout>
+	<Label float="true" pos="18,12,75,28" width="75" height="16" bkimage="PB_Logo.png"/>
+	<Button  normalimage="btn_close.png" hotimage="btn_close1.png" float="true" pos="-29,15,-15,39" name="btnClose" height="14" width="14" />
+	<Button  normalimage="btn_min.png" hotimage="btn_min1.png" float="true" pos="-52,15,-41,39" name="btnMin" height="14" width="14" />
+	</VerticalLayout>
+</Window>

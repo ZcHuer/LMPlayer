@@ -1,0 +1,8 @@
+<SOUI width="410" height="230" resizable="0" appWnd="0" translucent="1">
+  <root skin="msgbk" cache="1">    
+    <window pos="15,15,-15,-15">
+		<text pos="|0,55" offset="-0.5,0" colorText="#333333" font="size:20">很抱歉，内容已下架暂无法播放 ~</text>
+    <wndbtn name="btn_ok" pos="|0,-75" offset="-0.5,0" skin="cb_save1" focusSkin="cb_save1"  class="cls_login">确定</wndbtn>
+    </window>
+  </root>
+</SOUI>

@@ -1,0 +1,8 @@
+﻿<menuRoot itemSkin="menu_item" class="cls_menuex_nohot" colorText="#ffffff" cororTextGray="#999999" arrwOffset="13" colorBg="#1e1e1e" iconSize="10,10" iconSkin="menu_check" minWidth="120" arrowSkin="menu_arrow" checkSkin="menu_check">
+  <menuItem id="10" class="cls_logo_menuex">打开文件</menuItem>  
+  <menuItem id="4" class="cls_logo_menuex">设置</menuItem>
+  <menuItem id="2" class="cls_logo_menuex">在线升级</menuItem>    
+  <menuItem id="1" class="cls_logo_menuex">关于LMPlayer</menuItem>
+  <menuItem id="3" class="cls_logo_menuex">意见反馈</menuItem>
+  <menuItem id="5" class="cls_logo_menuex">退出</menuItem>
+</menuRoot>

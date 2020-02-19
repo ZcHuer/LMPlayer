@@ -1,0 +1,63 @@
+<menu itemSkin="menu_item" colorText="#ffffff" cororTextGray="#999999" colorBg="#1e1e1e" sepSkin="menu_sep" iconSize="10,10" arrowSkin="menu_arrow" checkSkin="menu_check">
+  <!--item id="10" hotkeyText="Ctrl+O">打开文件</item>
+  <item id="11" hotkeyText="Ctrl+F">打开文件夹</item>
+  <item id="12" hotkeyText="Ctrl+U" disable="0">打开URL</item>
+  <item id="13">打开下载链接</item>
+  <sep/-->
+  <item id="200" disable="1">
+    播放控制
+    <item id="21" hotkeyText="空格">播放/暂停</item>
+    <item id="22" hotkeyText="Ctrl+S">停止</item>
+    <item id="23" hotkeyText="→">快进</item>
+    <item id="24" hotkeyText="←">快退</item>
+    <sep/>
+    <item>
+      声音
+      <item id="60" radio="0">原始声道</item>
+      <item id="62" radio="0">左声道</item>
+      <item id="63" radio="0">右声道</item>
+      <item id="61" radio="0">反转立体声道</item>
+      <item id="64" radio="0">左右混合声道</item>
+    </item>
+    <!--item id="490" disable="1">
+      片头片尾设置
+      <item id="49" radio="0">跳过片头片尾</item>
+      <item id="50" radio="0">取消跳过片头片尾</item>
+    </item-->
+    <item>
+      AB点重复
+      <item id="31">设置A点</item>
+      <item id="32">设置B点</item>
+      <item id="33">取消AB点</item>
+    </item>
+  </item>
+  <sep/>
+  <item id="40" hotkeyText="Ctrl+Enter" disable="0" check="0">全屏</item>
+  <item id="41" disable="1" check="0">精简模式</item>
+  <item id="42" disable="1" check="0">正常模式</item>
+  <sep/>
+  <item class="cls_menuex">
+    画面比例
+    <item id="43" radio="0">原始比例</item>
+    <item id="44" radio="0">16:9</item>
+    <item id="45" radio="0">4:3</item>
+    <item id="46" radio="0">铺满屏幕</item>
+  </item>
+  <item>
+    置顶显示
+    <item id="95" radio="0">从不</item>
+    <item id="96" radio="0">始终</item>
+    <item id="97" radio="0">播放时</item>
+  </item>
+  <item id="54" hotkeyText="Ctrl+M" check="0">静音</item>
+  <item id="57" disable="1">
+    字幕选择
+    <item id="55">添加字幕文件</item>
+    <item id="58" disable="1">
+      字幕子轨道
+      <item id="100" radio="0">隐藏字幕</item>
+    </item>
+  </item>
+  <sep/>
+  <!--item id="1" hotkeyText="F2">设置</item-->
+</menu>

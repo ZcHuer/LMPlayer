@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<skin>
+  <imglist name="skin_teledefault" src="IMG:teledefault"/>
+  <imglist name="skin_minsetbg" src="IMG:minsetbg"/>
+  <imglist name="skin_setbg" src="IMG:setbg"/>
+  <imglist name="skin_tag1" src="IMG:tag1"/>
+  <imglist name="skin_tag2" src="IMG:tag2"/>
+  <imglist name="skin_tag3" src="IMG:tag3"/>
+  <imglist name="skin_tag4" src="IMG:tag4"/>
+  <imglist name="mainSet" src="IMG:mainSet"/>
+
+  <imglist name="defalut" src="IMG:defalut"/>
+  <imglist name="skin_close" src="url:close"/>
+  <imglist name="radio1" src="IMG:radio1" states="8"/>
+  <imglist name="radio2" src="IMG:radio2" states="8"/>
+  <imglist name="check1" src="IMG:check1" states="8"/>
+  <imglist name="check2" src="IMG:check2" states="8"/>
+  <scrollbar name="scrollbar" src="img:scrollbar" margin="3" hasgripper="1"/>
+  <scrollbar name="scrollbar1" src="img:scrollbar1" margin="3" hasgripper="1"/>
+  <scrollbar name="scrollbar2" src="img:scrollbar2" margin="3" hasgripper="1"/>
+  <scrollbar name="scrollbar3" src="img:scrollbar3" margin="3" hasgripper="1"/>
+  <scrollbar name="scrollbar4" src="IMG:scrollbar4" margin="3" hasgripper="1"/>
+  <imglist name="tig1" src="IMG:tig1"/>
+  <imglist name="tig2" src="IMG:tig2"/>
+
+  <imglist name="skin_aboutbg" src="ab:aboutbg"/>
+  <imglist name="abs_close1" src="ab:close1"/>
+  <imglist name="abs_close2" src="ab:close2"/>
+
+  <!--播放顺序-->
+  <imglist name="loop_listcycle" src="loop:listcycle" states="3"/>
+  <imglist name="loop_randomcycle" src="loop:randomcycle" states="3"/>
+  <imglist name="loop_sequentialplay" src="loop:sequentialplay" states="3"/>
+  <imglist name="loop_singlecycle" src="loop:singlecycle" states="3"/>
+  <imglist name="loop_singleplay" src="loop:singleplay" states="3"/>
+  <!--登录注册-->
+  <imglist name="login_close" src="Login:close"/>
+  <imglist name="login_close1" src="Login:close1"/>
+  <imglist name="login_back" src="Login:back"/>
+  <imglist name="login_edit1" src="Login:edit1"/>
+  <imglist name="login_editfocus" src="Login:editfocus"/>
+  <imglist name="login_edit2" src="Login:edit2"/>
+  <imglist name="login_edit2foucs" src="Login:edit2foucs"/>
+  <imglist name="login_code" src="Login:code"/>
+  <imglist name="login_code0" src="Login:code0"/>
+  <imglist name="login_code1" src="Login:code1"/>
+  <imglist name="login_btn" src="Login:btn"/>
+  <imglist name="login_btn2" src="Login:btn2"/>
+  <imglist name="login_ad" src="Login:adimg"/>
+
+  <imglist name="btnlogin1" src="Login:btnlogin1"/>
+  <imglist name="btnlogin2" src="Login:btnlogin2"/>
+
+  <imglist name="loginBtnNext1" src="Login:loginBtnNext1"/>
+  <imglist name="loginBtnNext2" src="Login:loginBtnNext2"/>
+  <imglist name="loginRegFinish1" src="Login:loginRegFinish1"/>
+  <imglist name="loginRegFinish2" src="Login:loginRegFinish2"/>
+  
+  <imglist name="btnlogin11" src="Login:btnlogin11"/>
+  <imglist name="btnlogin22" src="Login:btnlogin22"/>
+  
+  <imglist name="login_Le" src="Login:login_Le"/>
+  <imglist name="login_check1" src="Login:check1"/>
+  <imglist name="login_check2" src="Login:check2"/>
+  <imglist name="login_check3" src="Login:check3"/>
+  <imglist name="login_update" src="Login:update"/>
+  <imglist name="login_update1" src="Login:update1"/>
+  <imglist name="loginok_bg" src="Login:loginok_bg"/>
+  <imglist name="btnquitlogin" src="Login:btnquitlogin"/>
+  <imglist name="btnquitloginhor" src="Login:btnquitloginhor"/>
+  <imglist name="login_default" src="Login:default"/>
+  <imglist name="login_default1" src="Login:default1"/>
+  <imglist name="login_line" src="Login:line"/>
+  <imglist name="login_goback" src="Login:goback"/>
+  <imglist name="login_goback1" src="Login:goback1"/>
+  <imglist name="login_head" src="Login:headimg"/>
+  <imglist name="login_xl1" src="Login:xl1"/>
+  <imglist name="login_xl2" src="Login:xl2"/>
+
+  <imglist name="loginBind1" src="Login:loginBind1"/>
+  <imglist name="loginBind2" src="Login:loginBind2"/>
+
+  <imglist name="LOGIN_ID_ICON_MASK" src="Login:ID_ICON_MASK"/>
+  <!--导航栏-->
+  <imglist name="ng_logoxl" src="Navigation:logoxl"/>
+  <imglist name="ng_tag" src="Navigation:tag"/>
+  <imglist name="ng_record" src="Navigation:record"/>
+  <imglist name="ng_record1" src="Navigation:record1"/>
+  <imglist name="ng_refresh" src="Navigation:refresh"/>
+  <imglist name="ng_refresh1" src="Navigation:refresh1"/>
+  <imglist name="ng_collection" src="Navigation:collection"/>
+  <imglist name="ng_collection1" src="Navigation:collection1"/>
+  <imglist name="ng_vip_hor" src="Navigation:ng_vip_hor"/>
+  <imglist name="ng_vip" src="Navigation:ng_vip"/>
+  <imglist name="btn_openvip1" src="Navigation:btn_openvip1"/>
+  <imglist name="btn_openvip2" src="Navigation:btn_openvip2"/>
+  <imglist name="btn_Renewvip1" src="Navigation:btn_Renewvip1"/>
+  <imglist name="btn_Renewvip2" src="Navigation:btn_Renewvip2"/>
+  <imglist name="infoBack" src="Navigation:infoBack"/>
+  <imglist name="infoRefresh" src="Navigation:infoRefresh"/>
+  <imglist name="ng_search" src="Navigation:search"/>
+  <imglist name="ng_search1" src="Navigation:search1"/>
+  <imglist name="ng_search2" src="Navigation:search2"/>
+  <imglist name="ng_search3" src="Navigation:search3"/>
+  <imglist name="ng_search_1000" src="Navigation:search_1000"/>
+  <imglist name="ng_search_1920" src="Navigation:search_1920"/>
+  <imglist name="ng_search_2500" src="Navigation:search_2500"/>
+  <imglist name="ng_search_3000" src="Navigation:search_3000"/>  
+  <imglist name="ng_search_1" src="Navigation:search_1"/>
+  <imglist name="ng_search_2" src="Navigation:search_2"/>
+  <imglist name="ng_search_3" src="Navigation:search_3"/>
+  <imglist name="ng_search_4" src="Navigation:search_4"/>
+  <imglist name="ng_search_list" src="Navigation:search_list"/>
+  <imglist name="ng_search_list1" src="Navigation:search_list1"/>  
+  <imglist name="ng_close1" src="Navigation:close1"/>
+  <imglist name="ng_close2" src="Navigation:close2"/>
+  <imglist name="ng_max1" src="Navigation:maxsize1"/>
+  <imglist name="ng_max2" src="Navigation:maxsize2"/>
+  <imglist name="ng_restore1" src="Navigation:restore1"/>
+  <imglist name="ng_restore2" src="Navigation:restore2"/>
+  <imglist name="ng_min1" src="Navigation:minsize1"/>
+  <imglist name="ng_min2" src="Navigation:minsize2"/>
+  <imglist name="ng_zhiding1" src="Navigation:zhiding1"/>
+  <imglist name="ng_zhiding2" src="Navigation:zhiding2"/>
+  <imglist name="ng_buzhiding1" src="Navigation:buzhiding1"/>
+  <imglist name="ng_buzhiding2" src="Navigation:buzhiding2"/>
+  <imglist name="ng_mini1" src="Navigation:minimode1"/>
+  <imglist name="ng_mini2" src="Navigation:minimode2"/>  
+  <imglist name="ng_logo" src="Navigation:logo"/>
+  <imglist name="ng_logo1" src="Navigation:logo1"/>
+  <imglist name="ng_clearsearch1" src="Navigation:clearsearch1"/>
+  <imglist name="ng_clearsearch2" src="Navigation:clearsearch2"/>
+  <imglist name="ng_clearsearch3" src="Navigation:clearsearch3"/>
+  <imglist name="ng_clearsearch4" src="Navigation:clearsearch4"/>
+  <imglist name="ng_line" src="Navigation:line"/>
+  <imglist name="ID_ICON_MASK" src="Navigation:ID_ICON_MASK"/>
+  <imglist name="ID_ICON_MASK_HORVER" src="Navigation:ID_ICON_MASK_HORVER"/>
+  <imglist name="ID_ICON_MASKVIP" src="Navigation:ID_ICON_MASKVIP"/>
+  <imglist name="ID_ICON_MASK_HORVERVIP" src="Navigation:ID_ICON_MASK_HORVERVIP"/>
+  <imglist name="ng_menu1" src="Navigation:menu1"/>
+  <imglist name="ng_menu2" src="Navigation:menu2"/>
+  <imglist name="default1" src="Navigation:default1"/>
+  <imglist name="default2" src="Navigation:default2"/>
+ 
+  <!--弹出窗口-->
+  <imglist name="pop_vipbg" src="popwnd:pop_vipbg"/>
+  <imglist name="pop_listbg" src="popwnd:listbg"/>
+  <imglist name="pop_listbg1" src="popwnd:listbg1"/>
+  <imglist name="pop_norecord" src="popwnd:norecord"/>
+  <imglist name="pop_norecord1" src="popwnd:norecord1"/>
+  <imglist name="pop_dayicon" src="popwnd:dayicon"/>
+  <imglist name="pop_listitem" src="popwnd:listitem"/>
+  <imglist name="pop_close" src="popwnd:close"/>
+  <imglist name="pop_close1" src="popwnd:close1"/>
+  <imglist name="pop_btn" src="popwnd:btn"/>
+  <imglist name="pop_nocoll" src="popwnd:nocoll"/>
+  <imglist name="pop_btn1" src="popwnd:btn1"/>
+  <imglist name="pop_btn2" src="popwnd:btn2"/>
+  <imglist name="pop_btn3" src="popwnd:btn3"/>
+  <imglist name="pop_btn4" src="popwnd:btn4"/>
+  <imglist name="pop_pc1" src="popwnd:pc1"/>
+  <imglist name="pop_pc2" src="popwnd:pc2"/>
+  
+  <imglist name="searchlist_260X414" src="popwnd:searchlist_260X414"/>
+  <imglist name="searchlist_320X414" src="popwnd:searchlist_320X414"/>
+  <imglist name="searchlist_490X414" src="popwnd:searchlist_490X414"/>
+
+  <imglist name="btnfavourite1" src="popwnd:btnfavourite1"/>
+  <imglist name="btnfavourite2" src="popwnd:btnfavourite2"/>
+
+  <imglist name="btnrecord1" src="popwnd:btnrecord1"/>
+  <imglist name="btnrecord2" src="popwnd:btnrecord2"/>
+  
+  <imglist name="btnmore1" src="popwnd:btnmore1"/>
+  <imglist name="btnmore2" src="popwnd:btnmore2"/>
+
+  <!--播放器-->
+  <!--imglist name="player_bg" src="Player:bg"/-->
+  <imglist name="skin_player_vedio" src="Player:vedio"/>
+  <imglist name="skin_player_audio" src="Player:audio"/>
+  <imglist name="player_sz" src="Player:sz"/>
+  <imglist name="player_dk" src="Player:dk"/>
+  <imglist name="player_dk1" src="Player:dk1"/>
+  <imglist name="skin_collect" src="Player:collect"/>
+  <imglist name="skin_teleplay" src="Player:teleplay"/>
+  <imglist name="skin_collect_2" src="Player:collect2"/>
+  <imglist name="skin_teleplay_2" src="Player:teleplay2"/>
+  <!--播放器控制栏-->
+  <imglist name="ctrl_volume1" src="pCtrl:volume1"/>
+  <imglist name="ctrl_volume2" src="pCtrl:volume2"/>
+  <imglist name="ctrl_jy1" src="pCtrl:jy1"/>
+  <imglist name="ctrl_jy2" src="pCtrl:jy2"/>
+  <imglist name="ctrl_recover1" src="pCtrl:recover1"/>
+  <imglist name="ctrl_recover2" src="pCtrl:recover2"/>
+  <imglist name="ctrl_full1" src="pCtrl:full1"/>
+  <imglist name="ctrl_full2" src="pCtrl:full2"/>
+  <imglist name="ctrl_set1" src="pCtrl:set1"/>
+  <imglist name="ctrl_set2" src="pCtrl:set2"/>
+  <imglist name="ctrl_next1" src="pCtrl:next1"/>
+  <imglist name="ctrl_next2" src="pCtrl:next2"/>
+  <imglist name="ctrl_last1" src="pCtrl:last1"/>
+  <imglist name="ctrl_last2" src="pCtrl:last2"/>
+  <imglist name="ctrl_play1" src="pCtrl:play1"/>
+  <imglist name="ctrl_play2" src="pCtrl:play2"/>
+  <imglist name="ctrl_pause1" src="pCtrl:pause1"/>
+  <imglist name="ctrl_pause2" src="pCtrl:pause2"/>
+  <imglist name="ctrl_popbg" src="pCtrl:popbg"/>
+  <imglist name="ctrl_drama1" src="pCtrl:drama1"/>
+  <imglist name="ctrl_drama2" src="pCtrl:drama2"/>
+  <imglist name="ctrl_min1" src="pCtrl:min1"/>
+  <imglist name="ctrl_min2" src="pCtrl:min2"/>
+  <imglist name="ctrl_min3" src="pCtrl:min3"/>
+  <imglist name="ctrl_min4" src="pCtrl:min4"/>
+  <imglist name="ctrl_stop1" src="pCtrl:stop1"/>
+  <imglist name="ctrl_stop2" src="pCtrl:stop2"/>
+  <imglist name="exitFull1" src="pCtrl:exitFull1"/>
+  <imglist name="exitFull2" src="pCtrl:exitFull2"/>
+  
+  <!--确定取消按钮-->
+  <imglist name="cb_cancel1" src="btn:cancel1"/>
+  <imglist name="cb_cancel2" src="btn:cancel2"/>
+  <imglist name="cb_save1" src="btn:save1"/>
+  <imglist name="cb_save2" src="btn:save2"/>
+  <imglist name="cb_sure1" src="btn:sure1"/>
+  <imglist name="cb_sure2" src="btn:sure2"/>
+  <imglist name="cb_use1" src="btn:use1"/>
+  <imglist name="cb_use2" src="btn:use2"/>
+  <imglist name="cb_use3" src="btn:use3"/>
+  <imglist name="defaultSet1" src="btn:defaultSet1"/>
+  <imglist name="defaultSet2" src="btn:defaultSet2"/>
+  
+  <!--进度条-->
+  <imglist name="pg_wndbg" src="pg:wndbg"/>
+  <imglist name="pg_vbg" src="pg:vbg"/>
+  <imglist name="pg_pos" src="pg:pos"/>
+  <imglist name="pg_vbg_v" src="pg:vbg_v"/>
+  <imglist name="pg_pos_v" src="pg:pos_v"/>
+  <imglist name="pg_thumb_v" src="pg:thumb_v"/>
+  <imglist name="pg_thumb" src="pg:thumb"/>
+  
+  <imglist name="pgb_bg1" src="Progressbar:bg1"/>
+  <imglist name="pgb_pos1" src="Progressbar:pos1"/>
+  <imglist name="pgb_thumb1" src="Progressbar:thumb1" states="4"/>
+  <imglist name="pgb_bg2" src="Progressbar:bg2"/>
+  <imglist name="pgb_pos2" src="Progressbar:pos2"/>
+  <imglist name="pgb_thumb2" src="Progressbar:thumb2" states="4"/>
+  <imglist name="pgb_bg3" src="Progressbar:bg3"/>
+  <imglist name="pgb_pos3" src="Progressbar:pos3"/>
+  <imglist name="pgb_thumb3" src="Progressbar:thumb3" states="4"/>
+  <imglist name="pgb_bg4" src="Progressbar:bg4"/>
+  <imglist name="pgb_pos4" src="Progressbar:pos4"/>
+  <imglist name="pgb_thumb4" src="Progressbar:thumb4" states="4"/>
+  <!--复选框-->
+  <imglist name="combo_dropbtn1"	src="Combobox:dropbtn1" states="3"/>
+  <imglist name="combo_dropbtn2"	src="Combobox:dropbtn2" states="3"/>
+  <imglist name="combo_bg2" src="Combobox:combobg2" states="3"/>
+  <imglist name="combo_bg1" src="Combobox:combobg1" states="3"/>
+
+  <!--列表-->
+  <imglist name="ls_add1" src="List:add1"/>
+  <imglist name="ls_add2" src="List:add2"/>
+  <imglist name="ls_del1" src="List:del1"/>
+  <imglist name="ls_del2" src="List:del2"/>
+  <imglist name="ls_bfsx1" src="List:bfsx1"/>
+  <imglist name="ls_bfsx2" src="List:bfsx2"/>
+  <imglist name="ls_continue1" src="List:continue1"/>
+  <imglist name="ls_continue2" src="List:continue2"/>
+  <imglist name="cls_playing" src="List:playing"/>
+ 
+  <!--菜单-->
+  <!--imglist name="menu_back" src="MenuSkin:back"/-->
+  <imglist name="menu_item" src="MenuSkin:item" states="2"/>
+  <imglist name="menu_arrow" src="MenuSkin:arrow" states="2"/>
+  <imglist name="menu_sep" src="MenuSkin:sep" states="1"/>
+  <imglist name="menu_check" src="MenuSkin:check" states="2"/>
+  <gif name="gif_loading" src="GIF:gif_loading"/>
+  <gif name="gif_Installing" src="GIF:gif_Installing"/>
+  <!--msgbox-->
+  <imglist name="msgbk" src="Msgbox:msgbk"/>
+  <imglist name="MsgCancel1" src="Msgbox:MsgCancel1"/>
+  <imglist name="MsgCancel2" src="Msgbox:MsgCancel2"/>
+  
+  <!--咪咕-->
+  <imglist name="migu_vimg" src="migu:vimg"/>
+  <imglist name="migu_himg" src="migu:himg"/>
+  <imglist name="migu_open1" src="migu:open1"/>
+  <imglist name="migu_open2" src="migu:open2"/>
+  <imglist name="migu_packup1" src="migu:packup1"/>
+  <imglist name="migu_packup2" src="migu:packup2"/>
+  <imglist name="migu_vip1" src="migu:vip1"/>
+  <imglist name="migu_vip2" src="migu:vip2"/>
+  <imglist name="migu_more1" src="migu:more1"/>
+  <imglist name="migu_more2" src="migu:more2"/>
+  <imglist name="migu_invalid" src="migu:invalid"/>
+
+  <!--吐槽-->
+  <imglist name="skin_feedback" src="FeedBack:back"/>
+  <imglist name="skin_line" src="FeedBack:line"/>
+  <imglist name="FeedInfo" src="FeedBack:FeedInfo"/>
+  <imglist name="FeedPhone" src="FeedBack:FeedPhone"/>
+  
+  <imglist name="FeedOK1" src="FeedBack:okbtn1"/>
+  <imglist name="FeedOK2" src="FeedBack:okbtn2"/>
+  <imglist name="FeedCancel1" src="FeedBack:cancelbtn1"/>
+  <imglist name="FeedCancel2" src="FeedBack:cancelbtn2"/>
+  <imglist name="msgSucess" src="FeedBack:msgSucess"/>
+  
+  <imglist name="findtag1" src="btn:findtag1"/>
+  <imglist name="findtag2" src="btn:findtag2"/>
+  <imglist name="findtag3" src="btn:findtag3"/>
+  
+  <imglist name="playtag1" src="btn:playtag1"/>
+  <imglist name="playtag2" src="btn:playtag2"/>
+  <imglist name="playtag3" src="btn:playtag3"/>
+
+  <imglist name="faxiantag1" src="btn:faxiantag1"/>
+  <imglist name="faxiantag2" src="btn:faxiantag2"/>
+  <imglist name="faxiantag3" src="btn:faxiantag3"/>
+  
+  <imglist name="youkutag1" src="btn:youkutag1"/>
+  <imglist name="youkutag2" src="btn:youkutag2"/>
+  
+  <!--列表菜单-->
+  <imglist name="sequence1" src="ListMenu:sequence1"/>
+  <imglist name="sequence2" src="ListMenu:sequence2"/>
+  <imglist name="sequence3" src="ListMenu:sequence3"/>
+  
+  <imglist name="rand1" src="ListMenu:rand1"/>
+  <imglist name="rand2" src="ListMenu:rand2"/>
+  <imglist name="rand3" src="ListMenu:rand3"/>
+  
+  <imglist name="single1" src="ListMenu:single1"/>
+  <imglist name="single2" src="ListMenu:single2"/>
+  <imglist name="single3" src="ListMenu:single3"/>
+  
+  <imglist name="singleloop1" src="ListMenu:singleloop1"/>
+  <imglist name="singleloop2" src="ListMenu:singleloop2"/>
+  <imglist name="singleloop3" src="ListMenu:singleloop3"/>
+  
+  <imglist name="listloop1" src="ListMenu:listloop1"/>
+  <imglist name="listloop2" src="ListMenu:listloop2"/>
+  <imglist name="listloop3" src="ListMenu:listloop3"/>
+  
+  <!--播放右键菜单-->
+  <imglist name="playCtl1" src="PlayerMenu:playCtl1"/>
+  <imglist name="playCtl2" src="PlayerMenu:playCtl2"/>
+  <imglist name="playCtl3" src="PlayerMenu:playCtl3"/>
+  
+  <imglist name="fullScren1" src="PlayerMenu:fullScren1"/>
+  <imglist name="fullScren2" src="PlayerMenu:fullScren2"/>
+  <imglist name="fullScren3" src="PlayerMenu:fullScren3"/>
+  
+  <imglist name="minMode1" src="PlayerMenu:minMode1"/>
+  <imglist name="minMode2" src="PlayerMenu:minMode2"/>
+  <imglist name="minMode3" src="PlayerMenu:minMode3"/>
+  
+  <imglist name="normalMode1" src="PlayerMenu:normalMode1"/>
+	<imglist name="normalMode2" src="PlayerMenu:normalMode2"/>
+	<imglist name="normalMode3" src="PlayerMenu:normalMode3"/>
+	<imglist name="pictureScale1" src="PlayerMenu:pictureScale1"/>
+	<imglist name="pictureScale2" src="PlayerMenu:pictureScale2"/>
+	<imglist name="pictureScale3" src="PlayerMenu:pictureScale3"/>
+	
+	<imglist name="topMostSet1" src="PlayerMenu:topMostSet1"/>
+	<imglist name="topMostSet2" src="PlayerMenu:topMostSet2"/>
+	<imglist name="topMostSet3" src="PlayerMenu:topMostSet3"/>
+	<imglist name="silentSet1" src="PlayerMenu:silentSet1"/>
+	<imglist name="silentSet2" src="PlayerMenu:silentSet2"/>
+	<imglist name="silentSet3" src="PlayerMenu:silentSet3"/>
+	<imglist name="subtitleSet1" src="PlayerMenu:subtitleSet1"/>
+	<imglist name="subtitleSet2" src="PlayerMenu:subtitleSet2"/>
+	<imglist name="subtitleSet3" src="PlayerMenu:subtitleSet3"/>
+		
+	<!--更新模块-->
+	<imglist name="close1"	src="img:close1"/>
+	<imglist name="close2"	src="img:close2"/>
+	<imglist name="skin_prg"	src="img:progress_bg"/>
+	<imglist name="skin_prp"	src="img:progress_pos"/>
+  <imglist name="btnUpdate1"	src="img:btnUpdate1"/>
+  <imglist name="btnUpdate2"	src="img:btnUpdate2"/>
+  
+	<imglist name="skin_img_background" src="img:background"/>
+  <imglist name="updatebk" src="img:updatebk"/>
+	<imglist name="skin_img_default" src="img:img_default"/>
+	<imglist name="ok1" src="img:ok1"/>
+	<imglist name="ok2" src="img:ok2"/>
+
+  <!--MainSet-->
+  <imglist name="AllSelect1"	src="MainSet:AllSelect1"/>
+  <imglist name="AllSelect2"	src="MainSet:AllSelect2"/>
+
+  <imglist name="NoAllSelect1"	src="MainSet:NoAllSelect1"/>
+  <imglist name="NoAllSelect2"	src="MainSet:NoAllSelect2"/>
+  
+  <imglist name="DefaultSelect1"	src="MainSet:DefaultSelect1"/>
+  <imglist name="DefaultSelect2"	src="MainSet:DefaultSelect2"/>
+
+  <!--WebPlayer-->
+  <imglist name="btnleft1"	src="WebPlayer:btnleft1"/>
+  <imglist name="btnleft2"	src="WebPlayer:btnleft2"/>
+
+  <imglist name="btnright1"	src="WebPlayer:btnright1"/>
+  <imglist name="btnright2"	src="WebPlayer:btnright2"/>
+
+  <imglist name="EditBk"	src="WebPlayer:EditBk"/>
+  <imglist name="EditUrlLeft"	src="WebPlayer:EditUrlLeft"/>
+  <imglist name="EditUrlRight"	src="WebPlayer:EditUrlRight"/>
+  
+  <imglist name="btnIE1"	src="WebPlayer:btnIE1"/>
+  <imglist name="btnIE2"	src="WebPlayer:btnIE2"/>
+  <imglist name="transebg"	src="WebPlayer:transebg"/>
+
+</skin>

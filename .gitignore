@@ -1,0 +1,8 @@
+/Launch/ipch
+Release
+Debug
+*.opendb
+*.db
+x64
+*.bsc
+.vs

@@ -1,0 +1,7 @@
+<menuRoot itemHeight="32" font="size:13" colorBkgnd="#2d2d2d" colorSep="#000000" sepHeight="2" minWidth="60">
+  <menuItem id="903" class="cls_menuex_1" colorText="#a7acbc">超清</menuItem>
+  <sep/>
+  <menuItem id="902" class="cls_menuex_1" colorText="#a7acbc">高清</menuItem>
+  <sep/>
+  <menuItem id="901" class="cls_menuex_1" colorText="#a7acbc">标清</menuItem>
+</menuRoot>

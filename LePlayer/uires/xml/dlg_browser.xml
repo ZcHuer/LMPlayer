@@ -1,0 +1,7 @@
+﻿<SOUI name="web" title="web" width="800" height="600" resizable="1" margin="0,0,0,0" appWnd="1" translucent="0">
+  <root colorBkgnd="#000000" cache="1">
+    <window name="play_wnd" pos="0,0,-0,-0" cache="1">
+      <!--wkeWebkit pos="0,0,-0,-0" url="http://leplayer.test.epg.lenovo.com.cn/#/" name="wke_browser"/-->
+    </window>
+  </root>
+</SOUI>

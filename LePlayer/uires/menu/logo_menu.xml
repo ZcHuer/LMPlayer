@@ -1,0 +1,11 @@
+﻿<menu itemSkin="menu_item" colorText="#a7acbc" cororTextGray="#999999"
+      colorBg="#1b1e2a" maxWidth="132" sepSkin="menu_sep" 
+      iconSize="10,10" align="center" arrowSkin="menu_arrow" checkSkin="menu_check">
+  <item align="center">关于LMPlayer</item>
+  <item align="center">在线升级</item>
+  <item>意见反馈</item>
+  <item>设置</item>
+  <sep/>
+  <item>注销</item>
+  <item>退出</item>
+</menu>

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="DlgMain.cpp" />
+    <ClCompile Include="IrregularWindow.cpp" />
+    <ClCompile Include="nsPlugin.cpp" />
+    <ClCompile Include="..\..\..\SDK\http\Constants.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SDK\http\Http.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SDK\http\Network.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SDK\Flog\FileLog.cpp">
+      <Filter>Flog</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DlgMain.h" />
+    <ClInclude Include="IrregularWindow.h" />
+    <ClInclude Include="plugin-common.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="..\..\..\SDK\http\Common.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SDK\http\Constants.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SDK\http\Http.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SDK\http\Network.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SDK\Flog\FileLog.h">
+      <Filter>Flog</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="nsDui.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico" />
+    <Image Include="logo.ico" />
+    <Image Include="unlogo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\res\license.txt" />
+    <None Include="..\res\skin.zip" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="http">
+      <UniqueIdentifier>{1e932c18-6ed3-4311-9ff6-0e39e26f29ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Flog">
+      <UniqueIdentifier>{3886a3c1-9a82-40cf-a0aa-b932f4d86e19}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

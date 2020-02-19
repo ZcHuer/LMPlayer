@@ -1,0 +1,13 @@
+﻿<SOUI name="cef" title="cef" width="800" height="600" resizable="1" margin="0,0,0,0" appWnd="1" translucent="0">
+  <root colorBkgnd="#282A2C" cache="1">
+    <window name="cef_head" pos="0,0,-0,@32"  colorBkgnd="#282A2C" cache="1">
+     <imgbtn1 name="btn_left" pos="20,|0,@8,@14" skin="btnleft1" offset="0,-0.5" focusSkin="btnleft2" tip="后退"/>
+	 <imgbtn1 name="btn_right" pos="[20,|0,@8,@14" skin="btnright1" offset="0,-0.5" focusSkin="btnright2" tip="前进"/>
+	   <window name="cef_url" pos="410,|0,-410,@32" offset="0,-0.5" >
+			<edit name="edit_url" pos="00,0,-0,-0" enable="0" cueText="" class="cls_url"/>
+	   </window>
+      <imgbtn1 name="btn_changeDefault" pos="[306,|0,@18,@18" skin="btnIE1" offset="0,-0.5" focusSkin="btnIE2" tip="切换为网页模式"/>
+    </window>
+	<window name="cef_wnd" pos="0,[0,-0,-0" cache="1"/>
+  </root>
+</SOUI>

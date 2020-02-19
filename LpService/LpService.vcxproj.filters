@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="WMIInfo">
+      <UniqueIdentifier>{1d790b93-c004-4084-88e1-d05357efc190}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Aes_encryptor">
+      <UniqueIdentifier>{604c7849-9cc3-4940-8535-0545555716c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base64">
+      <UniqueIdentifier>{9c66cf96-90fa-47e7-8abb-505e4bf376ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="http">
+      <UniqueIdentifier>{38d674aa-9156-4c46-aeb5-6d64499a0ff5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WMIInfo\WMIInfo.cpp">
+      <Filter>WMIInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="Aes_encryptor\Aes_encryptor.cpp">
+      <Filter>Aes_encryptor</Filter>
+    </ClCompile>
+    <ClCompile Include="base64\base641.cpp">
+      <Filter>base64</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SDK\Flog\FileLog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SDK\http\Constants.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SDK\http\Http.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SDK\http\Network.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Baseclass\RegisterExt.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WMIInfo\WMIInfo.h">
+      <Filter>WMIInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="Aes_encryptor\Aes_encryptor.h">
+      <Filter>Aes_encryptor</Filter>
+    </ClInclude>
+    <ClInclude Include="base64\base641.h">
+      <Filter>base64</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDK\Flog\FileLog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDK\http\Common.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDK\http\Constants.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDK\http\Http.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDK\http\Network.h">
+      <Filter>http</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

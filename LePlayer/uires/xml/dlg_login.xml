@@ -1,0 +1,156 @@
+﻿<SOUI name="WND_LOGIN" title="联想登录" width="768" height="500" resizable="0" appWnd="0" translucent="1">
+  <root skin="login_back" cache="1">
+    <window pos="15,15,-15,-15">
+      <img skin="login_ad" pos="0,0,258,-0"/>
+      <window pos="258,0,-0,-0">
+		<window name="loginLg" pos="0,0,@28,-0">
+			<img skin="login_Le" pos="0,12"/>
+		</window>
+		<!--登录窗口-->
+        <window name="wnd_login" pos="0,0,-0,-0" show="1">
+          <window pos="0,93,-0,75">
+            <text pos="|0,0" font="size:18" offset="-0.5,0" colorText="#444444">登录</text>
+          </window>
+          <img id="10" pos="90,150" skin="login_edit1"/>
+          <edit name="lg_user" pos="{0,{0,@300,@34" cueText="请输入手机号" class="cls_lg_edit"/>
+          <img id="11" pos="90,[20" skin="login_edit1"/>
+          <edit name="lg_pass" pos="{0,{0,@300,@34" cueText="请输入密码" password="1" class="cls_lg_edit"/>
+          
+		  <check1 name="jz_key" pos="90,[20" class="cls_login_check1" colorText="#666666">记住密码</check1>
+          <check1 name="chk_autologin" pos="[20,{0" class="cls_login_check1" colorText="#666666">自动登录</check1>
+          <link name="show_key" pos="-90,{0" offset="-1,0" class="cls_text_color1" colorText="#666666">忘记密码？</link>
+		 
+		  <imgbtn1 name="btn_login" pos="90,[20" offset="0,0" skin="btnlogin1" focusSkin="btnlogin2"/>
+		  
+          <link name="show_reg" pos="90,[20" font="size:14" colorText="#444444" class="cls_text_color1" >注册>></link>
+          <link name="show_quick" pos="276,{0" offset="0,0" font="size:14" colorText="#444444" class="cls_text_color1">手机快速登录>></link>
+        </window>
+		<!--注册窗口1-->
+        <window name="wnd_register" pos="0,0,-0,-0" show="0">
+          <window pos="0,40,-0,75">
+            <text pos="|0,0" font="size:16" offset="-0.5,0" colorText="#444444">注册</text>
+          </window>
+		  
+          <img id="12" pos="90,88" skin="login_edit1"/>
+          <edit name="reg_user" pos="{0,{0,@300,@34" cueText="请输入11位手机号" class="cls_lg_edit"/>
+          
+		  <img id="15" pos="90,[20" skin="login_edit2"/>
+          <edit name="edit_regimg_code" pos="{0,{0,@180,@34" cueText="请输入右侧图片上的数字" class="cls_lg_edit"/>
+          
+		  <img pos="[6,{0,@80,@34" skin="login_code1"/>
+		  <img name="image_regcode" pos="{1,{1,@80,@32" skin="login_code1"/>      
+		  <wndbtn name="btn_regcode" pos="[10,{6" skin="login_update" focusSkin="login_update1"/>
+          
+		  <img id="16" pos="90,[20" skin="login_edit2"/>
+          <edit name="reg_code" pos="{0,{0,@180,@34" cueText="请输入短信验证码" class="cls_lg_edit"/>
+          
+		  <wndbtn name="btn_regpcode" pos="[6,{0" class="cls_phone_code">获取验证码</wndbtn>
+          
+		  
+		  <img id="13" pos="90,[20" skin="login_edit1"/>
+          <edit name="reg_pass1" pos="{0,{0,@300,@34" cueText="设置密码" password="1" class="cls_lg_edit"/>
+		  <text pos="90,[10" font="size:12" colorText="#63697b">请输入8-20位密码，字母、数字、下划线至少包含两种</text>
+          <img id="14" pos="90,[20" skin="login_edit1"/>
+          <edit name="reg_pass2" pos="{0,{0,@300,@34" cueText="确认密码" password="1" class="cls_lg_edit"/>
+		  
+		  
+		  <imgbtn1 name="btn_register" pos="90,[20" skin="loginRegFinish1" focusSkin="loginRegFinish2"/>
+		  
+          <text pos="{0,[15" colorText="#444444" font="size:11"></text>
+          <link name="lnk_legal" pos="[0,{0" colorText="#444444" font="size:11,underline:1">《使用条款》</link>
+          <text pos="[0,{0" colorText="#444444" font="size:11"> </text>
+          <link name="lnk_privacy" pos="[0,{0" colorText="#444444" font="size:11,underline:1">《隐私声明》</link>
+       
+          <link name="btn_pwback" pos="[98,{0" colorText="#444444" class="cls_text_color1">登录>></link>
+        </window>
+		
+		<window name="wnd_register2" pos="0,0,-0,-0" show="0">
+          <window pos="0,0,-0,75">
+            <text pos="|0,|0" font="size:16" offset="-0.5,-0.5" colorText="#444444">设置密码</text>
+          </window>
+		  <img id="13" pos="110,110" skin="login_edit1"/>
+          <edit name="reg_pass1" pos="{0,{0,@300,@34" cueText="设置密码" password="1" class="cls_lg_edit"/>
+		  <text pos="110,[10" font="size:12" colorText="#63697b">请输入8-20位密码，字母、数字、下划线至少包含两种</text>
+          <img id="14" pos="110,[20" skin="login_edit1"/>
+          <edit name="reg_pass2" pos="{0,{0,@300,@34" cueText="确认密码" password="1" class="cls_lg_edit"/>
+          <wndbtn name="btn_register1" pos="110,[20,@300,@40" skin="login_btn" focusSkin="login_btn2" class="cls_login">马上注册</wndbtn>
+		  
+		</window>
+		
+		
+		<!--忘记密码-->
+        <window name="wnd_key" pos="0,0,-0,-0" show="0">
+          <window pos="0,40,-0,75">
+            <text pos="|0,0" font="size:16" offset="-0.5,0" colorText="#444444">找回密码</text>
+          </window>
+		  
+          <img id="17" pos="90,88" skin="login_edit1"/>
+          <edit name="pw_user" pos="{0,{0,@300,@34" cueText="请输入11位手机号" class="cls_lg_edit"/>
+          <img id="18" pos="90,[20" skin="login_edit2"/>
+          <edit name="edit_pwimg_code" pos="{0,{0,@180,@34" cueText="请输入右侧图片上的数字" class="cls_lg_edit"/>
+          <img pos="[10,{0,@80,@34" skin="login_code1"/>
+          
+		  <img name="image_pwcode" pos="{1,{1,@80,@32" skin="login_code1"/>
+          <wndbtn name="btn_imgcode" pos="[4,{6" skin="login_update" focusSkin="login_update1"/>
+          
+		  <img id="19" pos="90,[26" skin="login_edit2"/>
+          <edit name="pw_code" pos="{0,{0,@180,@34" cueText="请输入短信验证码" class="cls_lg_edit"/>
+          <wndbtn name="btn_pswcode" pos="[10,{0" class="cls_phone_code">获取验证码</wndbtn>
+          <img id="20" pos="90,[20" skin="login_edit1"/>
+          <edit name="pw_pass1" pos="{0,{0,@300,@34" cueText="设置新密码" password="1" class="cls_lg_edit"/>
+          <img id="21" pos="90,[20" skin="login_edit1"/>
+          <edit name="pw_pass2" pos="{0,{0,@300,@34" cueText="确认密码" password="1" class="cls_lg_edit"/>
+		  <text pos="{0,[10" font="size:12" colorText="#63697b">请输入8-20位密码，字母、数字、下划线至少包含两种</text>
+          <wndbtn name="btn_pass" pos="90,[20,@300,@40" skin="login_btn" focusSkin="login_btn2" class="cls_login">完成</wndbtn>
+		  
+		  
+		  <link name="btn_pwback" pos="341,[14" colorText="#444444" class="cls_text_color1">登录>></link>
+         
+        </window>
+		<!--手机快速登录-->
+        <window name="wnd_quick" pos="0,0,-0,-0" show="0">
+          <window pos="0,93,-0,75">
+             <text pos="|0,0" font="size:18" offset="-0.5,0" colorText="#444444">登录</text>
+          </window>
+          <img id="22" pos="90,135" skin="login_edit1"/>
+          <edit name="quick_user" pos="{0,{0,@300,@34" cueText="请输入手机号" class="cls_lg_edit"/>
+          <img id="23" pos="90,[20,@174,@34" skin="login_edit2"/>
+          <edit name="quick_code" pos="{0,{0,@174,@34" cueText="请输入短信验证码" class="cls_lg_edit"/>
+          
+		  <wndbtn name="quick_getvcode" pos="[16,{0" class="cls_phone_code">获取短信验证码</wndbtn>
+		  
+		  <imgbtn1 name="btn_quick" pos="90,[54" offset="0,0" skin="btnlogin1" focusSkin="btnlogin2"/>
+          <text pos="90,[20" font="size:14" colorText="#444444" show="0">没有账号？</text>
+          <link name="show_reg" pos="[0,{0" font="size:14" colorText="#0296ff" show="0">立即注册</link>
+          <link name="btn_back2" pos="410,[16" offset="-1,-1" colorText="#444444" class="cls_text_color1">账号密码登录>></link>
+        </window>
+		<!--绑定手机号-->
+		<window name="wnd_bindphone" pos="0,0,-0,-0" show="0">
+          <window pos="0,93,-0,75">
+            <text pos="|0,0" font="size:16" offset="-0.5,0" colorText="#444444">绑定手机号</text>
+          </window>
+          <img id="22" pos="90,135" skin="login_edit1"/>
+          <edit name="bind_user" pos="{0,{0,@300,@34" cueText="请输入手机号" class="cls_lg_edit"/>
+		  
+		  <img id="18" pos="90,[20" skin="login_edit2"/>
+		  <edit name="edit_bindpwimg_code" pos="{0,{0,@174,@34" cueText="请输入右侧图片上的数字" class="cls_lg_edit"/>
+          <img pos="[6,{0,@120,@34" skin="login_code1"/>
+		  <img name="image_bindpwcode" pos="{1,{1,@118,@32" skin="login_code1"/>
+          <wndbtn name="btn_bindimgcode" pos="[10,{6" skin="login_update" focusSkin="login_update1"/>
+		  
+          <img id="23" pos="90,[20" skin="login_edit2"/>
+          <edit name="bind_code" pos="{0,{0,@174,@34" cueText="请输入短信验证码" class="cls_lg_edit"/>
+          <wndbtn name="bind_getvcode" pos="[16,{0" class="cls_phone_code">获取验证码</wndbtn>
+		  
+		  <imgbtn1 name="btn_bindphone" pos="90,[20" offset="0,0" skin="loginBind1" focusSkin="loginBind2"/>
+        </window>
+		
+        <text name="error" pos="[0,[10" colorText="#de3030" font="size:12" show="0"/>
+		
+      </window>
+		<caption pos="0,0,-0,75">
+			  <imgbtn1 name="btn_close"  pos="-12,12" offset="-1,0" skin="ng_close1" focusSkin="ng_close2" tip="关闭"/>
+		</caption>
+	</window>
+  </root>
+</SOUI>

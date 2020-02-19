@@ -1,0 +1,24 @@
+管家下发游戏端、视频端，现存问题和解决方案：
+问题1：
+	新下发的LG端、LV端，由于不会执行任何注册表操作，导致原有的悬浮球无法识别是否已经下发;
+解决方案：
+	LV 提供注册表批处理文件，由管家在下发后，直接将安装路径写入注册表，便于悬浮球发现。批处理文件为 install.bat，需要防止在 LeLaunch.exe 同级目录下。
+	LG ？国华补充
+
+
+问题2：
+	之前下发的LG、LV端，能否通过乐窗拉活？
+解决方案：
+	需要管家来覆盖兼容。
+
+注册表说明：
+	LG端保存安装路径的注册表地址，一直只有一处，见批处理内描述。
+	
+
+	LV端保存安装路径的注册表地址，有2处。
+	·计算机\HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\App Paths\LenovoVideo  （悬浮球调用）
+	·计算机\HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\App Paths\LePlayer      （乐窗调用）
+
+	LG ？国华补充
+
+		

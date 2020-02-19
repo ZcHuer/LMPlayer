@@ -1,0 +1,16 @@
+﻿<SOUI name="loginOK" title="LIST" width="294" height="264" resizable="1" margin="0,0,0,0" appWnd="0" toolWindow="1" translucent="1">
+  <root cache="1">
+    <window pos="0,0,-0,-0" skin="loginok_bg">
+		<window name="loginok" pos="15,15,-15,-15">
+			<wndbtn name="btn_changeUser" align="left" textOffset="0" pos="-80,7,@60,@20" font="size:12" colorTextHover="#FFFFFF" colorText="#BCBEC3" rightText=">">切换账号</wndbtn>
+			<titleheader name="img_head" pos="|0,30,@74,@74" skin="login_default" offset="-0.5,0" maskskin="LOGIN_ID_ICON_MASK"/>
+			
+			<text name="username" pos="|0,[10,-20,@20" align="center" font="size:16" offset="-0.5,0" dotted="1" colorText="#BCBEC3"/>
+			
+			<img pos="|0,[12,@244,@1" offset="-0.5,0" colorBkgnd="#666666"/>
+			<wndbtn name="btn_pcenter" align="left" textOffset="0" pos="{0,[10,@70,@20" font="size:14" colorTextHover="#FFFFFF" colorText="#BCBEC3" rightText=">">个人中心</wndbtn>
+			<imgbtn1 name="btn_loginout" pos="|0,-13" offset="-0.5,-1" skin="btnquitlogin" focusSkin="btnquitloginhor" tip="退出登陆"/>
+		</window>
+    </window>
+  </root>
+</SOUI>

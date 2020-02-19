@@ -1,0 +1,4 @@
+<menuRoot class="cls_menuroot" minWidth="180">
+    <menuItem id="10" class="cls_menuex" hotkeyText="Ctrl+O">打开文件</menuItem>
+    <menuItem id="11" class="cls_menuex" hotkeyText="Ctrl+F">打开文件夹</menuItem>
+</menuRoot>

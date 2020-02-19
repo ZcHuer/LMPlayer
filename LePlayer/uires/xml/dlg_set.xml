@@ -1,0 +1,26 @@
+﻿<SOUI title="设置" width="364" height="118">
+  <root cache="1" colorBkgnd="#444648">
+    <window pos="0,0,-0,-0"  >
+      <caption pos="0,0,-0,40">
+        <text pos="18,|0" offset="0,-0.5" colorText="#CCCCCC" font="size:14">设置</text>
+        <imgbtn1 name="btn_close" pos="-10,|0" offset="-1,-0.5" skin="ng_close1" focusSkin="ng_close2"/>
+      </caption>
+     
+      <window pos="0,[0,-0,-0">
+        <text pos="19,8" offset="0,-0.5" colorText="#CCCCCC" font="size:14">画面比例</text>
+        <group pos="90,{0" headerHeight="0">
+          <radio id="43" pos="0,{0" colorText="#CCCCCC" skin="radio1" checked="1" class="cls_check">原始</radio>
+          <radio id="44" pos="[20,{0" colorText="#CCCCCC" skin="radio1" class="cls_check">16:9</radio>
+          <radio id="45" pos="[20,{0" colorText="#CCCCCC" skin="radio1" class="cls_check">4:3</radio>
+          <radio id="46" pos="[20,{0" colorText="#CCCCCC" skin="radio1" class="cls_check">铺满</radio>
+        </group>
+        <text pos="19,[22" colorText="#CCCCCC" font="size:14">置顶显示</text>
+        <group pos="90,{0" headerHeight="0">
+          <radio id="95" pos="0,{0" colorText="#CCCCCC" skin="radio1" class="cls_check">从不</radio>
+          <radio id="96" pos="[20,{0" colorText="#CCCCCC" skin="radio1" checked="1" class="cls_check">始终</radio>
+          <!--radio id="97" pos="[20,{0" colorText="#CCCCCC" skin="radio1" checked="1" class="cls_check">播放时</radio-->
+        </group>
+      </window>
+    </window>
+  </root>
+</SOUI>

@@ -1,0 +1,70 @@
+2020-02-18 15:05:21[978] data:>>>启动,命令行：
+2020-02-18 15:05:22[006] data:版本号：2.0.2.2
+2020-02-18 15:05:22[411] data:InitCreate begin 
+2020-02-18 15:05:22[526] data:CPlayerDlg::SetPlayerShowMode ePlayerWndMode_Nomal
+2020-02-18 15:05:22[561] data:resetWnd show:808 :529 
+2020-02-18 15:05:22[589] data:InitCreate end
+2020-02-18 15:05:22[651] data:resetWnd show:864 :559 
+2020-02-18 15:05:22[684] data:resetWnd show:864 :559 
+2020-02-18 15:05:22[739] data:CMainDlg::DoInit Begin
+2020-02-18 15:05:22[991] data:CMainDlg::DoCmdLine begin
+2020-02-18 15:05:23[020] data:CCMDParser::Parse begin
+2020-02-18 15:05:23[050] data:CCMDParser::Parse end
+2020-02-18 15:05:23[079] data:CMainDlg::HandleCmd_Run begin
+2020-02-18 15:05:23[119] data:CMainDlg::HandleCmd_Run end
+2020-02-18 15:05:23[157] data:CMainDlg::DoCmdLine End
+2020-02-18 15:05:23[528] data:CMainDlg::DoInit End
+2020-02-18 15:09:39[759] data:>>>启动,命令行：
+2020-02-18 15:09:39[790] data:版本号：2.0.2.2
+2020-02-18 15:09:40[136] data:InitCreate begin 
+2020-02-18 15:09:40[194] data:CPlayerDlg::SetPlayerShowMode ePlayerWndMode_Nomal
+2020-02-18 15:09:40[223] data:resetWnd show:808 :529 
+2020-02-18 15:09:40[254] data:InitCreate end
+2020-02-18 15:09:40[312] data:resetWnd show:864 :559 
+2020-02-18 15:09:40[345] data:resetWnd show:864 :559 
+2020-02-18 15:09:40[401] data:CMainDlg::DoInit Begin
+2020-02-18 15:09:40[652] data:CMainDlg::DoCmdLine begin
+2020-02-18 15:09:40[682] data:CCMDParser::Parse begin
+2020-02-18 15:09:40[713] data:CCMDParser::Parse end
+2020-02-18 15:09:40[749] data:CMainDlg::HandleCmd_Run begin
+2020-02-18 15:09:40[794] data:CMainDlg::HandleCmd_Run end
+2020-02-18 15:09:40[835] data:CMainDlg::DoCmdLine End
+2020-02-18 15:09:40[947] data:CMainDlg::DoInit End
+2020-02-18 15:11:52[186] data:>>>启动,命令行：
+2020-02-18 15:11:52[211] data:版本号：2.0.2.2
+2020-02-18 15:11:52[595] data:InitCreate begin 
+2020-02-18 15:11:52[662] data:CPlayerDlg::SetPlayerShowMode ePlayerWndMode_Nomal
+2020-02-18 15:11:52[698] data:resetWnd show:808 :529 
+2020-02-18 15:11:52[730] data:InitCreate end
+2020-02-18 15:11:52[790] data:resetWnd show:808 :529 
+2020-02-18 15:11:52[851] data:CMainDlg::OnInitDialog end
+2020-02-18 15:11:52[875] data:g_strCmdLine:
+2020-02-18 15:11:52[906] data:非开机启动
+2020-02-18 15:11:52[941] data:resetWnd show:808 :529 
+2020-02-18 15:11:52[974] data:升级模块-开机启动-否
+2020-02-18 15:11:53[004] data:resetWnd show:808 :529 
+2020-02-18 15:11:53[050] data:CMainDlg::DoCmdLine begin
+2020-02-18 15:11:53[082] data:CCMDParser::Parse begin
+2020-02-18 15:11:53[116] data:CCMDParser::Parse end
+2020-02-18 15:11:53[157] data:CMainDlg::HandleCmd_Run begin
+2020-02-18 15:11:53[199] data:CMainDlg::HandleCmd_Run end
+2020-02-18 15:11:53[236] data:CMainDlg::DoCmdLine End
+2020-02-18 15:11:53[363] data:CMainDlg::DoInit End
+2020-02-18 15:29:07[538] data:点击LOGO，打开设置菜单
+2020-02-18 16:22:13[931] data:>>>启动,命令行：
+2020-02-18 16:22:13[946] data:版本号：2.0.2.2
+2020-02-18 16:22:14[175] data:InitCreate begin 
+2020-02-18 16:22:14[250] data:CPlayerDlg::SetPlayerShowMode ePlayerWndMode_Nomal
+2020-02-18 16:22:14[272] data:resetWnd show:808 :529 
+2020-02-18 16:22:14[291] data:InitCreate end
+2020-02-18 16:22:14[329] data:resetWnd show:808 :529 
+2020-02-18 16:22:14[367] data:CMainDlg::DoInit Begin
+2020-02-18 16:22:14[499] data:CMainDlg::DoCmdLine begin
+2020-02-18 16:22:14[515] data:CCMDParser::Parse begin
+2020-02-18 16:22:14[530] data:CCMDParser::Parse end
+2020-02-18 16:22:14[550] data:CMainDlg::HandleCmd_Run begin
+2020-02-18 16:22:14[571] data:CMainDlg::HandleCmd_Run end
+2020-02-18 16:22:14[590] data:CMainDlg::DoCmdLine End
+2020-02-18 16:22:14[649] data:CMainDlg::DoInit End
+2020-02-18 16:22:15[668] data:点击LOGO，打开设置菜单
+2020-02-18 17:07:31[111] data:点击关闭按钮

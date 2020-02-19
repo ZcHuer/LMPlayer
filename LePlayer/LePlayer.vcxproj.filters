@@ -1,0 +1,626 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{cd8b2f1e-405f-4567-8578-0d2bcbce9a79}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{ac052e4e-bfee-4465-8b7b-daf55366971b}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{484a3812-dad9-4612-8ea4-e122ed88f137}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;jpg;jpeg;jpe;manifest</Extensions>
+    </Filter>
+    <Filter Include="SoUI Resouece">
+      <UniqueIdentifier>{85ee6c5d-2e17-4693-ad3a-3f83cf23e069}</UniqueIdentifier>
+      <Extensions>idx;xml;png;gif;jpg;ico;lua;bmp</Extensions>
+    </Filter>
+    <Filter Include="ctrl">
+      <UniqueIdentifier>{094f8d09-205b-4366-ba0d-1625d532f2fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dlg">
+      <UniqueIdentifier>{9fb69842-ac27-43e9-93d8-42860ad846df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="json">
+      <UniqueIdentifier>{1505e97d-79c3-4bda-b0e7-803e702ec0d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="flog">
+      <UniqueIdentifier>{a98426b0-6281-498e-90fa-e58135a3fe15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="trayicon">
+      <UniqueIdentifier>{5240baeb-5f7a-432f-b5f3-1da2b4bbbcaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ctrl\gif">
+      <UniqueIdentifier>{839eedd2-435b-477f-8fe0-e0ed931980d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xml">
+      <UniqueIdentifier>{12251dc4-1b65-40bc-a1fe-4f9997459b3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SoUI Resouece\menu">
+      <UniqueIdentifier>{8f15f9a7-c939-4b5c-84d5-21f8b98e6446}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SoUI Resouece\menuex">
+      <UniqueIdentifier>{97f0214e-f20b-4ac5-961f-d03903052f4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{db9250df-95a0-487b-ac62-e5e48aa5d129}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Baseclass">
+      <UniqueIdentifier>{9dd90a1a-1b43-4bcb-a3d1-9e671ff84fc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Update">
+      <UniqueIdentifier>{c7947641-b2ef-43b5-8957-43b23af190ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data">
+      <UniqueIdentifier>{b9a5c0cf-8c47-4169-a28a-59b1ece07116}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="http">
+      <UniqueIdentifier>{f4acebef-0373-4c70-8056-772603d33b42}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ctrl\SImageButton1.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="json\json_reader.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="json\json_value.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="json\json_writer.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerDlg.cpp">
+      <Filter>dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="ctrl\SFadeFrame.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ctrl\SFlyWnd.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="SetDlg.cpp">
+      <Filter>dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="ctrl\SListTitle.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ctrl\SListWnd.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ClearDlg.cpp">
+      <Filter>dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="AboutDlg.cpp">
+      <Filter>dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="MainSetDlg.cpp">
+      <Filter>dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="trayicon\SShellNotifyIcon.cpp">
+      <Filter>trayicon</Filter>
+    </ClCompile>
+    <ClCompile Include="md5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ctrl\gif\SGifPlayer.cpp">
+      <Filter>ctrl\gif</Filter>
+    </ClCompile>
+    <ClCompile Include="ctrl\gif\SSkinGif.cpp">
+      <Filter>ctrl\gif</Filter>
+    </ClCompile>
+    <ClCompile Include="ctrl\gif\SSkinAPNG.cpp">
+      <Filter>ctrl\gif</Filter>
+    </ClCompile>
+    <ClCompile Include="ctrl\SLineCtrl.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ctrl\SAreaButton.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ctrl\SCheckBoxEx.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="SListDlg.cpp">
+      <Filter>dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="ctrl\SWndBtn.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ctrl\SItemWnd.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="util\base64.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\blowfish.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\util.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Aes_encryptor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WMIInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base641.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SCtrlDlg.cpp">
+      <Filter>dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="MainDlg.cpp">
+      <Filter>dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="LePlayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FeedbackDlg.cpp">
+      <Filter>dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Baseclass\CommandParse.cpp">
+      <Filter>Baseclass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SDK\cryptopp700\rsa.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="ctrl\ImageHeader.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="ShortcutHint.cpp">
+      <Filter>dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="Playfailed.cpp">
+      <Filter>dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="Update\CUpdateHelper.cpp">
+      <Filter>Update</Filter>
+    </ClCompile>
+    <ClCompile Include="Update\NewVerDlg.cpp">
+      <Filter>Update</Filter>
+    </ClCompile>
+    <ClCompile Include="Update\UpdateDlg.cpp">
+      <Filter>Update</Filter>
+    </ClCompile>
+    <ClCompile Include="Update\UserChoiceDlg.cpp">
+      <Filter>Update</Filter>
+    </ClCompile>
+    <ClCompile Include="SwitchNewVer.cpp">
+      <Filter>Update</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayData.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="InstallingGif.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CMDParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SDK\Flog\FileLog.cpp">
+      <Filter>flog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SDK\http\Constants.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SDK\http\Http.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SDK\http\Network.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="LePlayer.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ctrl\SImageButton1.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="MainDlg.h">
+      <Filter>dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="json\assertions.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\autolink.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\config.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\features.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\forwards.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\json.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\json_tool.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\reader.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\value.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\version.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\writer.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="ctrl\SAnimator.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerDlg.h">
+      <Filter>dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="ctrl\SAdapterBase.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ctrl\SFadeFrame.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ctrl\SFlyWnd.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="SetDlg.h">
+      <Filter>dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="ctrl\SListTitle.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ctrl\SListWnd.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ClearDlg.h">
+      <Filter>dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="AboutDlg.h">
+      <Filter>dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="MainSetDlg.h">
+      <Filter>dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="trayicon\SShellNotifyIcon.h">
+      <Filter>trayicon</Filter>
+    </ClInclude>
+    <ClInclude Include="md5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ctrl\gif\SAniImgFrame.h">
+      <Filter>ctrl\gif</Filter>
+    </ClInclude>
+    <ClInclude Include="ctrl\gif\SGifPlayer.h">
+      <Filter>ctrl\gif</Filter>
+    </ClInclude>
+    <ClInclude Include="ctrl\gif\SSkinGif.h">
+      <Filter>ctrl\gif</Filter>
+    </ClInclude>
+    <ClInclude Include="ctrl\gif\SSkinAPNG.h">
+      <Filter>ctrl\gif</Filter>
+    </ClInclude>
+    <ClInclude Include="ctrl\SLineCtrl.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ctrl\SAreaButton.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="xml\tinyxml.h">
+      <Filter>xml</Filter>
+    </ClInclude>
+    <ClInclude Include="xml\tinystr.h">
+      <Filter>xml</Filter>
+    </ClInclude>
+    <ClInclude Include="ctrl\SCheckBoxEx.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="MyHttp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SListDlg.h">
+      <Filter>dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="ctrl\SWndBtn.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="ctrl\SItemWnd.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="util\util.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\aes.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\base64.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\blowfish.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\blowfish.hpp">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\buffer.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Aes_encryptor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WMIInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base641.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SCtrlDlg.h">
+      <Filter>dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Baseclass\RegisterExt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FilesFormat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FeedbackDlg.h">
+      <Filter>dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Baseclass\CommandParse.h">
+      <Filter>Baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDK\cryptopp700\rsa.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="ctrl\ImageHeader.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Baseclass\MiniDump.h">
+      <Filter>Baseclass</Filter>
+    </ClInclude>
+    <ClInclude Include="SysAlive.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ShortcutHint.h">
+      <Filter>dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="Playfailed.h">
+      <Filter>dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="Update\CUpdateHelper.h">
+      <Filter>Update</Filter>
+    </ClInclude>
+    <ClInclude Include="Update\NewVerDlg.h">
+      <Filter>Update</Filter>
+    </ClInclude>
+    <ClInclude Include="Update\UpdateDlg.h">
+      <Filter>Update</Filter>
+    </ClInclude>
+    <ClInclude Include="Update\UserChoiceDlg.h">
+      <Filter>Update</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CommonDefine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SwitchNewVer.h">
+      <Filter>Update</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayData.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="InstallingGif.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Data_OffLine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\Data_RealTime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CMDParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CefMsgDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDK\Flog\FileLog.h">
+      <Filter>flog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\CommonStruct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDK\http\Common.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDK\http\Constants.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDK\http\Http.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDK\http\Network.h">
+      <Filter>http</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\soui_res.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="json\json_valueiterator.inl">
+      <Filter>json</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="uires\uidef\init.xml">
+      <Filter>SoUI Resouece</Filter>
+    </Xml>
+    <Xml Include="uires\values\color.xml">
+      <Filter>SoUI Resouece</Filter>
+    </Xml>
+    <Xml Include="uires\values\skin.xml">
+      <Filter>SoUI Resouece</Filter>
+    </Xml>
+    <Xml Include="uires\values\string.xml">
+      <Filter>SoUI Resouece</Filter>
+    </Xml>
+    <Xml Include="uires\xml\dlg_main.xml">
+      <Filter>SoUI Resouece</Filter>
+    </Xml>
+    <Xml Include="uires\xml\dlg_player.xml">
+      <Filter>SoUI Resouece</Filter>
+    </Xml>
+    <Xml Include="uires\xml\dlg_vlcwnd.xml">
+      <Filter>SoUI Resouece</Filter>
+    </Xml>
+    <Xml Include="uires\xml\dlg_set.xml">
+      <Filter>SoUI Resouece</Filter>
+    </Xml>
+    <Xml Include="uires\xml\dlg_clear.xml">
+      <Filter>SoUI Resouece</Filter>
+    </Xml>
+    <Xml Include="uires\xml\dlg_about.xml">
+      <Filter>SoUI Resouece</Filter>
+    </Xml>
+    <Xml Include="uires\xml\dlg_mainset.xml">
+      <Filter>SoUI Resouece</Filter>
+    </Xml>
+    <Xml Include="uires\xml\dlg_teleplay.xml">
+      <Filter>SoUI Resouece</Filter>
+    </Xml>
+    <Xml Include="uires\xml\dlg_poplist.xml">
+      <Filter>SoUI Resouece</Filter>
+    </Xml>
+    <Xml Include="uires\xml\dlg_login.xml">
+      <Filter>SoUI Resouece</Filter>
+    </Xml>
+    <Xml Include="uires\xml\dlg_searchlist.xml">
+      <Filter>SoUI Resouece</Filter>
+    </Xml>
+    <Xml Include="uires\xml\dlg_loginok.xml">
+      <Filter>SoUI Resouece</Filter>
+    </Xml>
+    <Xml Include="uires\xml\dlg_cefbrowser.xml">
+      <Filter>SoUI Resouece</Filter>
+    </Xml>
+    <Xml Include="uires\menuex\logo_menuex.xml">
+      <Filter>SoUI Resouece\menuex</Filter>
+    </Xml>
+    <Xml Include="uires\menuex\resolution_menuex.xml">
+      <Filter>SoUI Resouece\menuex</Filter>
+    </Xml>
+    <Xml Include="uires\menu\list_menu.xml">
+      <Filter>SoUI Resouece\menu</Filter>
+    </Xml>
+    <Xml Include="uires\menu\logo_menu.xml">
+      <Filter>SoUI Resouece\menu</Filter>
+    </Xml>
+    <Xml Include="uires\menu\player_menu.xml">
+      <Filter>SoUI Resouece\menu</Filter>
+    </Xml>
+    <Xml Include="uires\menu\right_menu.xml">
+      <Filter>SoUI Resouece\menu</Filter>
+    </Xml>
+    <Xml Include="uires\menu\sx_menu.xml">
+      <Filter>SoUI Resouece\menu</Filter>
+    </Xml>
+    <Xml Include="uires\menu\tray_menu.xml">
+      <Filter>SoUI Resouece\menu</Filter>
+    </Xml>
+    <Xml Include="uires\xml\dlg_list.xml">
+      <Filter>SoUI Resouece</Filter>
+    </Xml>
+    <Xml Include="uires\menuex\add_menuex.xml">
+      <Filter>SoUI Resouece\menuex</Filter>
+    </Xml>
+    <Xml Include="uires\xml\dlg_migu.xml">
+      <Filter>SoUI Resouece</Filter>
+    </Xml>
+    <Xml Include="uires\xml\dlg_feedbackwnd.xml">
+      <Filter>SoUI Resouece</Filter>
+    </Xml>
+    <Xml Include="uires\xml\dlg_browser.xml">
+      <Filter>SoUI Resouece</Filter>
+    </Xml>
+    <Xml Include="uires\xml\dlg_ctrlwnd.xml">
+      <Filter>SoUI Resouece</Filter>
+    </Xml>
+    <Xml Include="uires\xml\dlg_msg.xml">
+      <Filter>SoUI Resouece</Filter>
+    </Xml>
+    <Xml Include="uires\xml\dlg_popmsg.xml">
+      <Filter>SoUI Resouece</Filter>
+    </Xml>
+    <Xml Include="uires\xml\dlg_popup.xml">
+      <Filter>SoUI Resouece</Filter>
+    </Xml>
+    <Xml Include="uires\xml\dlg_shortcuthint.xml">
+      <Filter>SoUI Resouece</Filter>
+    </Xml>
+    <Xml Include="uires\xml\dlg_switchnewver.xml">
+      <Filter>SoUI Resouece</Filter>
+    </Xml>
+    <Xml Include="uires\xml\dlg_updateing.xml">
+      <Filter>SoUI Resouece</Filter>
+    </Xml>
+    <Xml Include="uires\xml\dlg_playfailed.xml">
+      <Filter>SoUI Resouece</Filter>
+    </Xml>
+    <Xml Include="uires\xml\dlg_cefMsg.xml">
+      <Filter>SoUI Resouece</Filter>
+    </Xml>
+    <Xml Include="uires\xml\dlg_Installing.xml">
+      <Filter>SoUI Resouece</Filter>
+    </Xml>
+    <Xml Include="uires\xml\dlg_msg2.xml">
+      <Filter>SoUI Resouece</Filter>
+    </Xml>
+    <Xml Include="uires\xml\dlg_newver.xml">
+      <Filter>SoUI Resouece</Filter>
+    </Xml>
+    <Xml Include="uires\xml\dlg_onlineupdate.xml">
+      <Filter>SoUI Resouece</Filter>
+    </Xml>
+    <Xml Include="uires\xml\dlg_popvip.xml">
+      <Filter>SoUI Resouece</Filter>
+    </Xml>
+    <Xml Include="uires\xml\dlg_userchoise.xml">
+      <Filter>SoUI Resouece</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="uires\image\soui.ico">
+      <Filter>SoUI Resouece</Filter>
+    </Image>
+    <Image Include="icon1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="uires\uires.idx">
+      <Filter>SoUI Resouece</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

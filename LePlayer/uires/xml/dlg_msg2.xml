@@ -1,0 +1,13 @@
+﻿<SOUI name="popupmsg" title="LMPlayer" width="280" height="144" resizable="0" appWnd="0" toolWindow="1" translucent="0">
+  <root colorBkgnd="#40c2fd" cache="1">
+    <caption pos="0,0,-0,36">
+      <text pos="20,|0" offset="0,-0.5" colorText="#ffffff" font="size:14">提示</text>
+      <imgbtn name="btn_close" pos="-20,|0" offset="-1,-0.5" skin="close1" focusSkin="close2"/>
+    </caption>
+    <window pos="0,36,-0,-0" colorBkgnd="#ffffff" show="1">
+      <text pos="20,20" colorText="#565656" font="size:16">更新已取消</text>
+      <imgbtn1 name="btn_cancel" pos="-20,-14,@78,@30" offset="-1,-1" colorBkgnd="#40c2fd"
+               colorText="#ffffff" font="size:14" cursor="hand">我知道了</imgbtn1>
+    </window>
+  </root>
+</SOUI>

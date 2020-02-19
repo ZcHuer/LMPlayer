@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Flog">
+      <UniqueIdentifier>{0c78bf10-8c6f-4c64-9602-96c784558138}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="update">
+      <UniqueIdentifier>{5ae7cc72-1881-4582-b788-1b30b1fc5a24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="zip">
+      <UniqueIdentifier>{da11a608-bba3-461c-82e1-22a247314699}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="http">
+      <UniqueIdentifier>{3734c495-dfbb-4c31-91a1-68b27bb1dc62}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LeDaemonWork.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zip\unzip.h">
+      <Filter>zip</Filter>
+    </ClInclude>
+    <ClInclude Include="zip\zip.h">
+      <Filter>zip</Filter>
+    </ClInclude>
+    <ClInclude Include="UpdateRepire.h">
+      <Filter>update</Filter>
+    </ClInclude>
+    <ClInclude Include="RepireInstance.h">
+      <Filter>update</Filter>
+    </ClInclude>
+    <ClInclude Include="BindDownloadCallback.h">
+      <Filter>update</Filter>
+    </ClInclude>
+    <ClInclude Include="RemoteCtrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PopAdvCtrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UserToken.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDK\Flog\FileLog.h">
+      <Filter>Flog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDK\http\Common.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDK\http\Constants.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDK\http\Http.h">
+      <Filter>http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDK\http\Network.h">
+      <Filter>http</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LeDaemonWork.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zip\unzip.cpp">
+      <Filter>zip</Filter>
+    </ClCompile>
+    <ClCompile Include="zip\zip.cpp">
+      <Filter>zip</Filter>
+    </ClCompile>
+    <ClCompile Include="UpdateRepire.cpp">
+      <Filter>update</Filter>
+    </ClCompile>
+    <ClCompile Include="RepireInstance.cpp">
+      <Filter>update</Filter>
+    </ClCompile>
+    <ClCompile Include="BindDownloadCallback.cpp">
+      <Filter>update</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoteCtrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PopAdvCtrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SDK\Flog\FileLog.cpp">
+      <Filter>Flog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SDK\http\Constants.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SDK\http\Http.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SDK\http\Network.cpp">
+      <Filter>http</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
