@@ -71,7 +71,7 @@
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>..\Release\run</OutDir>
+    <OutDir>..\Installer\app\run</OutDir>
     <LinkIncremental>true</LinkIncremental>
     <TargetName>lmp</TargetName>
   </PropertyGroup>

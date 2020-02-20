@@ -1,0 +1,12 @@
+prefix=
+exec_prefix=
+libdir=${pcfiledir}/../../../lib
+includedir=
+
+Name: lib
+Description: 
+Version: 
+Requires: 
+Conflicts:
+Libs: -L${libdir} -Wl,-rpath,${libdir} -l 
+Cflags: -I${includedir}
