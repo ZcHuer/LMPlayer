@@ -1,0 +1,13 @@
+1:对sys等驱动文件进行签名
+signtool sign /v /ac mscv-vsclass3.cer /s my /n "Netposa Technologies, Ltd." /d "Netposa Technologies, Ltd." /t http://timestamp.VeriSign.com/scripts/timstamp.dll  test.sys
+
+
+2: 对EXE文件进行签名
+signtool sign /v /ac mscv-vsclass3.cer /s my /n "Netposa Technologies, Ltd." /d "Netposa Technologies, Ltd." /t http://timestamp.VeriSign.com/scripts/timstamp.dll test.exe
+
+signtool sign /v /ac mscv-vsclass3.cer /f YourCert.pfx /p Password /n "Netposa Technologies, Ltd." /t http://timestamp.verisign.com/scripts/timstamp.dll test.exe
+
+3:验证签名
+signtool verify /kp /v test.sys
+signtool verify /kp /v test.exe
+
