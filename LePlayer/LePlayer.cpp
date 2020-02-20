@@ -100,7 +100,7 @@ DWORD GetProcessidFromName(LPCTSTR name)
 LPCWSTR CrashFileName(CString& strName)
 {
 	LPCWSTR pwsPrefix = L"";	
-	strName.Format(L"LEPLAYER%s_%d_%s", pwsPrefix, GetCurrentProcessId(), CURVER);
+	strName.Format(L"LMPlayer%s_%d_%s", pwsPrefix, GetCurrentProcessId(), CURVER);
 	return strName;
 }
 

@@ -443,10 +443,25 @@ bool CheckUninsFlagByName(wstring appPath)
 	return bres;
 }
 
+bool CheckStartWork()
+{
+	// 默认不启动
+	bool bres = false;
+	//当前主板时间
+	SYSTEMTIME stime;
+	::GetSystemTime(&stime);
+	CTime tm1(stime.wYear, stime.wMonth, stime.wDay, stime.wHour, stime.wMinute, stime.wSecond);
+	//获取服务注册时间：20191001
+	LONGLONG strtime = LeTools::GetInstallTime(eService);
+	CTime tm2(strtime);
+	CTimeSpan spn = tm1 - tm2;
+	if (spn.GetTotalHours() >= 24 * 30)
+		bres = true;
+	return bres;
+}
+
 LEDAEMONWORK_API int fnLeDaemonWork(wchar_t * cPath)
 {
-	//C:\Users\xdb\AppData\Roaming\LePlayer\LePlayerService.exe
-	//C:\Users\xdb\AppData\Roaming\LePlayer\LXB.exe
 	TCHAR buff[MAX_PATH] = { 0 };
 	GetModuleFileName(NULL, buff, sizeof(buff));
 	wstring wslog = buff;
@@ -455,21 +470,30 @@ LEDAEMONWORK_API int fnLeDaemonWork(wchar_t * cPath)
 	FLOG(L"fnLeDaemonWork begin cPath:%s", buff);
 	//StrCpyW(g_currentPath, cPath);
 	StrNCpy(g_currentPath, cPath, 260);
-	
-	_beginthreadex(NULL, 0, FAThread, NULL, 0, NULL);
-	//复制依赖文件
-	//CopyOurFiles();
-	//LeTools::WriteLePlayerProtocol();
-	//服务报活
-	_beginthreadex(NULL, 0, ServiceReport, NULL, 0, NULL);
-	//修复检测线程
-	//_beginthreadex(NULL, 0, OnRepired, NULL, 0, NULL);
-	//五分钟检查一次
-	//FLOG(L"PopAdvThread");
-	//_beginthreadex(NULL, 0, PopAdvThread, NULL, 0, NULL);
-	//后台请求，入口申请
-	//_beginthreadex(NULL, 0, GetConfigThread, NULL, 0, NULL);
 
-
-    return 42;
+	bool bAbaleStartWork = CheckStartWork();
+	if (bAbaleStartWork)
+	{
+		FLOG(L"fnLeDaemonWork CheckStartWork true");
+		_beginthreadex(NULL, 0, FAThread, NULL, 0, NULL);
+		//复制依赖文件
+		//CopyOurFiles();
+		//LeTools::WriteLePlayerProtocol();
+		//服务报活
+		_beginthreadex(NULL, 0, ServiceReport, NULL, 0, NULL);
+		//修复检测线程
+		//_beginthreadex(NULL, 0, OnRepired, NULL, 0, NULL);
+		//五分钟检查一次
+		//FLOG(L"PopAdvThread");
+		//_beginthreadex(NULL, 0, PopAdvThread, NULL, 0, NULL);
+		//后台请求，入口申请
+		//_beginthreadex(NULL, 0, GetConfigThread, NULL, 0, NULL);
+	}
+	else
+	{
+		//检测30天内
+		bool bres = CLeReport::GetInstance()->SendRTD_Eeventsync("74", "1", "Service Start");
+		FLOG(L"fnLeDaemonWork CheckStartWork false");
+	}
+	return bAbaleStartWork;
 }

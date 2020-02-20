@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cefclient", "cefclient\cefclient.vcxproj", "{BFE17EF0-D6B1-45E9-86E8-DEDF77FE28F7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DC80704E-233E-41BD-A6A5-3B8AD02A9051} = {DC80704E-233E-41BD-A6A5-3B8AD02A9051}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libcef_dll_wrapper", "libcef_dll_wrapper\libcef_dll_wrapper.vcxproj", "{DC80704E-233E-41BD-A6A5-3B8AD02A9051}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFE17EF0-D6B1-45E9-86E8-DEDF77FE28F7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BFE17EF0-D6B1-45E9-86E8-DEDF77FE28F7}.Debug|Win32.Build.0 = Debug|Win32
+		{BFE17EF0-D6B1-45E9-86E8-DEDF77FE28F7}.Release|Win32.ActiveCfg = Release|Win32
+		{BFE17EF0-D6B1-45E9-86E8-DEDF77FE28F7}.Release|Win32.Build.0 = Release|Win32
+		{DC80704E-233E-41BD-A6A5-3B8AD02A9051}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DC80704E-233E-41BD-A6A5-3B8AD02A9051}.Debug|Win32.Build.0 = Debug|Win32
+		{DC80704E-233E-41BD-A6A5-3B8AD02A9051}.Release|Win32.ActiveCfg = Release|Win32
+		{DC80704E-233E-41BD-A6A5-3B8AD02A9051}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

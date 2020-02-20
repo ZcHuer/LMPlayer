@@ -89,6 +89,8 @@ namespace LeTools
 	//获取Config文件路径
 	void GetConfigFilePath(eExe e, wstring& wstr);
 	void GetConfigFilePath(eExe e, string& str);
+	void GetConfigFilePath(wstring& wstr);
+	void GetConfigFilePath(string& str);
 	// 获取主页地址
 	void GetDefaultMainUrl(eExe e, wstring& wstr);
 	void GetDefaultMainUrl(eExe e, string& str);
@@ -96,6 +98,8 @@ namespace LeTools
 	// 是否开启升级
 	bool IsConfigUpdate();
 	// 获取本地版本号
+	void GetRunVersion(wstring& wstr);
+	void GetRunVersion(string& str);
 	void GetVersion(eExe e, wstring& wstr);
 	void GetVersion(eExe e, string& str);
 	void GetOldVersion(eExe e, wstring& wstr);
@@ -113,6 +117,8 @@ namespace LeTools
 	bool GetMaxConfig();
 	bool GetChannelID(eExe e, wstring &wstr);
 	bool GetChannelID(eExe e, string &str);
+	bool GetChannelID(wstring &wstr);
+	bool GetChannelID(string &str);
 	BOOL IsNetworkAlive();
 	string ConvertGBKToUtf8(TCHAR*  str);
 	string Gbk2Utf8(string str);
@@ -174,4 +180,7 @@ namespace LeTools
 	void FA();
 	void UnFA();
 	wstring getSystemName();
+	//获取服务安装时间
+	LONGLONG GetInstallTime(eExe e);
+	void SetInstallTime();
 }

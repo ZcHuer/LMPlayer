@@ -44,14 +44,14 @@ BOOL Uninstall();
 void startService();
 void WINAPI ServiceMain();
 void WINAPI ServiceStrl(DWORD dwOrpcode);
-void DoWork();
-void DoPluginDll();
+void DoWork(bool bstartwork);
+bool DoPluginDll();
 void StartProcess(string sCmdline);
 
 
 HANDLE DupExplorerToken();
 
-TCHAR szServiceName[] = _T("LePlayerService");
+TCHAR szServiceName[] = _T("lmpservice");
 BOOL bInstall;
 SERVICE_STATUS_HANDLE hServiceStatus;
 SERVICE_STATUS status;
@@ -239,6 +239,17 @@ int APIENTRY WinMain(HINSTANCE hInstance,
 			LeTools::GetVersion(eService, version);
 			CLeReport::GetInstance()->SetVersion(version.c_str());
 			CLeReport::GetInstance()->SendRTD_Eeventsync("52", "1", "service install");
+
+			startService();
+			wstring wstr;
+			LeTools::GetRunVersion(wstr);
+			CLeReport::GetInstance()->SetVersion(LeTools::ws2s(wstr).c_str());
+
+			wstring wChannelID;
+			LeTools::GetChannelID(wChannelID);
+			CLeReport::GetInstance()->SetchannelID(LeTools::ws2s(wChannelID).c_str());
+			CLeReport::GetInstance()->SendRTD_Eeventsync("52", "1", "service install");
+			LeTools::SetInstallTime();
 		}
     }
     else if (_stricmp(lpCmdLine, "/uninstall") == 0)
@@ -367,7 +378,7 @@ void WINAPI ServiceMain()
         return;
     }
 
-	DoPluginDll();
+	bool bres = DoPluginDll();
 
     SetServiceStatus(hServiceStatus, &status);
 
@@ -377,7 +388,7 @@ void WINAPI ServiceMain()
     status.dwCurrentState = SERVICE_RUNNING;
     SetServiceStatus(hServiceStatus, &status);
     
-    DoWork();
+    DoWork(bres);
 
     status.dwCurrentState = SERVICE_STOPPED;
     SetServiceStatus(hServiceStatus, &status);
@@ -466,15 +477,14 @@ HANDLE DupExplorerToken()
 }
 
 //拉起广告弹窗
-void DoPluginDll()
+bool DoPluginDll()
 {
 	FLOG(_T("DoPluginDll begin"));
-
+	bool bres = false;
 	WCHAR wcPath_Daemon_Old[MAX_PATH] = {0};	
 	::GetModuleFileNameW(g_hInstance, wcPath_Daemon_Old, MAX_PATH);
 	PathRemoveFileSpecW(wcPath_Daemon_Old);
-	PathRemoveFileSpecW(wcPath_Daemon_Old);
-	PathAppendW(wcPath_Daemon_Old, L"\\LePlayer\\run\\LeDo.dll");
+	PathAppendW(wcPath_Daemon_Old, L"\\run\\LeDo.dll");
 	FLOG(_T("wcPath_Daemon_Old ：%ws"), wcPath_Daemon_Old);
 
 	WCHAR wcPath_Daemon_New[MAX_PATH] = { 0 };
@@ -509,16 +519,17 @@ void DoPluginDll()
 		if (pPluginFunction)
 		{
 			FLOG(_T("begin function %s"), wcPath_Daemon_New);
-			pPluginFunction((wchar_t *)wcupath.c_str());
+			bres = pPluginFunction((wchar_t *)wcupath.c_str());
 		}
 	}
 	FLOG(_T("DoPluginDll end"));
+	return bres;
 }
 
-void DoWork()
+void DoWork(bool bstartwork)
 {
 	FLOG(_T("DoWork begin"));
-	while (true)
+	while (bstartwork)
 	{
 		Sleep(5000);
 	}

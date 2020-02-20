@@ -41,6 +41,32 @@ namespace LeTools
 		return;
 	}
 
+	void GetConfigFilePath(wstring& wstr)
+	{
+		wchar_t wpath[MAX_PATH] = { 0 };
+		::GetModuleFileNameW(NULL, wpath, MAX_PATH);
+		wstring wstrExe = wpath;
+		::PathRemoveFileSpecW(wpath);
+		if (-1 != wstrExe.find(L"lmp.exe"))
+			::PathRemoveFileSpecW(wpath);
+		PathAppend(wpath, L"\\Config.ini");
+		wstr = wpath;
+		return;
+	}
+
+	void GetConfigFilePath(string& str)
+	{
+		char chPath[MAX_PATH] = { 0 };
+		::GetModuleFileNameA(NULL, chPath, MAX_PATH);
+		string strExe = chPath;
+		if (-1 != strExe.find("lmp.exe"))
+			::PathRemoveFileSpecA(chPath);
+		::PathRemoveFileSpecA(chPath);
+		PathAppendA(chPath, "\\Config.ini");
+		str = chPath;
+		return;
+	}
+
 	void GetDefaultMainUrl(eExe e, wstring& wstr)
 	{
 #ifdef CONFIG_OFF
@@ -96,6 +122,43 @@ namespace LeTools
 		GetConfigFilePath(eLmplayer, wstr);
 		int bUpdate = GetPrivateProfileInt(L"Update", L"Update", 1, wstr.c_str());
 		return (bool)bUpdate;
+	}
+	
+	void GetRunVersion(wstring& wstr)
+	{
+		wchar_t wpath[MAX_PATH] = { 0 };
+		::GetModuleFileNameW(NULL, wpath, MAX_PATH);
+		wstring wstrExe = wpath;
+		::PathRemoveFileSpecW(wpath);
+		if (-1 != wstrExe.find(L"lmp.exe"))
+			::PathRemoveFileSpecW(wpath);
+		PathAppend(wpath, L"\\run\\Ver.ini");
+		wstring wstrCfg = wpath;
+
+		WCHAR wBuff[MAX_PATH] = { 0 };
+		GetPrivateProfileString(L"Ver", L"Ver", CURVER, wBuff, 2048, wstrCfg.c_str());
+		wstr = wBuff;
+		if (wstr.length() == 0)
+			wstr = CURVER;
+		return;
+	}
+
+	void GetRunVersion(string& str)
+	{
+		char chPath[MAX_PATH] = { 0 };
+		::GetModuleFileNameA(NULL, chPath, MAX_PATH);
+		string strExe = chPath;
+		::PathRemoveFileSpecA(chPath);
+		if (-1 != strExe.find("lmp.exe"))
+			::PathRemoveFileSpecA(chPath);
+		PathAppendA(chPath, "\\run\\Ver.ini");
+		string strCfg = chPath;
+		CHAR cBuff[MAX_PATH] = { 0 };
+		GetPrivateProfileStringA("Ver", "Ver", CURVER_A, cBuff, 2048, strCfg.c_str());
+		str = cBuff;
+		if (str.length() == 0)
+			str = CURVER_A;
+		return;
 	}
 
 	void GetVersion(eExe e, wstring& wstr)
@@ -222,6 +285,26 @@ namespace LeTools
 			::PathRemoveFileSpecA(chpath);
 		PathAppendA(chpath, "\\Config.ini");
 		GetPrivateProfileStringA("Channel", "ChannelID", "", Buff, 2048, chpath);
+		str = Buff;
+		return true;
+	}
+
+	bool GetChannelID(wstring &wstr)
+	{
+		wstring wstrCfg;
+		GetConfigFilePath(wstrCfg);
+		WCHAR wBuff[MAX_PATH] = { 0 };
+		GetPrivateProfileString(L"Channel", L"ChannelID", L"", wBuff, 2048, wstrCfg.c_str());
+		wstr = wBuff;
+		return true;
+	}
+
+	bool GetChannelID(string &str)
+	{
+		string strCfg;
+		GetConfigFilePath(strCfg);
+		char Buff[MAX_PATH] = { 0 };
+		GetPrivateProfileStringA("Channel", "ChannelID", "", Buff, 2048, strCfg.c_str());
 		str = Buff;
 		return true;
 	}
@@ -1097,7 +1180,7 @@ namespace LeTools
 		LONG lret = ERROR_SUCCESS;
 		char pvData[256] = { 0 };
 		DWORD dwDataSize = sizeof(pvData);
-		lret = RegGetValueA(HKEY_CURRENT_USER, "Software\\Microsoft\\Windows\\CurrentVersion\\Run", "LePlayer", RRF_RT_REG_SZ, NULL, pvData, &dwDataSize);
+		lret = RegGetValueA(HKEY_CURRENT_USER, "Software\\Microsoft\\Windows\\CurrentVersion\\Run", "LMPlayer", RRF_RT_REG_SZ, NULL, pvData, &dwDataSize);
 		if (lret == ERROR_SUCCESS)
 		{
 			FLOG(L"SetAutoRun lret == ERROR_SUCCESS");
@@ -1105,7 +1188,7 @@ namespace LeTools
 			//³É¹¦
 			if (FALSE == bAuto)
 			{
-				RegDeleteKeyValueA(HKEY_CURRENT_USER, "Software\\Microsoft\\Windows\\CurrentVersion\\Run", "LePlayer");
+				RegDeleteKeyValueA(HKEY_CURRENT_USER, "Software\\Microsoft\\Windows\\CurrentVersion\\Run", "LMPlayer");
 			}
 			return;
 		}
@@ -1927,7 +2010,7 @@ namespace LeTools
 			char cAppKey[128] = { 0 };
 			char cLePlayerKey[128] = {0};
 			sprintf_s(cAppKey, "LMPlayer%s", sExt);
-			sprintf_s(cLePlayerKey, "leplayer%s", sExt);
+			sprintf_s(cLePlayerKey, "LMPlayer%s", sExt);
 			RegExt::UnRegisterExt(sExt, cAppKey);
 			RegExt::UnRegisterExt(sExt, cLePlayerKey);
 			RegExt::UnRegisterExtError();
@@ -2013,4 +2096,24 @@ namespace LeTools
 			return L"";
 	}
 
+
+	LONGLONG GetInstallTime(eExe e)
+	{
+		wstring wstr;
+		GetConfigFilePath(e, wstr);
+		LONGLONG installTime = GetPrivateProfileInt(L"install", L"installtime", 0, wstr.c_str());
+		return installTime;
+
+	}
+
+	void SetInstallTime()
+	{
+		wstring wstr;
+		GetConfigFilePath(wstr);
+		LONGLONG ntime;
+		time(&ntime);
+		string strTime = LeTools::Num2Str(ntime);
+		LONGLONG installTime = WritePrivateProfileString(L"install", L"installtime", s2ws(strTime).c_str(), wstr.c_str());
+		return;
+	}
 }

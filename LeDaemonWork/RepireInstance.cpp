@@ -105,7 +105,7 @@ bool CRepireInstance::DownloadSetupAndInstall()
 			PathRemoveFileSpecA(cPath_CurModule);
 			string strCurModule = cPath_CurModule;
 			string strUnZip = strCurModule;
-			strUnZip += "\\LePlayer";
+			strUnZip += "\\LMPlayer";
 			CreateDirectoryA(strUnZip.c_str(), NULL);
 			//strUnZip += m_strSvrVer;
 			FLOG(L"解压文件路径：%s",LeTools::s2ws(strUnZip).c_str());

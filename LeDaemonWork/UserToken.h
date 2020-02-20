@@ -161,35 +161,3 @@ void WriteAppCurrentReg(string path)
 	if (NULL != hToken)
 		CloseHandle(hToken);
 }
-
-void CheckAppPath()
-{
-	bool bres = FALSE;
-	WCHAR wcPath[MAX_PATH] = { 0 };
-	::GetModuleFileNameW(NULL, wcPath, MAX_PATH);
-	PathRemoveFileSpecW(wcPath);
-
-	wstring wPath = wcPath;
-	wPath += L"\\LMPlayer.exe";
-	//PathAppendW(wcPath, L"\\LMPlayer.exe");
-	string appPath = "";
-
-	if (PathFileExists(wPath.c_str()))
-	{
-		//老版本
-		FLOG(L"老版本：%s", wPath);
-		appPath = LeTools::ws2s(wPath);
-	}
-	else
-	{
-		//新版本 
-		PathRemoveFileSpecW(wcPath);
-		PathAppendW(wcPath, L"\\LePlayer\\LMPlayer.exe");
-		wPath = wcPath;
-		FLOG(L"新版本：%s", wPath);
-		appPath = LeTools::ws2s(wPath);
-	}
-	WriteAppCurrentReg(appPath);
-	return;
-
-}
