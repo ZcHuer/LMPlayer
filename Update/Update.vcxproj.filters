@@ -36,9 +36,6 @@
     <ClInclude Include="UpdateInstance.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="QwBase.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="BindDownloadCallback.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -60,6 +57,9 @@
     <ClInclude Include="..\SDK\http\Network.h">
       <Filter>http</Filter>
     </ClInclude>
+    <ClInclude Include="..\SDK\Flog\FileLog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -72,9 +72,6 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="UpdateInstance.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="QwBase.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="BindDownloadCallback.cpp">
@@ -94,6 +91,9 @@
     </ClCompile>
     <ClCompile Include="..\SDK\http\Network.cpp">
       <Filter>http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SDK\Flog\FileLog.cpp">
+      <Filter>头文件</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

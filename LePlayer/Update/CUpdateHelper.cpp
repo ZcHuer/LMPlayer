@@ -49,6 +49,7 @@ bool CUpdatehelper::CheckUpdate()
 	if (false == LeTools::IsConfigUpdate())
 	{
 		m_bUpdateWork = false;
+		FLOG(L"升级配置关闭，退出升级")
 		return false;
 	}
 
@@ -56,6 +57,7 @@ bool CUpdatehelper::CheckUpdate()
 	if (false == GetUpdateInfo())
 	{
 		m_bUpdateWork = false;
+		FLOG(L"获取升级信息失败，退出升级")
 		return false;
 	}
 
@@ -67,6 +69,7 @@ bool CUpdatehelper::CheckUpdate()
 	if (!bNeedUpdate)
 	{
 		m_bUpdateWork = false;
+		FLOG(L"无新版本，退出升级")
 		return false;
 	}
 
@@ -91,6 +94,7 @@ bool CUpdatehelper::ManualCheck()
 	// 获取升级配置
 	if (false == GetUpdateInfo())
 	{
+		FLOG(L"获取升级信息失败，退出升级")
 		m_bUpdateWork = false;
 		return false;
 	}
@@ -159,13 +163,22 @@ bool CUpdatehelper::GetUpdateInfo()
 }
 
 bool CUpdatehelper::IsNewVersion(const char * version_Net, const char * version_Local)
-{
+{	
 	string strversion_Net = version_Net;
 	string strversion_Local = version_Local;
+	FLOG(L"比较版本号")
+	FLOG(LeTools::s2ws(version_Net).c_str())
+	FLOG(LeTools::s2ws(version_Local).c_str())
 	if (strversion_Net.empty())
+	{
+		FLOG(L"服务端返回版本号为空，退出升级")
 		return false;
+	}		
 	if (strversion_Local.empty())
+	{
+		FLOG(L"本地版本号为空，退出升级")
 		return true;
+	}		
 
 	size_t pos = 0;
 	int number_Net = 0;

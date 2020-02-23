@@ -2,9 +2,10 @@
 #include "stdafx.h"
 #include "Update.h"
 #include "UpdateInstance.h"
-#include "QwBase.h"
 #include "../include/json/json.h"
 #include "../SDK/http/Http.h"
+#include "../SDK/Flog/FileLog.h"
+#include "../include/LeTools.h"
 using namespace LeConnect;
 
 CUpdateInstance g_Update;
@@ -28,25 +29,30 @@ bool CUpdate::IsDownLoading()
 
 bool CUpdate::GetUpdateConfig(sUpdateInfo& sInfo)
 {
+	FLOG(L"GetUpdateConfig")
 	bool bSucc = false;
 	wstring wsUrl = BASE_URL;
 	wsUrl.append(L"tvSign=lenovo_win_lmp");
 	wsUrl.append(L"&sn=");
-	string strMac = QwBase::GetMacString();
-	wsUrl.append(QwBase::s2ws(strMac));
+	string strMac = LeTools::GetMacString();
+	wsUrl.append(LeTools::s2ws(strMac));
 	HttpRequest req(wsUrl.c_str(), NULL, NULL);
 	bSucc = req.doGet();
 
 	if (bSucc)
 	{
-		string sData = req.getStream().str();
-		sData = QwBase::ConvertUtf8ToGBK(sData);
+		//FLOG(L"获取升级信息成功")
+		string sData = req.getStream().str();		
+		sData = LeTools::ConvertUtf8ToGBK(sData);
+		//FLOG(LeTools::s2ws(sData).c_str())
 		Json::Reader jr;
 		Json::Value jv;
 		if (jr.parse(sData, jv))
 		{
+			//FLOG(L"解析升级信息成功")
 			if (jv["code"].asInt() == 200)
 			{
+				//FLOG(L"升级返回code 200")
 				Json::Value jvData = jv["data"][0];
 
 				sInfo.appLoadUrl = jvData["appLoadUrl"].asString();

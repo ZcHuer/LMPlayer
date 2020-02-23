@@ -4,8 +4,8 @@
 #include "zip\unzip.h"
 #include "Update.h"
 #include <thread>
-#include "QwBase.h"
 #include <corecrt_io.h>
+#include "LeTools.h"
 
 #pragma comment(lib,"urlmon.lib")
 #pragma comment(lib,"WinInet.lib")
@@ -164,7 +164,7 @@ bool CUpdateInstance::UnZipToPath(const char* filePath, std::string strUnzip)
 		}
 
 		string str = filePath;
-		wstring wstr = QwBase::s2ws(str);
+		wstring wstr = LeTools::s2ws(str);
 		BOOL resultCurrent = SetCurrentDirectoryA(strUnzip.c_str());
 		HZIP hz = OpenZip(wstr.c_str(), NULL);
 		ZIPENTRY ze;

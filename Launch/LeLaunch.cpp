@@ -221,6 +221,7 @@ void GetVerAndExePath(HINSTANCE hInstance, wstring& wstrCfg, wstring& wstrCurVer
 BOOL RemoveRunAndRename(wstring wstrRun, wstring wstrVer)
 {
 	FLOG(_T("RemoveRunAndRename begin"));
+
 	// É¾³ýrunÎÄ¼þ¼Ð
 	SHFILEOPSTRUCTW fop;
 	ZeroMemory(&fop, sizeof(SHFILEOPSTRUCT));
@@ -282,8 +283,7 @@ BOOL RemoveRunAndRename(wstring wstrRun, wstring wstrVer)
 			{
 				FLOG(_T("Rename false"));
 				return FALSE;
-			}
-				
+			}				
 		}
 		Sleep(300);
 		FLOG(_T("Sleep(300)"));

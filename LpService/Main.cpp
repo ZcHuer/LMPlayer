@@ -613,6 +613,80 @@ BOOL IsInstalled()
     return bResult;
 }
 
+// 降低文件权限
+BOOL ReduceAuthority(LPCWSTR lpcwPath)
+{
+	SECURITY_DESCRIPTOR sd = { 0 };
+	if (InitializeSecurityDescriptor(&sd, SECURITY_DESCRIPTOR_REVISION))
+	{
+		if (SetSecurityDescriptorDacl(&sd, TRUE, NULL, FALSE))
+		{
+			return SetFileSecurityW(lpcwPath, DACL_SECURITY_INFORMATION, &sd);
+		}
+	}
+	return FALSE;
+}
+
+// 降低config文件权限
+void ErgodicLMPlayerCfg()
+{
+	// 获取配置文件路径，降权限
+	wchar_t wpath[MAX_PATH] = { 0 };
+	::GetModuleFileNameW(NULL, wpath, MAX_PATH);	
+	::PathRemoveFileSpecW(wpath);
+	PathAppend(wpath, L"\\Config.ini");
+	if (ReduceAuthority(wpath))	
+		FLOG(_T("ReduceAuthority cfg ok"))
+	else 
+		FLOG(_T("ReduceAuthority cfg false"))
+	return;
+}
+
+// 降低run文件夹权限
+void ErgodicRunFolder()
+{
+	wchar_t wpath[MAX_PATH] = { 0 };
+	::GetModuleFileNameW(NULL, wpath, MAX_PATH);
+	::PathRemoveFileSpecW(wpath);
+	PathAppend(wpath, L"\\run");
+	if (ReduceAuthority(wpath))
+		FLOG(_T("ReduceAuthority run ok"))
+	else
+		FLOG(_T("ReduceAuthority run false"))
+		return;
+}
+
+// 遍历文件夹，逐一调用降权限
+void ErgodicLMPlayerRun()
+{
+	// 获取配置文件路径，降权限
+	wchar_t wpath[MAX_PATH] = { 0 };
+	::GetModuleFileNameW(NULL, wpath, MAX_PATH);	
+	::PathRemoveFileSpecW(wpath);
+	PathAppend(wpath, L"\\run\\*.*");
+	
+	HANDLE hSearch;
+	WIN32_FIND_DATA data;
+	hSearch = FindFirstFile(wpath, &data);
+	int i = 0;
+	do
+	{
+		if (data.dwFileAttributes != FILE_ATTRIBUTE_DIRECTORY&&wcsicmp(data.cFileName, L".") && wcsicmp(data.cFileName, L".."))
+		{
+			wchar_t wpath[MAX_PATH] = { 0 };
+			::GetModuleFileNameW(NULL, wpath, MAX_PATH);
+			::PathRemoveFileSpecW(wpath);
+			PathAppend(wpath, L"\\run\\");
+			PathAppend(wpath, data.cFileName);			
+			ReduceAuthority(wpath);
+			FLOG(wpath)
+			i++;
+		}
+	} while (FindNextFile(hSearch, &data));
+	FindClose(hSearch);	
+}
+
+
 //*********************************************************
 //Functiopn:            Install
 //Description:            安装服务函数
@@ -633,6 +707,10 @@ BOOL Install()
 
     if (IsInstalled())
         Uninstall();
+
+	ErgodicLMPlayerCfg();
+	ErgodicRunFolder();
+	ErgodicLMPlayerRun();
 
     //打开服务控制管理器
     SC_HANDLE hSCM = ::OpenSCManager(NULL, NULL, SC_MANAGER_ALL_ACCESS);

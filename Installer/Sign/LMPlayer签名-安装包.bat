@@ -1,1 +1,1 @@
-signtool sign /f lenovogame.pfx /p 800300 /t http://timestamp.globalsign.com/scripts/timstamp.dll /fd sha256 ../LMPlayer/LMPlayer_official.exe
+signtool sign /f lenovogame.pfx /p 800300 /t http://timestamp.globalsign.com/scripts/timstamp.dll /fd sha256 ../../Installer/LMPlayer_official.exe
