@@ -2,8 +2,8 @@
   <root cache="1" skin="skin_aboutbg">
     <window pos="15,15,-15,-15">
       <imgbtn1 name="btn_close" pos="-17,12" offset="-1,0" skin="abs_close2" focusSkin="abs_close1"/>	  
-	  <text name="version" pos="|0,183" offset="-0.5,0" colorText="#444444" font="size:20">版本号：0.91.10</text>
-      <text pos="|0,[10" offset="-0.5,0" colorText="#444444" font="size:16">Copyright© 2016-2020 联想（北京）有限公司</text>
+	  <text name="version" pos="|0,183" offset="-0.5,0" colorText="#FFFFFF" font="size:20">版本号：0.91.10</text>
+      <text pos="|0,[10" offset="-0.5,0" colorText="#FFFFFF" font="size:16">Copyright© 2016-2020 联想（北京）有限公司</text>
     </window>
  
   </root>
