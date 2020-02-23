@@ -393,7 +393,7 @@ NSISAPI InitDUISetup( HWND hwndParent, int string_size, char *variables, stack_t
 	
         popstring(pszName);
        // g_pMainDlg->SetLicenseFilePath(pszName);
-		g_pMainDlg->Create(NULL, _T("联想视频"), UI_WNDSTYLE_FRAME, WS_EX_STATICEDGE | WS_EX_APPWINDOW, 0, 0, 600, 800);
+		g_pMainDlg->Create(NULL, _T("LMPlayer"), UI_WNDSTYLE_FRAME, WS_EX_STATICEDGE | WS_EX_APPWINDOW, 0, 0, 600, 800);
 		//g_pMainDlg->m_pBackWnd->CenterWindow();
 
 		

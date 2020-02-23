@@ -57,7 +57,7 @@ bool CIrregularWindow::RegisterWindowClass()
 
 bool CIrregularWindow::Create()
 {
-	m_hWnd = ::CreateWindowEx(WS_EX_LAYERED, __className, _T("ÁªÏëÊÓÆµ"),WS_OVERLAPPEDWINDOW,
+	m_hWnd = ::CreateWindowEx(WS_EX_LAYERED, __className, _T("LMPlayer"),WS_OVERLAPPEDWINDOW,
 		CW_USEDEFAULT, CW_USEDEFAULT, 
 		CW_USEDEFAULT, CW_USEDEFAULT, 
 		NULL, NULL, (HINSTANCE)::GetModuleHandle(NULL), 0);

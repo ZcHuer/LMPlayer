@@ -4,7 +4,7 @@
 !define EXE_NAME               "LMPlayer.exe" 
 !define EXE_FILENAME 		   "LMPlayer.exe"
 !define INST_SUBDIR            "" 
-!define PRODUCT_VERSION        "2.0.2.3" 
+!define PRODUCT_VERSION        "2.0.2.6" 
 !define PRODUCT_PUBLISHER      "LMPlayer" 
 !define PRODUCT_LEGAL          "Copyright (C) 1998-2020 Lenovo, All Rights Reserved" 
 !define CONFIGINI_NAME_PRE     "info"
