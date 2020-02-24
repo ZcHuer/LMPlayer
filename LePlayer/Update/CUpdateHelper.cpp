@@ -40,6 +40,7 @@ CUpdatehelper::~CUpdatehelper()
 
 bool CUpdatehelper::CheckUpdate()
 {
+	//return false;
 	if (m_bUpdateWork)
 		return false;
 

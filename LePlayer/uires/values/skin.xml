@@ -275,7 +275,7 @@
   <imglist name="menu_sep" src="MenuSkin:sep" states="1"/>
   <imglist name="menu_check" src="MenuSkin:check" states="2"/>
   <gif name="gif_loading" src="GIF:gif_loading"/>
-  <gif name="gif_Installing" src="GIF:gif_Installing"/>
+  <!--gif name="gif_Installing" src="GIF:gif_Installing"/-->
   <!--msgbox-->
   <imglist name="msgbk" src="Msgbox:msgbk"/>
   <imglist name="MsgCancel1" src="Msgbox:MsgCancel1"/>

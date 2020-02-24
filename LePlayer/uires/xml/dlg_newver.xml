@@ -1,12 +1,11 @@
 ﻿<SOUI name="lenovo.update" title="LMPlayer升级" bigIcon="ICON_LOGO:32" smallIcon="ICON_LOGO:16"
-      width="420" height="300" resizable="0" appWnd="0" toolWindow="1" translucent="1">
+      width="232" height="133" resizable="0" appWnd="0" toolWindow="1" translucent="1">
   <root skin="skin_img_background" cache="1">
     <window name="updated" pos="15,15,-15,-15" show="1">
-	  <caption pos="0,0,-0,36">
-	  	<imgbtn1 name="btn_close" pos="-20,|0" offset="-1,-0.5" skin="abs_close2" focusSkin="abs_close1" cursor="hand"/>
+	  <caption pos="0,0,-0,6">
+	  	<imgbtn1 name="btn_close" pos="-0,|0" offset="-0.5,-0.5" skin="abs_close2" focusSkin="abs_close1" cursor="hand" tip="关闭"/>		
 	  </caption>
-      <text pos="|0,195" colorText="#FFFFFF" font="size:16" offset="-0.5,0" >当前版本已是最新</text>
-	  <imgbtn1 name="btn_cancel" pos="|0,-14" offset="-0.5,-1" skin="cb_save1" focusSkin="cb_save2" tip="确定" cursor="hand"/>
+      <text pos="|0,80" colorText="#EEEEEE" font="size:14" offset="-0.5,0" >当前为最新版本</text>
     </window>
   </root>
 </SOUI>

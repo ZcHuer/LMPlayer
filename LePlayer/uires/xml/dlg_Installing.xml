@@ -3,7 +3,7 @@
     <caption pos="0,0,-0,-0">
     </caption>
     <window name="installing" pos="0,0,-0,-0" show="1">
-		 <gifplayer pos="0,0" skin="gif_Installing" show="1" name="gif_installing" bloop="1"/>
+      <!-->gifplayer pos="0,0" skin="gif_Installing" show="1" name="gif_installing" bloop="1"/-->
     </window>
   </root>
 </SOUI>

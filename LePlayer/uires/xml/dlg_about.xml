@@ -1,10 +1,13 @@
-﻿<SOUI name="MSGWND" title="关于" width="410" height="290" minsize="410,290" resizable="0" appWnd="0" translucent="1">
-  <root cache="1" skin="skin_aboutbg">
-    <window pos="15,15,-15,-15">
-      <imgbtn1 name="btn_close" pos="-17,12" offset="-1,0" skin="abs_close2" focusSkin="abs_close1"/>	  
-	  <text name="version" pos="|0,183" offset="-0.5,0" colorText="#FFFFFF" font="size:20">版本号：0.91.10</text>
-      <text pos="|0,[10" offset="-0.5,0" colorText="#FFFFFF" font="size:16">Copyright© 2016-2020 联想（北京）有限公司</text>
-    </window>
- 
+﻿<SOUI name="MSGWND" title="关于LMPlayer" width="240" height="130" minsize="240,130" resizable="0" appWnd="0" translucent="0">
+  <root cache="1" colorBkgnd="#26262A">
+    <window pos="0,0,-0,-0">
+      <imgbtn1 name="btn_close" pos="-20,6" skin="ng_close1" focusSkin="ng_close2"  tip="关闭"/>
+	  <text name="title" pos="|0,5" offset="-0.5,0" colorText="#CCCCCC" font="size:14">关于LMPlayer</text>
+	  <text name="version" pos="|0,40" offset="-0.5,0" colorText="#CCCCCC" font="size:12">版本号：0.91.10</text>
+      <text pos="|0,[3" offset="-0.5,0" colorText="#CCCCCC" font="size:12">Copyright© 2019-2020联想（北京）</text>
+	  <text pos="|0,[3" offset="-0.5,0" colorText="#CCCCCC" font="size:12">有限公司</text>	 
+      <link name="lnk_yinsi" pos="-190,105" colorText="#2A9CF5" font="size:12">《隐私声明》</link>      
+      <link name="lnk_kaiyuan" pos="-120,105" colorText="#2A9CF5" font="size:12">《开源组件许可》</link>
+    </window> 
   </root>
 </SOUI>

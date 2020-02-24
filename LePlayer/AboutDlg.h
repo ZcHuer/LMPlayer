@@ -11,10 +11,14 @@ public:
     BOOL DoModel();
 protected:
     void OnClose();
+	void OnLnkYinsi();//隐私协议
+	void OnLnkKaiyuan();//开源组件许可
 
     //soui消息
     EVENT_MAP_BEGIN()
         EVENT_NAME_COMMAND(L"btn_close", OnClose)
+		EVENT_NAME_COMMAND(L"lnk_yinsi", OnLnkYinsi)
+		EVENT_NAME_COMMAND(L"lnk_kaiyuan", OnLnkKaiyuan)
         EVENT_MAP_END()
 
     //HostWnd真实窗口消息处理

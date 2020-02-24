@@ -99,3 +99,13 @@ void CAboutDlg::OnClose()
     PostMessage(WM_QUIT);
 }
 
+void CAboutDlg::OnLnkYinsi()
+{
+	ShellExecute(NULL, L"open", L"iexplore.exe", L"http://sta.vgs.lenovo.com.cn/privacy2.html", 0, SW_SHOW);
+}
+
+void CAboutDlg::OnLnkKaiyuan()
+{
+	ShellExecute(NULL, L"open", L"iexplore.exe", L"http://sta.vgs.lenovo.com.cn/notice.html", 0, SW_SHOW);
+}
+

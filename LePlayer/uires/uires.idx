@@ -379,7 +379,7 @@
   
   <GIF>
     <file name="gif_loading" path="image\loading.gif"/>
-    <file name="gif_Installing" path="image\Installing.gif"/>
+    <!---->file name="gif_Installing" path="image\Installing.gif"/-->
   </GIF>
   
   <List>

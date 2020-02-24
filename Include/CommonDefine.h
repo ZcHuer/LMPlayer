@@ -338,8 +338,8 @@ enum Web_wParam
 #define HEIGHT_TITLE			30
 
 #define HEIGHT_CTRBAR			46
-#define WIDTH_PLAYER_MINI		642
-#define HEIGHT_PLAYER_MINI		420
+#define WIDTH_PLAYER_MINI		500
+#define HEIGHT_PLAYER_MINI		280
 
 #define RECORD_SHOW				5
 
