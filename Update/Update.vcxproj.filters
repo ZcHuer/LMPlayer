@@ -42,9 +42,6 @@
     <ClInclude Include="zip\unzip.h">
       <Filter>zip</Filter>
     </ClInclude>
-    <ClInclude Include="zip\zip.h">
-      <Filter>zip</Filter>
-    </ClInclude>
     <ClInclude Include="..\SDK\http\Common.h">
       <Filter>http</Filter>
     </ClInclude>
@@ -78,9 +75,6 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="zip\unzip.cpp">
-      <Filter>zip</Filter>
-    </ClCompile>
-    <ClCompile Include="zip\zip.cpp">
       <Filter>zip</Filter>
     </ClCompile>
     <ClCompile Include="..\SDK\http\Constants.cpp">

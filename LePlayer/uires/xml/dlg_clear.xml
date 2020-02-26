@@ -1,14 +1,13 @@
-﻿<SOUI name="MSGWND" title="删除" width="410" height="230" resizable="0" appWnd="0" translucent="1">
+﻿<SOUI name="MSGWND" title="删除" width="260" height="130" resizable="0" appWnd="0" translucent="1">
   <root skin="msgbk" cache="1">
-    <window pos="15,15,-15,-15">
-      <caption pos="0,0,-0,40">
-        <text pos="14,|0" offset="0,-0.5" colorText="#444444" font="size:16">确认清空</text>
+    <window pos="0,0,-0,-0">
+      <caption pos="0,10,-0,16">        
         <imgbtn1 name="btn_close" pos="-10,|0" offset="-1,-0.5" skin="ng_close1" focusSkin="ng_close2"/>
       </caption>
       <window pos="0,[0,-0,-0">
-        <text pos="|0,32" offset="-0.5,0" colorText="#444444" font="size:16">确定清空所有播放记录？</text>
-        <imgbtn1 name="btn_cancel" pos="208,-45" offset="0,-1" skin="MsgCancel1" focusSkin="MsgCancel2"/>
-        <imgbtn1 name="btn_sure" pos="82,-45" offset="0,-1" skin="cb_save1" focusSkin="cb_save1"/>
+        <text pos="|0,26" offset="-0.5,0" colorText="#CCCCCC" font="size:16">确定清空所有播放记录？</text>
+        <imgbtn1 name="btn_cancel" pos="140,100" offset="0,-1" skin="MsgCancel1" focusSkin="MsgCancel2"/>
+        <imgbtn1 name="btn_sure" pos="20,100" offset="0,-1" skin="cb_save1" focusSkin="cb_save1"/>
       </window>
     </window>
   </root>
