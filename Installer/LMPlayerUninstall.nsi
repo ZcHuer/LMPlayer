@@ -151,7 +151,7 @@ FunctionEnd
 Section .init
 	IfSilent 0 +2
 	push "true"
-	call installSlient 
+	;call installSlient 
 	!insertmacro serverCfg
     ;MessageBox MB_OK|MB_ICONINFORMATION 'This is a "silent" installer'
 	;messagebox mb_ok $INSTDIR
@@ -334,10 +334,6 @@ ReadINIStr $vCTROLPANEL_UNINSTALL_NAME $vLangIDPath Installation CTROLPANEL_UNIN
 ReadINIStr $vun_exeisrunning $vLangIDPath Installation un_exeisrunning
 !macroend
 
-Function installSlient
-	;卸载脚本中不需要实现静默安装
-FunctionEnd
-
 Function un.DUIPage
 	!insertmacro serverCfg
 	!insertmacro ReadVersionCfgUnistall
@@ -496,7 +492,8 @@ Function un.OnShowPic2
 FunctionEnd
 
 Function un.btnUninstallFinished
-ExecShell open "https://sta.vgs.lenovo.com.cn/feedback.html"
+;ExecShell open "https://sta.vgs.lenovo.com.cn/feedback.html"
+ExecShell open "http://sta.vgs.lenovo.com.cn/lmplayer.html"
 nsDui::ExitDUISetup
 FunctionEnd
 Function un.OnRepire
@@ -1007,14 +1004,14 @@ Function un.DelShortcutContrlPanel
     SetShellVarContext current
 	
     Delete "$DESKTOP\$vDESKTOP_SHORTCUT_NAME.lnk"
-	Delete "$SMPROGRAMS\$vSHORTCUTSUBDIR\$vPROGRAM_SHUORTCUT_NAME.lnk"
+	Delete "$SMPROGRAMS\Lenovo\$vSHORTCUTSUBDIR\$vPROGRAM_SHUORTCUT_NAME.lnk"
     Delete "$SMPROGRAMS\$vSHORTCUTSUBDIR\$vCTROLPANEL_UNINSTALL_NAME.lnk"
     RMDir "$SMPROGRAMS\$vSHORTCUTSUBDIR"
     
 	SetShellVarContext All
 	
 	Delete "$DESKTOP\$vDESKTOP_SHORTCUT_NAME.lnk"
-	Delete "$SMPROGRAMS\$vSHORTCUTSUBDIR\$vPROGRAM_SHUORTCUT_NAME.lnk"
+	Delete "$SMPROGRAMS\Lenovo\$vSHORTCUTSUBDIR\$vPROGRAM_SHUORTCUT_NAME.lnk"
     Delete "$SMPROGRAMS\$vSHORTCUTSUBDIR\$vCTROLPANEL_UNINSTALL_NAME.lnk"
     RMDir "$SMPROGRAMS\$vSHORTCUTSUBDIR"
 	

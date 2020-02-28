@@ -91,7 +91,7 @@ bool CLeDB_Local::SelectLocalFileList(void** pVoid_Local, bool bLimit /*= false*
 	if (NULL == pDB)
 		return false;
 
-	string strSql = "select * from LocalFileList";
+	string strSql = "select * from LocalFileList order by rowid desc";
 	char* cErrMsg;
 	vector<sLocalFileItem*>* pVec_Local = new vector<sLocalFileItem *>;
 	int res = sqlite3_exec(pDB, strSql.c_str(), CLeDBInstance::LocalResult, pVec_Local, &cErrMsg);
