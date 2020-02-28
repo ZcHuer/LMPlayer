@@ -803,9 +803,10 @@ void CMainDlg::OnCommand(UINT uNotifyCode, int nID, HWND wndCtl)
 	}
 	case CMD_Feedback: //意见反馈
 	{
-		CLeReport::GetInstance()->SaveData_Count(ERD_COUNT_CLICK_MENU_FEEDBACK);
-		CFeedbackDlg dlg;
-		dlg.DoModel();
+		//CLeReport::GetInstance()->SaveData_Count(ERD_COUNT_CLICK_MENU_FEEDBACK);
+		//CFeedbackDlg dlg;
+		//dlg.DoModel();
+		ShellExecute(NULL, L"open", L"iexplore.exe", L"http://sta.vgs.lenovo.com.cn/lmplayer.html", 0, SW_SHOW);
 		break;
 	}
 	case CMD_Setting: //设置
@@ -980,6 +981,7 @@ LRESULT CMainDlg::OnIconNotify(UINT uMsg, WPARAM wParam, LPARAM lParam)
 		if (m_dlgPlayer->GetPlayerShowMode() == ePlayerWndMode_Nomal)
 		{
 			SendMessageW(WM_SYSCOMMAND, SC_RESTORE);
+			m_dlgPlayer->SendMessageW(WM_SYSCOMMAND, SC_RESTORE);
 			CLeReport::GetInstance()->SaveData_Count(ERD_COUNT_CLICK_TUOPAN);
 			CLeReport::GetInstance()->SendRTD_Eevent(RTD_RUNAPP, "1", "tray");
 			CUpdatehelper::GetInstance()->WhenLeplayerActivation();

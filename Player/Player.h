@@ -16,6 +16,7 @@
 #define SCALE_4X3			2
 #define SCALE_fill			3
 
+// 播放状态
 enum ePlayStatus
 {
 	ePS_Init,
@@ -26,6 +27,7 @@ enum ePlayStatus
 	ePS_Stoped
 };
 
+// 播放状态回调接口
 class IPlayerCallBack
 {
 public:
@@ -43,28 +45,28 @@ public:
 	~CPlayer();
 	bool CreatePlayer(HWND hWndParent, LPRECT lpRect);				// 创建播放器，内部启动线程
 	void AttachCallBack(IPlayerCallBack* pCallBack);				// 设置回调指针
-	ePlayStatus GetPlayStatus();
+	ePlayStatus GetPlayStatus();									// 得到播放状态
 	void ReWndSize(int nLeft, int nTop, int nRight, int nBottom);	// 调整窗口大小（向内偏移量）	
-	void OpenAndPlay(const char* pch);									// 播放相关-可外部调用	
-	void Play();
-	void Pause();
-	void Seek(LONGLONG dbPos);
-	void SetPlayRate(double dbRate);	
-	double GetPlayRate();
-	void SetVolume(int nVolume);
-	int GetVolume();
-	void SetMute(bool bMute);
-	bool GetMute();
-	void SetAudioChannel(int nChannel);
-	int GetAudioChannel();
-	bool SetVideoSize(long pWidth, long pHeight);
-	bool GetVideoSize(long *pWidth, long* pHeight);
-	void SetSubtitlefile(const char* lpPath);						//添加字幕
-	int GetSubtitleCount();											//获取可用字幕数量
-	void SetSubtitleSpu(unsigned nSpu);
-	int GetSubtitleSpu();
+	void OpenAndPlay(const char* pch);								// 播放相关-可外部调用	
+	void Play();													// 播放
+	void Pause();													// 暂停
+	void Seek(LONGLONG dbPos);										// Seek
+	void SetPlayRate(double dbRate);								// 设置播放速率
+	double GetPlayRate();											// 获取播放速率
+	void SetVolume(int nVolume);									// 设置音量
+	int GetVolume();												// 得到当前音量
+	void SetMute(bool bMute);										// 设置静音
+	bool GetMute();													// 获取是否静音
+	void SetAudioChannel(int nChannel);								// 设置音频声道
+	int GetAudioChannel();											// 得到音频声道
+	bool SetVideoSize(long pWidth, long pHeight);					// 设置视频尺寸
+	bool GetVideoSize(long *pWidth, long* pHeight);					// 得到视频尺寸
+	void SetSubtitlefile(const char* lpPath);						// 添加字幕
+	int GetSubtitleCount();											// 获取可用字幕数量
+	void SetSubtitleSpu(unsigned nSpu);								// 设置字幕速度
+	int GetSubtitleSpu();											// 得到字幕速度
 	void SetAspectRatio(int nScale);								// 设置屏幕纵横比
-	int GetAspectRatio();											//获取屏幕纵横比
-	void Stop();
-	void Quit();
+	int GetAspectRatio();											// 获取屏幕纵横比
+	void Stop();													// 停止
+	void Quit();													// 退出
 };
