@@ -1378,11 +1378,13 @@ void CPlayerDlg::OnOpenfloder(int nWnd)
     PostMessage(UM_RECHECK_TOP);
     SetForegroundWindow(m_hWnd);
 
+	wstring wstrName;
+	SStringT wsPath;
     if (pItem != NULL)
     {
         if (SHGetPathFromIDList(pItem, szPath))
         {
-            SStringT wsPath = szPath;
+			wsPath = szPath;
             wsPath += _T("\\*.*");
             HANDLE hSearch;
             WIN32_FIND_DATA data;
@@ -1406,7 +1408,7 @@ void CPlayerDlg::OnOpenfloder(int nWnd)
                     }
 
 					// 播放消息统一发给maindlg处理
-					wstring wstrName = wsPath;
+					wstrName = wsPath;
 					wstrName = wstrName.substr(wstrName.rfind(L"\\") + 1);
 					sPlayData* pData = new sPlayData;
 					pData->eSignal = eSignalType_OpenFile;
@@ -1418,13 +1420,8 @@ void CPlayerDlg::OnOpenfloder(int nWnd)
 					pData->nNum = 0;
 					pData->nTotal = 0;
 					pData->ifConsume = _T("2");
-					if (nWnd == 3 && ePS_Stoped != m_ePlayerStatus)
-						pData->bOnlyAddList = true;
-					else
-					{
-						pData->bOnlyAddList = (0 == i) ? false : true;
-					}
-
+					// 添加文件夹，就只是添加，不允许播放。等添加完毕之后，播放最后一个。
+					pData->bOnlyAddList = true;
 					::PostMessage(CMainDlg::g_hMainWnd, UM_PLAY, (WPARAM)pData, 0);
 
 					i++;
@@ -1436,6 +1433,21 @@ void CPlayerDlg::OnOpenfloder(int nWnd)
             CLeReport::GetInstance()->SendRTD_Eevent(RTD_ADDFILE, "1", "本地视频添加文件夹");
         }
     }
+
+	// 添加文件夹，就只是添加，不允许播放。等添加完毕之后，播放最后一个。
+	sPlayData* pData = new sPlayData;
+	pData->eSignal = eSignalType_OpenFile;
+	pData->eSrcType = eSourceType_Local;
+	pData->bNoHistory = false;
+	pData->strSource = wsPath;
+	pData->strName = wstrName.c_str();
+	pData->sRD.videoId = LeTools::ws2s(wstrName);
+	pData->nNum = 0;
+	pData->nTotal = 0;
+	pData->ifConsume = _T("2");	
+	pData->bOnlyAddList = false;
+	::PostMessage(CMainDlg::g_hMainWnd, UM_PLAY, (WPARAM)pData, 0);
+
 	return;
 }
 
@@ -2021,7 +2033,13 @@ BOOL CPlayerDlg::OnInitDialog(HWND wndFocus, LPARAM lInitParam)
 
     return 0;
 }
-
+/*
+	因为老板要求当前播放的文件在播放列表的最上边
+	所以，拖拽文件进来的时候，播放的文件，应该最后添加进播放列表。
+	可以借鉴打开文件夹的做法，修改这个函数。
+	首先遍历文件夹，然后无论是否需要播放，统一发送play消息给主窗口，由主窗口来添加播放列表并决定播放那一个文件。
+	随后再做，最近时间先处理更重要的事项。
+*/
 void CPlayerDlg::OnDropFiles(HDROP hDropInfo)
 {
     int nFiles = DragQueryFile(hDropInfo, -1, nullptr, 0); //获取文件数量
