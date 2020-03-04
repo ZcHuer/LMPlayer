@@ -689,11 +689,11 @@ void CPlayerDlg::Play(sPlayData* pData)
 		if (m_dlgCtrl)
 			m_dlgCtrl->SetHead(pData->strName.c_str());
 		
-		if (eSignalType_CmdLine == m_sPlayData.eSignal || eSignalType_DrogFile == m_sPlayData.eSignal)
-		{
+		//if (eSignalType_CmdLine == m_sPlayData.eSignal || eSignalType_DrogFile == m_sPlayData.eSignal)
+		//{
 			// 添加同文件夹下的其他文件
-			AddOtherFile(m_sPlayData.strSource);
-		}		
+			//AddOtherFile(m_sPlayData.strSource);
+		//}		
 	}
 }
 

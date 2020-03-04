@@ -3,7 +3,7 @@
     <window name="title" pos="0,0,-0,30" cache="1">
       <caption name="wnd_navigation" pos="0,0,-0,-0" show="1">
         <imgbtn1 name="btn_set" pos="{14,|0,@82,@16" offset="0,-0.5" skin="ng_menu1" focusSkin="ng_menu2" tip="设置"/>
-        <imgbtn1 name="btn_close" pos="-20,|0,@14,@14" offset="-1,-0.5" skin="ng_close1" focusSkin="ng_close2" tip="关闭"/>
+        <imgbtn1 name="btn_close" pos="-20,|0,@14,@14" offset="-1,-0.5" skin="ng_close1" focusSkin="ng_close2"/>
         <imgbtn1 name="btn_max" pos="{-14,|0,@14,@14" offset="-1,-0.5" skin="ng_max1" focusSkin="ng_max2" tip="最大化"/>
         <imgbtn1 name="btn_restore" pos="{0,|0,@14,@14" offset="0,-0.5" skin="ng_restore1" focusSkin="ng_restore2" show="0" tip="还原"/>
         <imgbtn1 name="btn_min" pos="{-14,|0,@14,@14" offset="-1,-0.5" skin="ng_min1" focusSkin="ng_min2" tip="最小化" enable="1"/>

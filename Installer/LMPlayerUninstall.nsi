@@ -534,16 +534,16 @@ Function un.onUninstall
 		ReadRegStr $INSTDIR HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\${PRODUCT_UNIST_CONTRL_PATH}" "InstallLocation"
 	${endif}
 	;messagebox mb_ok $INSTDIR
-	IfFileExists "$INSTDIR\run\$vDESKTOP_SHORTCUT_NAME.lnk" 0 +2
-	ExecShell "taskbarunpin" "$INSTDIR\run\$vDESKTOP_SHORTCUT_NAME.lnk"
+	;IfFileExists "$INSTDIR\run\$vDESKTOP_SHORTCUT_NAME.lnk" 0 +2
+	;ExecShell "taskbarunpin" "$INSTDIR\run\$vDESKTOP_SHORTCUT_NAME.lnk"
 	
-	IfFileExists "$INSTDIR\run\${EXE_FILENAME}" 0 +2
-	ExecShell "taskbarunpin" "$INSTDIR\run\${EXE_FILENAME}"
+	;IfFileExists "$INSTDIR\run\${EXE_FILENAME}" 0 +2
+	;ExecShell "taskbarunpin" "$INSTDIR\run\${EXE_FILENAME}"
 	
-	IfFileExists "$INSTDIR\run\$vDESKTOP_SHORTCUT_NAME.lnk" 0 +2
-	LenovoDataRep::TaskbarPinWin10 "false" "$INSTDIR\run\" "$vDESKTOP_SHORTCUT_NAME.lnk"
-	IfFileExists "$INSTDIR\run\${EXE_FILENAME}" 0 +2
-	LenovoDataRep::TaskbarPinWin10 "false" "$INSTDIR\run\" "${EXE_FILENAME}"	
+	;IfFileExists "$INSTDIR\run\$vDESKTOP_SHORTCUT_NAME.lnk" 0 +2
+	;LenovoDataRep::TaskbarPinWin10 "false" "$INSTDIR\run\" "$vDESKTOP_SHORTCUT_NAME.lnk"
+	;IfFileExists "$INSTDIR\run\${EXE_FILENAME}" 0 +2
+	;LenovoDataRep::TaskbarPinWin10 "false" "$INSTDIR\run\" "${EXE_FILENAME}"	
 		
 	ExecWait '"$INSTDIR\lmpservice.exe" /uninstall'
 	
@@ -564,19 +564,19 @@ Function un.onUninstall
 		goto InstallAbort
     ${EndIf}
 	;messagebox mb_ok "$INSTDIR\lmpservice.exe /uninstall"
-	nsProcess::_FindProcess "LePopAdSe.exe"
-	Pop $R0
-	${If} $R0 == 0
+	;nsProcess::_FindProcess "LePopAdSe.exe"
+	;Pop $R0
+	;${If} $R0 == 0
         ;MessageBox MB_ICONINFORMATION|MB_OK "$vun_exeisrunning" /SD IDOK
-		nsProcess::_KillProcess "LePopAdSe.exe"
-    ${EndIf}
+	;	nsProcess::_KillProcess "LePopAdSe.exe"
+    ;${EndIf}
 	
-	nsProcess::_FindProcess "LeUpdate.exe"
-	Pop $R0
-	${If} $R0 == 0
+	;nsProcess::_FindProcess "LeUpdate.exe"
+	;Pop $R0
+	;${If} $R0 == 0
         ;MessageBox MB_ICONINFORMATION|MB_OK "$vun_exeisrunning" /SD IDOK
-		nsProcess::_KillProcess "LeUpdate.exe"
-    ${EndIf}
+	;	nsProcess::_KillProcess "LeUpdate.exe"
+    ;${EndIf}
 	
 	nsProcess::_FindProcess "LMPlayer.exe"
 	Pop $R0
@@ -584,7 +584,7 @@ Function un.onUninstall
         ;MessageBox MB_ICONINFORMATION|MB_OK "$vun_exeisrunning" /SD IDOK
 		nsProcess::_KillProcess "LMPlayer.exe"
     ${EndIf}
-	nsDui::UnFA
+	;nsDui::UnFA
 	nsDui::NextPage "wizardTab"
 	nsDui::EnableButton "btnClose" "false"
 	nsDui::SetSliderRange "slrProgress" 0 100
@@ -654,7 +654,7 @@ Function un.slientUninstall
 		nsProcess::_KillProcess "LMPlayer.exe"
     ${EndIf}
 	
-	nsDui::UnFA
+	;nsDui::UnFA
 	GetFunctionAddress $0 un.slientFile
     BgWorker::CallAndWait
 	;messagebox mb_ok "remove end"
@@ -837,19 +837,20 @@ Function OnBtnInstall
         ;MessageBox MB_ICONINFORMATION|MB_OK "$vun_exeisrunning" /SD IDOK
 		nsProcess::_KillProcess "${EXE_FILENAME}"
     ${EndIf}
-	nsProcess::_FindProcess "LePopAdSe.exe"
-	Pop $R0
-	${If} $R0 == 0
-        ;MessageBox MB_ICONINFORMATION|MB_OK "$vun_exeisrunning" /SD IDOK
-		nsProcess::_KillProcess "LePopAdSe.exe"
-    ${EndIf}
 	
-	nsProcess::_FindProcess "LeUpdate.exe"
-	Pop $R0
-	${If} $R0 == 0
+	;nsProcess::_FindProcess "LePopAdSe.exe"
+	;Pop $R0
+	;${If} $R0 == 0
         ;MessageBox MB_ICONINFORMATION|MB_OK "$vun_exeisrunning" /SD IDOK
-		nsProcess::_KillProcess "LeUpdate.exe"
-    ${EndIf}
+	;	nsProcess::_KillProcess "LePopAdSe.exe"
+    ;${EndIf}
+	
+	;nsProcess::_FindProcess "LeUpdate.exe"
+	;Pop $R0
+	;${If} $R0 == 0
+        ;MessageBox MB_ICONINFORMATION|MB_OK "$vun_exeisrunning" /SD IDOK
+	;	nsProcess::_KillProcess "LeUpdate.exe"
+    ;${EndIf}
 	
 	nsProcess::_FindProcess "LMPlayer.exe"
 	Pop $R0
@@ -964,9 +965,9 @@ FunctionEnd
 Function CreateShortcut
 	SetShellVarContext current
 	CreateShortCut "$DESKTOP\$vDESKTOP_SHORTCUT_NAME.lnk" "$vInitPath\${EXE_NAME}" "" "$vInitPath\Icon.ico"
-	CreateDirectory "$SMPROGRAMS\$vSHORTCUTSUBDIR"
-	CreateShortCut "$SMPROGRAMS\$vSHORTCUTSUBDIR\$vPROGRAM_SHUORTCUT_NAME.lnk" "$vInitPath\${EXE_NAME}"
-	CreateShortCut "$vInitPath\run\$vDESKTOP_SHORTCUT_NAME.lnk" "$vInitPath\run\${EXE_FILENAME}"
+	CreateDirectory "$SMPROGRAMS\Lenovo\$vSHORTCUTSUBDIR"
+	CreateShortCut "$SMPROGRAMS\Lenovo\$vSHORTCUTSUBDIR\$vPROGRAM_SHUORTCUT_NAME.lnk" "$vInitPath\${EXE_NAME}"
+	;CreateShortCut "$vInitPath\run\$vDESKTOP_SHORTCUT_NAME.lnk" "$vInitPath\run\${EXE_FILENAME}"
 	Version::IsWindows7
 	Pop $0
 	${if} $0 == 1
@@ -1005,15 +1006,15 @@ Function un.DelShortcutContrlPanel
 	
     Delete "$DESKTOP\$vDESKTOP_SHORTCUT_NAME.lnk"
 	Delete "$SMPROGRAMS\Lenovo\$vSHORTCUTSUBDIR\$vPROGRAM_SHUORTCUT_NAME.lnk"
-    Delete "$SMPROGRAMS\$vSHORTCUTSUBDIR\$vCTROLPANEL_UNINSTALL_NAME.lnk"
-    RMDir "$SMPROGRAMS\$vSHORTCUTSUBDIR"
+    Delete "$SMPROGRAMS\Lenovo\$vSHORTCUTSUBDIR\$vCTROLPANEL_UNINSTALL_NAME.lnk"
+    RMDir "$SMPROGRAMS\Lenovo\$vSHORTCUTSUBDIR"
     
 	SetShellVarContext All
 	
 	Delete "$DESKTOP\$vDESKTOP_SHORTCUT_NAME.lnk"
 	Delete "$SMPROGRAMS\Lenovo\$vSHORTCUTSUBDIR\$vPROGRAM_SHUORTCUT_NAME.lnk"
-    Delete "$SMPROGRAMS\$vSHORTCUTSUBDIR\$vCTROLPANEL_UNINSTALL_NAME.lnk"
-    RMDir "$SMPROGRAMS\$vSHORTCUTSUBDIR"
+    Delete "$SMPROGRAMS\Lenovo\$vSHORTCUTSUBDIR\$vCTROLPANEL_UNINSTALL_NAME.lnk"
+    RMDir "$SMPROGRAMS\Lenovo\$vSHORTCUTSUBDIR"
 	
     ;${StdUtils.InvokeShellVerb} $0 "$vInitPath" "${EXE_NAME}" ${StdUtils.Const.ShellVerb.UnpinFromTaskbar}
     ;messagebox mb_ok "$SMPROGRAMS\$vSHORTCUTSUBDIR"
