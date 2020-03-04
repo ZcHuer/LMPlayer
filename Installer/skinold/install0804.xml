@@ -16,7 +16,7 @@
 		<Control height="27"/>
 		<HorizontalLayout height="14">
 			<CheckBox name="Agree" float="true" pos="20,0,32,14" font="1" text="" selected="true" normalimage="file='BTN_Check.png' source='0,0,12,12' dest='0,2,12,14'" normalhotimage="file='BTN_Check.png' source='0,0,12,12' dest='0,2,12,14'" selectedimage="file='BTN_Check2.png' source='0,0,12,12' dest='0,2,12,14'" selectedhotimage="file='BTN_Check2.png' source='0,0,12,12' dest='0,2,12,14'" />
-			<Button  name="btnAgree" float="true" pos="39,0,200,14" text="同意联想视频的使用条款" textcolor="#FF565656" align="left"/>
+			<Button  name="btnAgree" float="true" pos="39,0,200,14" text="同意LMPlayer的使用条款" textcolor="#FF565656" align="left"/>
 			<!--
 			<Button  name="DIYInstall" float="true" visible="false" pos="-120,0,-35,14" normalimage="GoSelectPathPage1.png" hotimage="GoSelectPathPage2.png" />
 			!-->

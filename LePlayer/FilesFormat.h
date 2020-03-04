@@ -3,7 +3,7 @@
 const WCHAR* szFilters = _T("媒体文件(所有媒体文件)\0*.flv;*.f4v;*.flc;*.3gpp;*.3g2;*.mkv;\
 *.ram;*.fli;*.3gp;*.rmvb;*.mp4;*.mov;*.rm;*.asf;*.wmv;*.m1v;*.ts;*.wma;*.vob;*.m2ts;*.mpg;\
 *.mpeg;*.mpe;*.m2v;*.m2p;*.m4v;*.wav;*.arm;*.m4b;*.ogv;*.aac;*.flac;*.mp3;*.avi;*.ac3;*.acc;*.aif;*.aiff;*.aifc;\
-*.amr;*.ape;*.au;*.dat;*.dv;*.m4a;*.m4r;*.mka;*.mp2;*.mpc;*.ogg;*.ra;*.swf;*.wv;*.webm;\
+*.amr;*.ape;*.au;*.dv;*.m4a;*.m4r;*.mka;*.mp2;*.mpc;*.ogg;*.ra;*.swf;*.wv;*.webm;\
 *.mpeg4;*.caf;*.opus;*.spx;*.gsm;*.qt;*.dts;*.evo;*.dvr-ms;*.mod;*.amv;*.bik;*.tp;\
 *.mpv2;*.mp2v;*.pva;*.3gp2;*.divx;*.h264;*.k3g;*.mts;*.nsv;*.ogm;*.pmf;*.pmp;\
 *.pss;*.scm;*.tod;*.vp6;*.vp7;*.wtv;*.wmp;*.cda;*.tta;*.mid;*.rmi\0")

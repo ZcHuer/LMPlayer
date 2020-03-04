@@ -8,7 +8,7 @@
 char* chArray_Ext[] =
 {
 	".asf",		".avi",		".wmv",		".wmp",		".dvrms",	".rmvb",	".ram",		".rm",		".rpm",		".scm",
-	".rt",		".smil",	".mov",		".qt",		".dat",		".m1v",		".m2v",		".m2p",		".m2ts",	".gsm"
+	".rt",		".smil",	".mov",		".qt",		".m1v",		".m2v",		".m2p",		".m2ts",	".gsm",
 	".mp2v",	".mpe",		".mpeg",	".mpeg1",	".mpeg2",	".mpg",		".mpv2",	".pss",		".pva",		".tp",
 	".trp",		".ts",		".mp4",		".m4b",		".m4r",		".m4v",		".mpeg4",	".3g2",		".3gp",		".3gp2",
 	".3gpp",	".flv",		".f4v",		".swf",		".vob",		".ifo",		".amv",		".csf",		".divx",	".evo",

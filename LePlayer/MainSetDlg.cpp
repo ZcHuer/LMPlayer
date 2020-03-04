@@ -943,7 +943,7 @@ void CMainSetDlg::UpdateRadio()
     if (pWnd)pWnd->SetCheck(bAllCheck);
     //MPEG1/2媒体
     bAllCheck = TRUE;
-    for (size_t i = EXT_ID_dat; i <= EXT_ID_ts; i++)
+    for (size_t i = EXT_ID_m1v; i <= EXT_ID_ts; i++)
     {
         pWnd = FindChildByID(i);
         if (pWnd)
@@ -1084,7 +1084,7 @@ void CMainSetDlg::OnMpegMedia()
     if (pWnd)
     {
         BOOL bChecked = pWnd->IsChecked();
-        for (size_t i = EXT_ID_dat; i <= EXT_ID_ts; i++)
+        for (size_t i = EXT_ID_m1v; i <= EXT_ID_ts; i++)
         {
             pWnd = FindChildByID(i);
             if (pWnd)

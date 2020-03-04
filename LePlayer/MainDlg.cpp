@@ -919,8 +919,8 @@ LRESULT CMainDlg::OnCopyData(UINT uMsg, WPARAM wParam, LPARAM lParam)
 		FLOG(L"OnCopydata UM_COPYDATA_CMDLING");
 		char* lpBuff = new char[cpd->cbData + 1];
 		memset(lpBuff, 0, cpd->cbData + 1);
-		memcpy(lpBuff, cpd->lpData, cpd->cbData);		
-		DoCmdLine(g_strCmdLine.GetBuffer(g_strCmdLine.GetLength()));
+		memcpy(lpBuff, cpd->lpData, cpd->cbData);
+		DoCmdLine(LeTools::s2ws(lpBuff).c_str());
 		FLOG(_T("OnCopyData cmdline：%s"),LeTools::s2ws(lpBuff).c_str());
 		delete[] lpBuff;
 		lpBuff = nullptr;

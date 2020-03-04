@@ -18,8 +18,7 @@ enum _ExtID
 
 	EXT_ID_mov,
 	EXT_ID_qt,
-
-	EXT_ID_dat,
+		
 	EXT_ID_m1v,//
 	EXT_ID_m2v,
 	EXT_ID_m2p,
@@ -127,7 +126,7 @@ const _Ext AllExt[] = {
 	{ EXT_ID_asf,".asf" },{ EXT_ID_avi,".avi" },{ EXT_ID_wmv,".wmv" },{ EXT_ID_wmp,".wmp" },{ EXT_ID_dvrms,".dvr-ms" },
 	{ EXT_ID_rmvb,".rmvb" },{ EXT_ID_ram,".ram" },{ EXT_ID_rm,".rm" },{ EXT_ID_rpm,".rpm" },{ EXT_ID_scm,".scm" },
 	{ EXT_ID_rp,".rp" },{ EXT_ID_rt,".rt" },{ EXT_ID_smil,".smil" },{ EXT_ID_mov,".mov" },{ EXT_ID_qt,".qt" },
-	{ EXT_ID_dat,".dat" },{ EXT_ID_m1v,".m1v" },{ EXT_ID_m2v,".m2v" },{ EXT_ID_m2p,".m2p" },{ EXT_ID_m2ts,".m2ts" },
+	{ EXT_ID_m1v,".m1v" },{ EXT_ID_m2v,".m2v" },{ EXT_ID_m2p,".m2p" },{ EXT_ID_m2ts,".m2ts" },
 	{ EXT_ID_mp2v,".mp2v" },{ EXT_ID_mpe,".mpe" },{ EXT_ID_mpeg,".mpeg" },{ EXT_ID_mpeg1,".mpeg1" },{ EXT_ID_mpeg2,".mpeg2" },
 	{ EXT_ID_mpg,".mpg" },{ EXT_ID_mpv2,".mpv2" },{ EXT_ID_pss,".pss" },{ EXT_ID_pva,".pva" },{ EXT_ID_tp,".tp" },
 	{ EXT_ID_ts,".ts" },{ EXT_ID_mp4,".mp4" },{ EXT_ID_m4b,".m4b" },{ EXT_ID_m4r,".m4r" },
