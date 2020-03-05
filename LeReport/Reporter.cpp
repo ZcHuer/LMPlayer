@@ -462,7 +462,7 @@ void CReporter::SendCollectData()
 
 	// 组装公共字段
 	Json::Value jvData;
-	jvData["appId"] = "2";
+	jvData["appId"] = "22";
 	jvData["appVersion"] = m_strVer.c_str();
 
 	//机型 精确到系列 比如 联想

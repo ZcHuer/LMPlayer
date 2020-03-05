@@ -53,7 +53,7 @@ private:
 	string m_sMac;
 	string m_sCpid;
 	string m_sOsType;
-	const string m_sAppID = "2";
+	const string m_sAppID = "22";
 	const string m_sAppChannel = "1";//标识终端类型，比如 3(tv)、2(pad)、1(pc)
 
 	string m_sSource;//来源 aiyiqi migu

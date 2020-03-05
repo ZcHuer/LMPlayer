@@ -160,7 +160,7 @@ typedef struct unz_file_info_s
 
 
 
-#define ZLIB_VERSION "1.1.3"
+#define ZLIB_VERSION "1.2.11"
 
 
 // Allowed flush values; see deflate() for details
