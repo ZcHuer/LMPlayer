@@ -13,18 +13,15 @@
 #include <string>
 using namespace std;
 
-#define Error_Download  0
-#define Error_Unzip		1
-#define Error_File		2
-
 // 向窗口发送的消息
 enum eUpdateMsg
 {
-	eUPDATE_Progress = WM_USER + 1,		// 下载进度
-	eUPDATE_Success,					// 成功
-	eUPDATE_Error_Download,				// 下载失败
-	eUPDATE_Error_Unzip,				// 下载失败
-	eUPDATE_Error_File,					// 文件错误
+	eUPDATE_Progress = WM_USER + 1,		// 下载进度	
+	eUPDATE_Download_Success,			// 下载成功
+	eUPDATE_Download_Error,				// 下载失败
+	eUPDATE_Unzip_Success,				// 解压成功
+	eUPDATE_Unzip_Error,				// 解压失败
+	eUPDATE_Error_File,					// 文件错误	
 };
 
 struct sUpdateInfo

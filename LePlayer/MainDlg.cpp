@@ -267,11 +267,12 @@ void CMainDlg::HandleCmd_Run(wstring wstr_Run, eCmdSource eSource/* = eeCmdSourc
 	if (wstr_Run.find(CMD_RUN_AUTORUN) != -1)
 		ShowWindow(SW_HIDE);
 
-	if (eeCmdSource_Run == eSource && PathFileExists(wstr_Run.c_str()))
-		CLeReport::GetInstance()->SendRTD_Eevent(RTD_RUNAPP, "1", LeTools::ws2s(CMC_RUN_FILERUN));
-	else
-		// 透传启动指令
-		CLeReport::GetInstance()->SendRTD_Eevent(RTD_RUNAPP, "1", LeTools::ws2s(wstr_Run));
+	// 运行传入的命令行才上报，copydata传的不上报启动指令	
+	if (eeCmdSource_Run == eSource)
+	{
+		CLeReport::GetInstance()->SetLaunchFrom(LeTools::ws2s(wstr_Run));
+		CLeReport::GetInstance()->SendRTD_Eevent(RTD_RUNAPP, "1", "");
+	}
 
 	FLOG(L"CMainDlg::HandleCmd_Run end");
 	return;
@@ -336,7 +337,7 @@ void CMainDlg::Native_Play(sPlayData* pPlayData)
 	{		
 		pPlayData->sRD.ifSuccess= "";
 		pPlayData->sRD.ifConsume = "2";
-		CLeReport::GetInstance()->SendRTD_Play("19", "1", "启动播放器", pPlayData->eSrcType, pPlayData->sRD);
+		//CLeReport::GetInstance()->SendRTD_Play("19", "1", "启动播放器", pPlayData->eSrcType, pPlayData->sRD);
 		m_dlgPlayer->Play(pPlayData);
 		pPlayData->sRD.ifSuccess = "1";
 		pPlayData->sRD.ifConsume = "2";
@@ -414,6 +415,8 @@ void CMainDlg::Play(sPlayData* pPlayData)
 		return;
 	if (NULL == m_dlgList)
 		return;	
+
+	Native_Stop();
 		
 	// 如果传进来的数据并没分析源类型，则再次分析
 	if (eSourceType_Unknown == pPlayData->eSrcType)
@@ -657,7 +660,7 @@ void CMainDlg::ReSetWnd()
 }
 
 void CMainDlg::TrueClose()
-{
+{	
 	m_dlgPlayer->ShowCtrlWnd(FALSE);
 	m_dlgPlayer->DoStop();
 	ShowWindow(SW_HIDE);
@@ -825,6 +828,7 @@ void CMainDlg::OnCommand(UINT uNotifyCode, int nID, HWND wndCtl)
 		LONGLONG tmp =LeTools::GetTimeStamp();
 		__int64 userTime = tmp - m_lStartTime;
 		CLeReport::GetInstance()->SaveData_Count(ERD_COUNT_CLICK_MENU_QUIT);
+		CLeReport::GetInstance()->SendRTD_Eevent(RTD_CLOSEAPP, "1", "关闭应用", "", 0, userTime);
 		TrueClose();
 		break;
 	}
@@ -1165,7 +1169,7 @@ void CMainDlg::OnClose()
 		//计算时长
 		LONGLONG tmp =LeTools::GetTimeStamp();
 		__int64 userTime = tmp - m_lStartTime;
-		CLeReport::GetInstance()->SendRTD_Eevent("46","1","关闭应用","",0, userTime);
+		CLeReport::GetInstance()->SendRTD_Eevent(RTD_CLOSEAPP, "1", "关闭应用", "", 0, userTime);
 		TrueClose();
 	}
 }

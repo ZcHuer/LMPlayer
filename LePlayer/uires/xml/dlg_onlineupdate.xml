@@ -1,13 +1,13 @@
-﻿<SOUI name="dialogupdate" title="LMPlayer升级" width="650" height="400" resizable="0" appWnd="0">
+﻿<SOUI name="dialogupdate" title="LMPlayer升级" width="460" height="264" resizable="0" appWnd="0">
   <root colorBkgnd="#FFFFFF" cache="1">
     <img name="image" pos="0,0,-0,-100" show="1" skin="skin_img_default"/>	
-    <window name="windowprogress" pos="0, 300,-0,-0" show="1">
+    <window name="windowprogress" pos="0, 160,-0,-0" show="1">
       <text name="progress_tip_text" pos="20,25" colorText="#333333" font="size:16">版本升级中.....</text>
       <text name="progress_pre_text" pos="-20,{0" offset="-1,0" colorText="#333333" font="size:14">0%</text>
       <progress name="progress_progress" pos="20,[10,-20,@10" bkgndSkin="skin_prg" posSkin="skin_prp" max="100"/>
     </window>
     <window name="error" pos="0,0,-0,-0" show="0">		
-		<text name="progress_pre_text" pos="340,-14,@78,@30" offset="-1,-1" colorText="#333333" font="size:16">更新失败！</text>      
+		<text name="progress_pre_text" pos="240,-14,@78,@30" offset="-1,-1" colorText="#333333" font="size:16">更新失败！</text>      
 		<imgbtn1 name="btn_sure" pos="-20,-14,@78,@30" offset="-1,-1" colorBkgnd="#40c2fd" colorText="#ffffff" font="size:14" cursor="hand">重试</imgbtn1>
     </window>
     <caption pos="0,0,-0,40">

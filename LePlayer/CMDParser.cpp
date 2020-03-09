@@ -3,6 +3,7 @@
 #include "../SDK/Flog/FileLog.h"
 #include "../include/json/json.h"
 #include "LeReport.h"
+#include "Data_RealTime.h"
 
 CCMDParser::CCMDParser()
 {
@@ -124,6 +125,12 @@ void CCMDParser::ParseOldCmd(wstring wstrCmd)
 		m_wstrCmd_Run = CMD_RUN_PCM;
 		return;
 	}
+	if (0 == wstrCmd.find(CMD_RUN_RUNNEW))
+	{
+		m_wstrCmd_Run = CMD_RUN_RUNNEW;
+		CLeReport::GetInstance()->SendRTD_Eevent(RTD_UPDATE, "1", "4replace");
+		return;
+	}	
 	m_wstrCmd_Run = wstrCmd;
 
 	// ≤•∑≈¿‡

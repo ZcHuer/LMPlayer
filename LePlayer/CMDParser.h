@@ -49,6 +49,7 @@ using namespace std;
 #define CMD_PLAY_LM				L"/lmplay"			// 乐窗调起播放
 #define CMD_FUNC_PLAY			L"lenovo-ai:play"	// AI播放
 #define CMD_FUNC_PAUSE			L"lenovo-ai:pause"	// AI暂停
+#define CMD_RUN_RUNNEW			L"runnew"			// 启动新版本
 
 
 class CCMDParser

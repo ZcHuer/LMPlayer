@@ -80,5 +80,8 @@
     <ClInclude Include="..\SDK\http\Network.h">
       <Filter>http</Filter>
     </ClInclude>
+    <ClInclude Include="..\Include\Data_RealTime.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

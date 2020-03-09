@@ -73,6 +73,7 @@ bool CUpdatehelper::CheckUpdate()
 		FLOG(L"无新版本，退出升级")
 		return false;
 	}
+	CLeReport::GetInstance()->SendRTD_Eevent(RTD_UPDATE, "1", "1detect");
 
 	// 解析升级类型，根据服务端的配置，分别处理。如果是开机启动，则忽略升级配置，只走静默升级
 	if ("1" == m_sUpdateInfo.updateType || m_bLePlayerAutoRun)// 静默升级
@@ -113,6 +114,7 @@ bool CUpdatehelper::ManualCheck()
 	}
 	else
 	{
+		CLeReport::GetInstance()->SendRTD_Eevent(RTD_UPDATE, "1", "1detect");
 		InstallNow();
 	}
 
@@ -360,7 +362,7 @@ void CUpdatehelper::WriteVersionToCfg_Old(string strVer)
 void CUpdatehelper::ReportDowsloadResult(bool bRet)
 {
 	string sData = "appId=";
-	sData.append(LeTools::Num2Str(m_sUpdateInfo.id));
+	sData.append("22");
 	sData.append("&sn=");
 	string strMac =LeTools::GetMacString();
 	sData.append(strMac);

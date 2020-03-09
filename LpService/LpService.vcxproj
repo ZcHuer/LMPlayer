@@ -178,6 +178,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Baseclass\RegisterExt.h" />
+    <ClInclude Include="..\Include\Data_RealTime.h" />
     <ClInclude Include="..\SDK\Flog\FileLog.h" />
     <ClInclude Include="..\SDK\http\Common.h" />
     <ClInclude Include="..\SDK\http\Constants.h" />

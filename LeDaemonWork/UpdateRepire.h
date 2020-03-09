@@ -2,10 +2,6 @@
 #include <string>
 using namespace std;
 
-#define Error_Download  0
-#define Error_Unzip		1
-#define Error_File		2
-
 // 向窗口发送的消息
 enum eUpdateMsg
 {

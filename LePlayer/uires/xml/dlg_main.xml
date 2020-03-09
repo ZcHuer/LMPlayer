@@ -1,5 +1,5 @@
 ﻿<SOUI name="LMPlayer" title="LMPlayer" width="810" height="560" resizable="1" minsize="810,560" margin="5,5,5,5" wndType="appMain" appWnd="1" translucent="0">
-  <root colorBkgnd="#2F3238" cache="1">
+  <root colorBkgnd="#000000" cache="1">
     <window name="title" pos="0,0,-0,30" cache="1">
       <caption name="wnd_navigation" pos="0,0,-0,-0" show="1">
         <imgbtn1 name="btn_set" pos="{14,|0,@82,@16" offset="0,-0.5" skin="ng_menu1" focusSkin="ng_menu2" tip="设置"/>

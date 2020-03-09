@@ -27,6 +27,8 @@ public:
 	void SetLenovoId(const char* pchLenovoId);									// 用户id
 	void SetchannelID(const string channelID);									// 设置渠道ID
 	void SetIfVip(string sVip);
+	void SetLaunchFrom(string sLaunch);
+	void SetExternRd(string sCmdRd);
 
 	string GetOsType();
 	string GetDeviceStyle();

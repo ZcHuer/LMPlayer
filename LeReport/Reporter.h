@@ -18,6 +18,9 @@ public:
 	void SetLenovoId(const char* pchLenovoId);		// 用户id
 	void SetchannelID(const string channelID);
 	void SetIfVip(string sVip);
+	void SetLaunchFrom(string sLaunch);
+	void SetExternRd(string sCmdRd);
+	void AppendCmdRd(Json::Value& jsDes);
 	// 发送本地收集的程序数据
 	void SendCollectData();
 	// 实时发送数据
@@ -53,6 +56,8 @@ private:
 	string m_sMac;
 	string m_sCpid;
 	string m_sOsType;
+	string m_slaunch;
+	string m_sCmdRd;	//命令行数据上报参数 最终透传到数据后台
 	const string m_sAppID = "22";
 	const string m_sAppChannel = "1";//标识终端类型，比如 3(tv)、2(pad)、1(pc)
 

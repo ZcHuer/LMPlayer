@@ -55,6 +55,16 @@ void CLeReport::SetIfVip(string sVip)
 	return CReporter::GetInstance()->SetIfVip(sVip);
 }
 
+void CLeReport::SetLaunchFrom(string sLaunch)
+{
+	return CReporter::GetInstance()->SetLaunchFrom(sLaunch);
+}
+
+void CLeReport::SetExternRd(string sCmdRd)
+{
+	return CReporter::GetInstance()->SetExternRd(sCmdRd);
+}
+
 string CLeReport::GetOsType()
 {
 	return CReporter::GetInstance()->GetOsType();

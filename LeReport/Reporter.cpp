@@ -301,33 +301,15 @@ void CReporter::GetBtnEventPublicStr(Json::Value& jvData, int nSourceType, strin
 	jvData["channel"] = m_channelID;
 	jvData["osType"] = m_sOsType;
 	jvData["deviceStyle"] = m_sDeviceStyle;
-	jvData["mac"] = LeTools::GetMacString();;
-	jvData["cpid"] = m_sCpid;
-	/*
-	eSourceType_Unknown,	// 未知
-	eSourceType_Local,		// 本地
-	eSourceType_Migu,		// 咪咕
-	eSourceType_FunTv,		// 风行
-	eSourceType_FunTvWeb,	// 风行web版
-	eSourceType_Youku		// 优酷
-	*/
-	if (3 == nSourceType )
-		jvData["source"] = "funtv";
-	else if (5 == nSourceType)
-		jvData["source"] = "youku";
-	else if(6 ==nSourceType)
-		jvData["source"] = "knews";
-	else
-		jvData["source"] = "lenovo";
-
+	jvData["mac"] = LeTools::GetMacString();
 	jvData["actionTime"] = LeTools::GetTimeStamp();
 	jvData["eventId"] = sEventId;
 	jvData["eventType"] = sEventType;
 	jvData["eventDes"] = sEventDes;
-
+	jvData["launcher"] = m_slaunch;
 	Json::FastWriter writer;
 	string sData = writer.write(jvData);
-	sData = LeTools::Gbk2Utf8(sData);
+	sData = LeTools::Gbk2Utf8(sData);	
 }
 
 bool CReporter::SendRTD_Eeventsync(const string sEventID, const string sEvnetype, const string sEventDes, string videoId, string format, int nSourceType, __int64 nUserTime)
@@ -429,6 +411,36 @@ void CReporter::SetchannelID(const string channelID)
 void CReporter::SetIfVip(string sVip)
 {
 	m_sifVip = sVip;
+}
+
+void CReporter::SetLaunchFrom(string sLaunch)
+{
+	m_slaunch = sLaunch;
+}
+
+void CReporter::SetExternRd(string sCmdRd)
+{
+	m_sCmdRd = sCmdRd;
+}
+
+void CReporter::AppendCmdRd(Json::Value& jsDes)
+{
+	//cmd 合并到上报的json 里面
+	Json::Reader jr;
+	Json::Value jCMDRd;
+	if (jr.parse(m_sCmdRd, jCMDRd))
+	{
+		//解析成功
+		int nCMDSize = jCMDRd.size();
+		vector<std::string> keys = jCMDRd.getMemberNames();
+		vector<std::string> Deskeys = jsDes.getMemberNames();
+		for (vector<std::string>::iterator it = keys.begin(); it != keys.end(); it++)
+		{
+			bool bfind = false;
+			string key1 = *it;
+			jsDes[key1] = jCMDRd[key1];
+		}
+	}
 }
 
 void CReporter::SetLenovoId(const char* pchLenovoId)
@@ -653,12 +665,12 @@ CReporter::CReporter()
 {
 	m_strServer = "";
 	m_strInterFace = "";
-	m_bQuit = false;
-	m_strVer = "1.2.0.26";
+	m_bQuit = false;	
+	LeTools::GetRunVersion(m_strVer);
+	m_slaunch = "";
 	m_aesEncry.InitKey("1102130405061708", "1102130405061708");
 	m_hBtnWork = CreateEvent(0, TRUE, FALSE, 0);
 	m_RepUrl = "https://collect.vgs.lenovo.com.cn/";
 	InitPublic();
 	m_hQuit = CreateEvent(0, TRUE, FALSE, 0);
-
 }

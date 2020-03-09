@@ -34,6 +34,7 @@ typedef int(*pPluginThread)(wchar_t * );
 #define HTTP_BUF_SIZE      1024     /* 缓冲区的大小 */
 
 #include "..\Include\LeReport.h"
+#include "..\Include\Data_RealTime.h"
 
 
 //定义全局函数变量
@@ -235,12 +236,6 @@ int APIENTRY WinMain(HINSTANCE hInstance,
 		if (bRes)
 		{
 			startService();
-			string version = "";
-			LeTools::GetVersion(eService, version);
-			CLeReport::GetInstance()->SetVersion(version.c_str());
-			CLeReport::GetInstance()->SendRTD_Eeventsync("52", "1", "service install");
-
-			startService();
 			wstring wstr;
 			LeTools::GetRunVersion(wstr);
 			CLeReport::GetInstance()->SetVersion(LeTools::ws2s(wstr).c_str());
@@ -248,7 +243,7 @@ int APIENTRY WinMain(HINSTANCE hInstance,
 			wstring wChannelID;
 			LeTools::GetChannelID(wChannelID);
 			CLeReport::GetInstance()->SetchannelID(LeTools::ws2s(wChannelID).c_str());
-			CLeReport::GetInstance()->SendRTD_Eeventsync("52", "1", "service install");
+			CLeReport::GetInstance()->SendRTD_Eeventsync(RTD_ACTIVEADNINSTALL, "1", "service install");
 			LeTools::SetInstallTime();
 		}
     }

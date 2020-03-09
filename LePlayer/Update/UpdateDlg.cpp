@@ -6,6 +6,7 @@
 #include <sstream>
 #include "../MainDlg.h"
 #include "CUpdateHelper.h"
+#include "../include/LeReport.h"
 
 #define TIMERID_DOWNLOAD_BEGIN				1001
 #define TIMERID_DOWNLOAD_PROGRESS			1002
@@ -188,17 +189,29 @@ LRESULT SUpdateDlg::WndPro(UINT uMsg, WPARAM wParam, LPARAM lParam)
 			m_pProNum->SetWindowTextW(wBuff);
 		}
 	}
+	break;	
+	case eUPDATE_Download_Success:
+	{	
+		CLeReport::GetInstance()->SendRTD_Eevent(RTD_UPDATE, "1", "2download");
+	}
 	break;
-	case eUPDATE_Success:
+	case eUPDATE_Unzip_Success:
 	{
+		CLeReport::GetInstance()->SendRTD_Eevent(RTD_UPDATE, "1", "3unpack");		
 		m_bSuccessed = true;
 		PostMessage(WM_QUIT);
 	}
 	break;
-	case eUPDATE_Error_Download:
-	case eUPDATE_Error_Unzip:
+	case eUPDATE_Download_Error:
+		CLeReport::GetInstance()->SendRTD_Eevent(RTD_UPDATE, "1", "2downloadfail");		
+		break;
+	case eUPDATE_Unzip_Error:
+		CLeReport::GetInstance()->SendRTD_Eevent(RTD_UPDATE, "1", "3unpackfail");
+		break;
+	break;
 	case eUPDATE_Error_File:
 	{
+		CLeReport::GetInstance()->SendRTD_Eevent(RTD_UPDATE, "1", "2fileerror");
 		ShowError();
 	}
 	break;	

@@ -101,6 +101,10 @@ bool CUpdateInstance::Download()
 	{
 		if (IsDownloadOk(strPath))
 		{
+			// 发送消息-下载成功
+			if (m_hMsgWnd)
+				::PostMessage(m_hMsgWnd, eUPDATE_Download_Success, 0, 0);
+
 			//解压文件
 			CHAR cPath_CurModule[MAX_PATH] = { 0 };
 			GetModuleFileNameA(NULL, cPath_CurModule, MAX_PATH);
@@ -116,14 +120,14 @@ bool CUpdateInstance::Download()
 			{
 				// 发送成功方法
 				if (m_hMsgWnd)
-					::PostMessage(m_hMsgWnd, eUPDATE_Success, 0, 0);
+					::PostMessage(m_hMsgWnd, eUPDATE_Unzip_Success, 0, 0);
 				return true;
 			}
 			else
 			{
 				//发送错误-解压失败
 				if (m_hMsgWnd)
-					::PostMessage(m_hMsgWnd, eUPDATE_Error_Unzip, 0, 0);
+					::PostMessage(m_hMsgWnd, eUPDATE_Unzip_Error, 0, 0);
 				return false;
 			}
 		}
@@ -139,7 +143,7 @@ bool CUpdateInstance::Download()
 	{
 		// 发送错误-网络错误
 		if (m_hMsgWnd)
-			::PostMessage(m_hMsgWnd, eUPDATE_Error_Download, 0, 0);
+			::PostMessage(m_hMsgWnd, eUPDATE_Download_Error, 0, 0);
 		return false;
 	}
 }
