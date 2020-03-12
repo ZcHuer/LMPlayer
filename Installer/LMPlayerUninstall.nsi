@@ -559,7 +559,7 @@ Function un.onUninstall
 	${If} $R0 == 0
         ;MessageBox MB_ICONINFORMATION|MB_OK "$vun_exeisrunning" /SD IDOK
 		nsDui::EnableButton "btnUnInstall" "false"
-		nsDui::DuiMsb "$vun_exeisrunning" "LMPlayer"
+		nsDui::DuiMsb "$vun_exeisrunning" "lmp"
 		nsDui::EnableButton "btnUnInstall" "true"
 		goto InstallAbort
     ${EndIf}
@@ -578,11 +578,11 @@ Function un.onUninstall
 	;	nsProcess::_KillProcess "LeUpdate.exe"
     ;${EndIf}
 	
-	nsProcess::_FindProcess "LMPlayer.exe"
+	nsProcess::_FindProcess "lmp.exe"
 	Pop $R0
 	${If} $R0 == 0
         ;MessageBox MB_ICONINFORMATION|MB_OK "$vun_exeisrunning" /SD IDOK
-		nsProcess::_KillProcess "LMPlayer.exe"
+		nsProcess::_KillProcess "lmp.exe"
     ${EndIf}
 	;nsDui::UnFA
 	nsDui::NextPage "wizardTab"
@@ -640,18 +640,18 @@ Function un.slientUninstall
 	${If} $R0 == 0
         ;MessageBox MB_ICONINFORMATION|MB_OK "$vun_exeisrunning" /SD IDOK
 		nsDui::EnableButton "btnUnInstall" "false"
-		nsDui::DuiMsb "$vun_exeisrunning" "LMPlayer"
+		nsDui::DuiMsb "$vun_exeisrunning" "lmp"
 		nsDui::EnableButton "btnUnInstall" "true"
 		goto InstallAbort
     ${EndIf}
 	;messagebox mb_ok "$INSTDIR\lmpservice.exe /uninstall"
 
 	
-	nsProcess::_FindProcess "LMPlayer.exe"
+	nsProcess::_FindProcess "lmp.exe"
 	Pop $R0
 	${If} $R0 == 0
         ;MessageBox MB_ICONINFORMATION|MB_OK "$vun_exeisrunning" /SD IDOK
-		nsProcess::_KillProcess "LMPlayer.exe"
+		nsProcess::_KillProcess "lmp.exe"
     ${EndIf}
 	
 	;nsDui::UnFA

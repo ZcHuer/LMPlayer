@@ -409,9 +409,9 @@
  */
 
 /* Version information for png.h - this should match the version in png.c */
-#define PNG_LIBPNG_VER_STRING "1.5.19"
+#define PNG_LIBPNG_VER_STRING "1.6.37"
 #define PNG_HEADER_VERSION_STRING \
-     " libpng version 1.5.19 - August 21, 2014\n"
+     " libpng version 1.6.37 - August 21, 2019\n"
 
 #define PNG_LIBPNG_VER_SONUM   15
 #define PNG_LIBPNG_VER_DLLNUM  15
@@ -450,7 +450,7 @@
  * version 1.0.0 was mis-numbered 100 instead of 10000).  From
  * version 1.0.1 it's    xxyyzz, where x=major, y=minor, z=release
  */
-#define PNG_LIBPNG_VER 10519 /* 1.5.19 */
+#define PNG_LIBPNG_VER 10637 /* 1.5.19 */
 
 /* Library configuration: these options cannot be changed after
  * the library has been built.
@@ -587,7 +587,7 @@ extern "C" {
 /* This triggers a compiler error in png.c, if png.c and png.h
  * do not agree upon the version number.
  */
-typedef char* png_libpng_version_1_5_19;
+typedef char* png_libpng_version_1_6_37;
 
 /* Three color definitions.  The order of the red, green, and blue, (and the
  * exact size) is not important, although the size of the fields need to

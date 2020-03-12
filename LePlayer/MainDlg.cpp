@@ -828,7 +828,7 @@ void CMainDlg::OnCommand(UINT uNotifyCode, int nID, HWND wndCtl)
 		LONGLONG tmp =LeTools::GetTimeStamp();
 		__int64 userTime = tmp - m_lStartTime;
 		CLeReport::GetInstance()->SaveData_Count(ERD_COUNT_CLICK_MENU_QUIT);
-		CLeReport::GetInstance()->SendRTD_Eevent(RTD_CLOSEAPP, "1", "关闭应用", "", 0, userTime);
+		CLeReport::GetInstance()->SendRTD_Eevent(RTD_CLOSEAPP, "1", "关闭应用", "", "", 0, userTime);
 		TrueClose();
 		break;
 	}
@@ -1169,7 +1169,7 @@ void CMainDlg::OnClose()
 		//计算时长
 		LONGLONG tmp =LeTools::GetTimeStamp();
 		__int64 userTime = tmp - m_lStartTime;
-		CLeReport::GetInstance()->SendRTD_Eevent(RTD_CLOSEAPP, "1", "关闭应用", "", 0, userTime);
+		CLeReport::GetInstance()->SendRTD_Eevent(RTD_CLOSEAPP, "1", "关闭应用", "", "", 0, userTime);
 		TrueClose();
 	}
 }

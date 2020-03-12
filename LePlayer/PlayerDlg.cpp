@@ -1569,12 +1569,12 @@ void CPlayerDlg::OnHotkey(int nID)
 	LONGLONG tmp = 0;
     switch (nID)
     {
-    case HK_OPENFILE:
-		OnOpenfile(0); 
-		break;
-    case HK_OPENFLODER:
-		OnOpenfloder(0); 
-		break;
+    //case HK_OPENFILE:
+	//	OnOpenfile(0); 
+	//	break;
+    //case HK_OPENFLODER:
+	//	OnOpenfloder(0); 
+	//	break;
     case HK_PAUSE:
 		DoPause(); 
 		break;
@@ -2342,11 +2342,11 @@ void CPlayerDlg::OnCommand(UINT uNotifyCode, int nID, HWND wndCtl)
 		::PostMessage(CMainDlg::g_hMainWnd, UM_SETMIMI_WND, 1, 0);
 		break;
         //隐藏字幕
-    case SUBTITLE_START:
-    {
-        m_CPlayer.SetSubtitleSpu(-1);
-        break;
-    }
+    //case SUBTITLE_START:
+    //{
+    //   m_CPlayer.SetSubtitleSpu(-1);
+    //   break;
+    //}
     case AudioChannel_Stereo:
     {
 		CLeDB::GetInstance()->Set()->UpdateSingleSet("channel", "0");

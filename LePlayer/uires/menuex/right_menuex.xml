@@ -23,12 +23,12 @@
       <menuItem id="49" radio="0">跳过片头片尾</menuItem>
       <menuItem id="50" radio="0">取消跳过片头片尾</menuItem>
     </menuItem-->
-    <menuItem headSkin="sequence1" headSkinFocus="sequence2" headSkinCheck="sequence3" bshowHead ="0" class="cls_menuex_nohot" textleft="10" radio="0">
+    <!--menuItem headSkin="sequence1" headSkinFocus="sequence2" headSkinCheck="sequence3" bshowHead ="0" class="cls_menuex_nohot" textleft="10" radio="0">
       AB点重复             
       <menuItem id="31" headSkin="sequence1" headSkinFocus="sequence2" headSkinCheck="sequence3" bshowHead ="0" class="cls_menuex_nohot" radio="0">设置A点</menuItem>
       <menuItem id="32" headSkin="sequence1" headSkinFocus="sequence2" headSkinCheck="sequence3" bshowHead ="0" class="cls_menuex_nohot" radio="0">设置B点</menuItem>
       <menuItem id="33" headSkin="sequence1" headSkinFocus="sequence2" headSkinCheck="sequence3" bshowHead ="0" class="cls_menuex_nohot" radio="0">取消AB点</menuItem>
-    </menuItem>
+    </menuItem-->
   </menuItem>
   
   <sep/>
@@ -54,14 +54,14 @@
     <menuItem id="97" headSkin="sequence1" headSkinFocus="sequence2" headSkinCheck="sequence3" bshowHead ="0" class="cls_menuex_nohot" radio="0">播放时</menuItem>
   </menuItem>
   <menuItem id="54" headSkin="silentSet1" headSkinFocus="silentSet2" headSkinCheck="silentSet3" bshowHead ="1" class="cls_menuex_nohot" radio="0">静音Ctrl+M</menuItem>
-  <menuItem id="57" headSkin="subtitleSet1" headSkinFocus="subtitleSet2" headSkinCheck="subtitleSet3" bshowHead ="1" class="cls_menuex_nohot" radio="0">
+  <!--menuItem id="57" headSkin="subtitleSet1" headSkinFocus="subtitleSet2" headSkinCheck="subtitleSet3" bshowHead ="1" class="cls_menuex_nohot" radio="0">
     字幕选择
     <menuItem id="55" headSkin="sequence1" headSkinFocus="sequence2" headSkinCheck="sequence3" bshowHead ="0" class="cls_menuex_nohot" radio="0">添加字幕文件</menuItem>
     <menuItem id="58" disable="1" headSkin="sequence1" headSkinFocus="sequence2" headSkinCheck="sequence3" bshowHead ="0" class="cls_menuex_nohot" radio="0">
       字幕子轨道
       <menuItem id="100" headSkin="sequence1" headSkinFocus="sequence2" headSkinCheck="sequence3" bshowHead ="0" class="cls_menuex_nohot" radio="0">隐藏字幕</menuItem>
     </menuItem>
-  </menuItem>
+  </menuItem-->
   <sep/>
   <!--menuItem id="1" hotkeyText="F2">设置</menuItem-->
 </menuRoot>

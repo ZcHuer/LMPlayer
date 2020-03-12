@@ -131,7 +131,12 @@ void CCMDParser::ParseOldCmd(wstring wstrCmd)
 		CLeReport::GetInstance()->SendRTD_Eevent(RTD_UPDATE, "1", "4replace");
 		return;
 	}	
-	m_wstrCmd_Run = wstrCmd;
+	//m_wstrCmd_Run = wstrCmd;
+	if (PathFileExists(wstrCmd.c_str()))
+	{
+		//命令行行中包含播放源信息不能返回
+		m_wstrCmd_Run = CMC_RUN_FILERUN;
+	}
 
 	// 播放类
 	if (0 == wstrCmd.find(CMD_PLAY_LM))

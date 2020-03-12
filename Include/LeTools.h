@@ -33,8 +33,8 @@ using namespace std;
 #define ENABLE_SAFTR_CHECK 1
 #define BUFFER_MAX_LEGTH 64*1024
 #define SAFE_CHECK_NEED_MODIFY 1
-#define CURVER		L"2.0.2.11"
-#define CURVER_A	"2.0.2.11"
+#define CURVER		L"2.0.2.16"
+#define CURVER_A	"2.0.2.16"
 
 typedef struct _ASTAT_
 {

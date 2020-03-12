@@ -42,12 +42,12 @@
       <item id="49" radio="0">跳过片头片尾</item>
       <item id="50" radio="0">取消跳过片头片尾</item>
     </item-->
-    <item id="300" disable="1">
+    <!--item id="300" disable="1">
       AB点重复
       <item id="31">设置A点</item>
       <item id="32">设置B点</item>
       <item id="33">取消AB点</item>
-    </item>
+    </item-->
   </item>
   <item id="1" hotkeyText="F2">设置</item>
   <item>

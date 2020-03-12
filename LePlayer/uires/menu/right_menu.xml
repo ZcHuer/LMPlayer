@@ -24,12 +24,12 @@
       <item id="49" radio="0">跳过片头片尾</item>
       <item id="50" radio="0">取消跳过片头片尾</item>
     </item-->
-    <item>
+    <!--item>
       AB点重复
       <item id="31">设置A点</item>
       <item id="32">设置B点</item>
       <item id="33">取消AB点</item>
-    </item>
+    </item-->
   </item>
   <sep/>
   <item id="40" hotkeyText="Ctrl+Enter" disable="0" check="0">全屏</item>
@@ -50,14 +50,14 @@
     <item id="97" radio="0">播放时</item>
   </item>
   <item id="54" hotkeyText="Ctrl+M" check="0">静音</item>
-  <item id="57" disable="1">
+  <!--item id="57" disable="1">
     字幕选择
     <item id="55">添加字幕文件</item>
     <item id="58" disable="1">
       字幕子轨道
       <item id="100" radio="0">隐藏字幕</item>
     </item>
-  </item>
+  </item-->
   <sep/>
   <!--item id="1" hotkeyText="F2">设置</item-->
 </menu>
