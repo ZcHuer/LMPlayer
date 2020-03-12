@@ -228,8 +228,7 @@ void CMainDlg::DoInit()
 	// 设置报数器
 	CLeReport::GetInstance()->SetDataServer(g_doMain.bigDataDomain.c_str(), "log/off_line_event");
 	string strVer;
-	LeTools::GetVersion(eLmplayer, strVer);
-	
+	LeTools::GetVersion(eLmplayer, strVer);	
 	CLeReport::GetInstance()->SetVersion(strVer.c_str());
 	wstring wstrChannel;
 	LeTools::GetChannelID(eLmplayer, wstrChannel);
@@ -696,11 +695,6 @@ void CMainDlg::TrueClose()
 	m_shellNotifyIcon.Hide();
 
 	CLeReport::GetInstance()->SaveData_Count(ERD_COUNT_QUIT);
-	
-	// 上报播放时长
-	m_sPlayData.sRD.playTime = LeTools::Num2Str(GetTickCount() - m_sPlayData.WatchDuration);
-	CLeReport::GetInstance()->SendRTD_Play("61", "1", "停止", m_eSrcType, m_sPlayData.sRD);
-
 	LeTools::KillProcess(L"lmp.exe");
 
 	return;

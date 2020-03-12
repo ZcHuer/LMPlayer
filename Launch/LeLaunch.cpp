@@ -8,6 +8,8 @@
 #include <ImageHlp.h>
 #include <string>
 #include "../SDK/FLog/FileLog.h"
+#include "../Include/LeReport.h"
+#include "../Include/Data_RealTime.h"
 
 using namespace std;
 
@@ -301,13 +303,15 @@ void Runlmplayer(BOOL bNeedUpdate, BOOL bSwitchOk, wstring wstrCfg, wstring wstr
 	{
 		FLOG(_T("bNeedUpdate 1"));
 		if (bSwitchOk)
-		{
+		{			
 			FLOG(_T("bSwitchOk 1"));
 			WritePrivateProfileStringW(L"Update", L"CurVer", wstrNewVer.c_str(), wstrCfg.c_str());
 			if (PathFileExistsW(wstrRunExe.c_str()))
 				::ShellExecuteW(NULL, L"open", wstrRunExe.c_str(), cstrCommand.GetString(), NULL, SW_SHOW);
 			else
 				::MessageBox(NULL, L"本地文件错误, 请重新下载安装！https://sta.vgs.lenovo.com.cn/leplayer.html", L"提示", MB_OK);
+			// 这里报数：替换成功
+			CLeReport::GetInstance()->SendRTD_Eeventsync(RTD_UPDATE, "1", "4replace");
 		}
 		else
 		{
@@ -316,6 +320,8 @@ void Runlmplayer(BOOL bNeedUpdate, BOOL bSwitchOk, wstring wstrCfg, wstring wstr
 				::ShellExecuteW(NULL, L"open", wstrVersionExe.c_str(), cstrCommand.GetString(), NULL, SW_SHOW);
 			else
 				::MessageBox(NULL, L"本地文件错误, 请重新下载安装！https://sta.vgs.lenovo.com.cn/leplayer.html", L"提示", MB_OK);
+			// 这里报数：替换失败
+			CLeReport::GetInstance()->SendRTD_Eeventsync(RTD_UPDATE, "1", "4replacefail");
 		}
 	}
 	else

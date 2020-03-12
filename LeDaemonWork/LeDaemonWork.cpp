@@ -492,7 +492,13 @@ LEDAEMONWORK_API int fnLeDaemonWork(wchar_t * cPath)
 	else
 	{
 		//¼ì²â30ÌìÄÚ
-		bool bres = CLeReport::GetInstance()->SendRTD_Eeventsync("74", "1", "Service Start");
+		wstring wstr;
+		LeTools::GetRunVersion(wstr);
+		CLeReport::GetInstance()->SetVersion(LeTools::ws2s(wstr).c_str());
+		wstring wChannelID;
+		LeTools::GetChannelID(wChannelID);
+		CLeReport::GetInstance()->SetchannelID(LeTools::ws2s(wChannelID).c_str());
+		bool bres = CLeReport::GetInstance()->SendRTD_Eeventsync("74", "1", "Service Sleep");
 		FLOG(L"fnLeDaemonWork CheckStartWork false");
 	}
 	return bAbaleStartWork;

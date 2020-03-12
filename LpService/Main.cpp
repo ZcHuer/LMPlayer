@@ -239,7 +239,6 @@ int APIENTRY WinMain(HINSTANCE hInstance,
 			wstring wstr;
 			LeTools::GetRunVersion(wstr);
 			CLeReport::GetInstance()->SetVersion(LeTools::ws2s(wstr).c_str());
-
 			wstring wChannelID;
 			LeTools::GetChannelID(wChannelID);
 			CLeReport::GetInstance()->SetchannelID(LeTools::ws2s(wChannelID).c_str());
@@ -250,9 +249,12 @@ int APIENTRY WinMain(HINSTANCE hInstance,
     else if (_stricmp(lpCmdLine, "/uninstall") == 0)
     {
         Uninstall();
-		string version = "";
-		LeTools::GetVersion(eService, version);
-		CLeReport::GetInstance()->SetVersion(version.c_str());
+		wstring wstr;
+		LeTools::GetRunVersion(wstr);
+		CLeReport::GetInstance()->SetVersion(LeTools::ws2s(wstr).c_str());
+		wstring wChannelID;
+		LeTools::GetChannelID(wChannelID);
+		CLeReport::GetInstance()->SetchannelID(LeTools::ws2s(wChannelID).c_str());
 		CLeReport::GetInstance()->SendRTD_Eeventsync("53", "1", "service uninstall");
     }
     else if (_stricmp(lpCmdLine, "/start") == 0)

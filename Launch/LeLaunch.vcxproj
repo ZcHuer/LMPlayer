@@ -133,6 +133,10 @@
       <OutputFile>$(OutDir)LMPlayer.exe</OutputFile>
       <ProgramDatabaseFile>..\PDB\$(TargetName).pdb</ProgramDatabaseFile>
       <LinkTimeCodeGeneration />
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <AdditionalDependencies>uafxcw.lib;LIBCMT.lib;cryptlib.lib;LeTools.lib;LeReport.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\SDK\cryptopp700\Win32\Output\Release;..\Lib\Release</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBCMTD.lib;uafxcwd.lib</IgnoreSpecificDefaultLibraries>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">

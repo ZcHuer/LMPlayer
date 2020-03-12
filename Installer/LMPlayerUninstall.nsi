@@ -4,7 +4,7 @@
 !define EXE_NAME               "LMPlayer.exe" 
 !define EXE_FILENAME 		   "LMPlayer.exe"
 !define INST_SUBDIR            "" 
-!define PRODUCT_VERSION        "2.0.2.6" 
+!define PRODUCT_VERSION        "2.0.2.17" 
 !define PRODUCT_PUBLISHER      "LMPlayer" 
 !define PRODUCT_LEGAL          "Copyright (C) 1998-2020 Lenovo, All Rights Reserved" 
 !define CONFIGINI_NAME_PRE     "info"
@@ -678,6 +678,7 @@ Function un.slientFile
 	Sleep 5000
 	Delete "$INSTDIR\${UINST_EXE_NAME}"
 	RMDir /r "$INSTDIR"
+	RMDir TEMP_USEDATA_DIR
 	LenovoDataRep::ReportLePlayerData "$vServerUrl" "53" "client" "$vPruduceVersion" $vChannelID
 
 FunctionEnd
@@ -968,17 +969,17 @@ Function CreateShortcut
 	CreateDirectory "$SMPROGRAMS\Lenovo\$vSHORTCUTSUBDIR"
 	CreateShortCut "$SMPROGRAMS\Lenovo\$vSHORTCUTSUBDIR\$vPROGRAM_SHUORTCUT_NAME.lnk" "$vInitPath\${EXE_NAME}"
 	;CreateShortCut "$vInitPath\run\$vDESKTOP_SHORTCUT_NAME.lnk" "$vInitPath\run\${EXE_FILENAME}"
-	Version::IsWindows7
-	Pop $0
-	${if} $0 == 1
+	;Version::IsWindows7
+	;Pop $0
+	;${if} $0 == 1
 		;ExecShell "taskbarunpin" "$DESKTOP\$vDESKTOP_SHORTCUT_NAME.lnk"
 		;messagebox mb_ok "win7"
 		ExecShell "taskbarpin" "$vInitPath\run\$vDESKTOP_SHORTCUT_NAME.lnk"
-	${else}
+	;${else}
 		;messagebox mb_ok "win10"
 		;ExecWait '"$INSTDIR\run\taskbarpin.exe" unpin $INSTDIR\run\${EXE_FILENAME}'
-		LenovoDataRep::TaskbarPinWin10 "true" "$vInitPath\run\" "${EXE_FILENAME}"
-	${Endif}
+	;	LenovoDataRep::TaskbarPinWin10 "true" "$vInitPath\run\" "${EXE_FILENAME}"
+	;${Endif}
 FunctionEnd
 
 
