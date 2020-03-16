@@ -44,7 +44,7 @@
 		<link name="lnk_CustomerPhone" pos="[0,{0" colorText="#0296ff" font="size:15,underline:0" show="0">123</link>
 		
         <imgbtn1 name="btn_Feed" pos="|-120,[20,@90,@34" skin="cb_save1" focusSkin="cb_save2" class="cls_login" colorText="#FFFFFF"/>
-		<imgbtn1 name="btn_FeedConcel" pos="|30,{0,@90,@34" skin="cb_cancel1" focusSkin="cb_cancel2" class="cls_login" colorText="#1BA6FF"/>
+		<imgbtn1 name="btn_FeedConcel" pos="|30,{0,@90,@34" skin="cb_cancel1" focusSkin="cb_cancel2" class="cls_login" colorText="#F7A13D"/>
 		<window name ="MsgSec" pos="197,207,@260,@100" colorText="#FFFFFF" colorBkgnd="#000000" show="0">
 		<img pos="20,37,@26,@26" skin="msgSucess"/>
 		<text pos="[10,{0" class="cls_lg_edit" colorText="#FFFFFF" font="size:16" >提交成功，感谢您的反馈！</text>

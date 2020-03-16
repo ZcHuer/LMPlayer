@@ -17,7 +17,7 @@
     <class name="cls_download_text" colorText="#999999" font="size:12"/>
     <class name="cls_download_check" font="size:12" colorText="#999999" drawfocusrect="0" cursor="hand"/>
     <class name="cls_set_check" font="size:12" colorText="#CCCCCC" drawfocusrect="0" cursor="hand"/>
-    <class name="cls_lt_text" colorText="#1BA6FF" colorSelect="#1BA6FF" font="size:14" cursor="hand"/>
+    <class name="cls_lt_text" colorText="#F7A13D" colorSelect="#F7A13D" font="size:14" cursor="hand"/>
     <class name="cls_item" font="size:14" colorBkgnd="#3e3e3e" colorText="#a7acbc" colorLine="#40c2fd"/>
     <class name="cls_item_btn" font="size:13" colorBkgnd="#40c2fd" colorText="#ffffff" cursor="hand" offset="0,-0.5"/>
     <class name="cls_set_combox" align="center" font="size:12" colorText="#CCCCCC" dropDown="1" dotted="0" animateTime="200" drawfocusrect="0"/>
@@ -26,8 +26,8 @@
     <class name="cls_dlt_btn" colorText="#999999" font="size:13" textOffset="8" startAlign="right" cursor="hand"/>
     <class name="cls_header" colorText="#999999" font="size:12"/>
     <class name="cls_menuroot" itemHeight="32" textOffset="15" font="size:13" colorBkgnd="#101010" colorHover="#0296ff" colorSep="#252525" sepHeight="10"/>
-    <class name="cls_menuex" colorText="#CCCCCC" colorTextHover="#1BA6FF" font="size:12" colorTextDisable="#0296ff" colorTextPush="#1BA6FF"/>
-	  <class name="cls_menuex_nohot" colorText="#BCBEC4" itemHeight="27" colorTextHover="#1BA6FF" font="size:12" colorTextDisable="#0296ff" textleft="38" colorTextPush="#39aadd" align="left"/>
+    <class name="cls_menuex" colorText="#CCCCCC" colorTextHover="#F7A13D" font="size:12" colorTextDisable="#0296ff" colorTextPush="#F7A13D"/>
+	  <class name="cls_menuex_nohot" colorText="#BCBEC4" itemHeight="27" colorTextHover="#F7A13D" font="size:12" colorTextDisable="#0296ff" textleft="38" colorTextPush="#39aadd" align="left"/>
     <class name="cls_menuex_1" colorText="#a7acbc" align="center" font="size:12" cursor="hand"/>
     <class name="cls_menu" colorText="#ffffff" font="size:13" cororTextGray="#999999"/>
     <class name="cls_set_edit" sbSkin="scrollbar" colorText="#666666" colorHover="#999999" font="size:13" margin-x="2" margin-y="2"/>
@@ -42,11 +42,11 @@
     <class name="cls_login_check1" skin1="login_check1" skin2="login_check2" skin3="login_check3" font="size:14" colorText="#CCCCCC"/>
     <class name="cls_text_color1" font="size:14" colorTextPush="#0296ff" colorTextHover="#0296ff" colorText="#323232"/>
     <class name="cls_phone_code" skin="login_code" focusSkin="login_code0" colorText="#06B4EC" colorTextPush="#5dbefa" colorTextHover="#5dbefa"/>
-    <class name="cls_logo_menuex" colorText="#BCBEC4" colorTextHover="#1BA6FF" align="center" font="size:12" cursor="hand"/>
+    <class name="cls_logo_menuex" colorText="#BCBEC4" colorTextHover="#F7A13D" align="center" font="size:12" cursor="hand"/>
     <class name="cls_definition" colorText="#a7acbc" colorTextPush="#ffffff" colorTextHover="#ffffff" font="size:14"/>
     <class name="cls_definition1" colorText="#0296ff" colorTextPush="#0296ff" colorTextHover="#0296ff" font="size:14"/>
     <!--正常状态-->
-    <class name="cls_listwnd" colorBkgnd="#282A2C" colorbgFocus="#3E4144" fbtnSkin1="ls_continue1" fbtnSkin2="ls_continue2" colorKey="#1BA6FF" align="left" textOffset="30" colorTextPush="#4CA7F8" colorTextHover="#4CA7F8" colorText="#CCCCCC" cursor="hand"/>
+    <class name="cls_listwnd" colorBkgnd="#282A2C" colorbgFocus="#3E4144" fbtnSkin1="ls_continue1" fbtnSkin2="ls_continue2" colorKey="#F7A13D" align="left" textOffset="30" colorTextPush="#F7A13D" colorTextHover="#F7A13D" colorText="#CCCCCC" cursor="hand"/>
     <!--播放出错-->
     <class name="cls_listwnd1" colorBkgnd="#252936" colorbgFocus="#313745" align="left" textOffset="30" colorText="#666666" cursor="hand"/>
   </style>

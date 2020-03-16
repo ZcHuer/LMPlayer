@@ -74,8 +74,8 @@
     <file name="btnUpdate2" path="image\btnUpdate2.png"/>
     
     <file name="background" path="image\update_background.png"/>
-    <file name="updatebk" path="image\updatebk.png"/>
-    <file name="img_default" path="image\img_default.png"/>
+    <file name="updatebk" path="image\update_background.png"/>
+    <file name="img_default" path="image\update_background.png"/>
     <file name="ok1" path="image\ok1.png"/>
     <file name="ok2" path="image\ok2.png"/>
   </IMG>

@@ -2,7 +2,7 @@
 
 namespace LeConnect
 {
-	LPCWSTR Http::HTTP_HEADER_USER_AGENT = L"WinHTTP LePlayer/2.0.2.16";
+	LPCWSTR Http::HTTP_HEADER_USER_AGENT = L"WinHTTP LePlayer/2.0.2.17";
 	const STRING Http::HTTP_HEADER_HOST = _T("Host");
 	
 	const INT StorageQueue::PRIO_EVENT_NUM[StorageQueue::PRIO_LEN] = {600, 600};
