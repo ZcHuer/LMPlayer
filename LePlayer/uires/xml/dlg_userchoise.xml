@@ -1,12 +1,11 @@
-﻿<SOUI name="lenovo.update" title="LMPlayer升级" width="460" height="264" resizable="0" appWnd="0" translucent="1">
+﻿<SOUI name="lenovo.update" title="LMPlayer升级" width="302" height="202" resizable="0" appWnd="0" translucent="1">
   <root skin="updatebk" cache="1">
 	<window pos="0,0,-0,-0">
-		<caption pos="0,0,-0,36">
-		  <text name="text_title" pos="20,|0" offset="0,-0.5" colorText="#333333" font="size:14"></text>
-		  <imgbtn1 name="btn_close" pos="-30,20" offset=",0" skin="abs_close1" focusSkin="abs_close2" cursor="hand"/>
+		<caption pos="0,0,-0,30">
+		  <imgbtn1 name="btn_close" pos="-30,10" offset="0.5,0" skin="abs_close1" focusSkin="abs_close2" cursor="hand"/>
 		</caption>
-		<window name="update" pos="0,36,-0,-0" show="1">
-			<text name="text_tip" align="center" float="true" pos="|0,150" offset="-0.5,0" colorText="#444444" font="size:16"></text>
+		<window name="update" pos="0,88,-0,-0" show="1">
+			<text name="text_tip" align="center" float="true" pos="|0,50" offset="-0.5,0" colorText="#FFFFFF" font="size:14"></text>
 			<imgbtn1 name="btn_ok"  pos="|0, [10" offset="-0.5,0" skin="btnUpdate1" focusSkin="btnUpdate2" cursor="hand"/>
 		</window>
 	</window>

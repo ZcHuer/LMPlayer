@@ -93,6 +93,17 @@ bool CUpdatehelper::ManualCheck()
 		return false;
 
 	m_bUpdateWork = true;
+
+	// 判断本地配置
+	if (false == LeTools::IsConfigUpdate())
+	{
+		CNewVerDlg dlg;
+		dlg.DoModel();
+		m_bUpdateWork = false;
+		FLOG(L"升级配置关闭，退出升级")
+		return false;
+	}
+
 	// 获取升级配置
 	if (false == GetUpdateInfo())
 	{

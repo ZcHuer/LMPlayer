@@ -83,9 +83,9 @@ public:
         if (pWnd)
         {
             if (m_pOld){
-                m_pOld->SetAttribute(L"colorText", L"#CCCCCC");
+                m_pOld->SetAttribute(L"colorText", L"#FFFFFF");
             }
-            pWnd->SetAttribute(L"colorText",L"#CCCCCC");
+            pWnd->SetAttribute(L"colorText",L"#FFFFFF");
             m_pOld = pWnd;
         }
         return true;

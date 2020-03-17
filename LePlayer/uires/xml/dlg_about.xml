@@ -6,8 +6,8 @@
 	  <text name="version" pos="|0,40" offset="-0.5,0" colorText="#CCCCCC" font="size:12">版本号：0.91.10</text>
       <text pos="|0,[3" offset="-0.5,0" colorText="#CCCCCC" font="size:12">Copyright© 2019-2020联想（北京）</text>
 	  <text pos="|0,[3" offset="-0.5,0" colorText="#CCCCCC" font="size:12">有限公司</text>	 
-      <link name="lnk_yinsi" pos="-190,105" colorText="#2A9CF5" font="size:12">《隐私声明》</link>      
-      <link name="lnk_kaiyuan" pos="-120,105" colorText="#2A9CF5" font="size:12">《开源组件许可》</link>
+      <link name="lnk_yinsi" pos="-190,105" colorText="#FFAC5A" font="size:12">《隐私声明》</link>      
+      <link name="lnk_kaiyuan" pos="-120,105" colorText="#FFAC5A" font="size:12">《开源组件许可》</link>
     </window> 
   </root>
 </SOUI>

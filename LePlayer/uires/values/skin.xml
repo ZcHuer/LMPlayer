@@ -151,8 +151,8 @@
   <imglist name="pop_norecord1" src="popwnd:norecord1"/>
   <imglist name="pop_dayicon" src="popwnd:dayicon"/>
   <imglist name="pop_listitem" src="popwnd:listitem"/>
-  <imglist name="pop_close" src="popwnd:close"/>
   <imglist name="pop_close1" src="popwnd:close1"/>
+  <imglist name="pop_close2" src="popwnd:close2"/>
   <imglist name="pop_btn" src="popwnd:btn"/>
   <imglist name="pop_nocoll" src="popwnd:nocoll"/>
   <imglist name="pop_btn1" src="popwnd:btn1"/>

@@ -81,8 +81,8 @@
   </IMG>
   <ab>
     <file name="aboutbg" path="image\about\aboutbg.png"/>
-    <file name="close1" path="image\about\close1.png"/>
-    <file name="close2" path="image\about\close2.png"/>
+    <file name="close1" path="image\close1.png"/>
+    <file name="close2" path="image\close2.png"/>
   </ab>
 
   <Login>
@@ -163,8 +163,8 @@
     <file name="search_3000" path="image\navigation\search_3000.png"/>
     <file name="search_list" path="image\navigation\searchlist.png"/>
     <file name="search_list1" path="image\navigation\searchlist1.png"/>
-    <file name="close1" path="image\navigation\close1.png"/>
-    <file name="close2" path="image\navigation\close2.png"/>
+    <file name="close1" path="image\close1.png"/>
+    <file name="close2" path="image\close2.png"/>
     <file name="maxsize1" path="image\navigation\maxsize1.png"/>
     <file name="maxsize2" path="image\navigation\maxsize2.png"/>
     <file name="minsize1" path="image\navigation\minsize1.png"/>
@@ -215,8 +215,8 @@
     <file name="norecord1" path="image\popwnd\norecord1.png"/>
     <file name="dayicon" path="image\popwnd\dayicon.png"/>
     <file name="listitem" path="image\popwnd\item.png"/>
-    <file name="close" path="image\popwnd\close.png"/>
-    <file name="close1" path="image\popwnd\close1.png"/>
+    <file name="close1" path="image\close1.png"/>
+    <file name="close2" path="image\close2.png"/>
     <file name="btn" path="image\popwnd\btn.png"/>
     <file name="nocoll" path="image\popwnd\nocoll.png"/>
 

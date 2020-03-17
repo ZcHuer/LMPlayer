@@ -5,7 +5,7 @@
         <!--colorBkgnd="#343333"  colorBkgnd="#292929" colorBkgnd="#252525"-->
 		<img pos="19,|0" offset="0,-0.5" skin="mainSet"/>
         <text pos="[5,|0" offset="0,-0.5" font="size:18" colorText="#CCCCCC">设置</text>
-        <imgbtn1 name="btn_close" pos="-33,16" skin="pop_close" focusSkin="pop_close1"/>
+        <imgbtn1 name="btn_close" pos="-33,16" skin="pop_close1" focusSkin="pop_close2"/>
         <!--imgbtn1 name="btn_min" pos="{-20,|0" offset="-1,-0.5"  skin="ng_min1" focusSkin="ng_min2"/-->
       </caption>
       <window pos="0,[0,114,-0" colorBkgnd="#47494B">
@@ -116,7 +116,7 @@
           <text pos="20,16" class="cls_set_text">隐私设置</text>
           <check1 id="2078" pos="38,[15"  class="cls_login_check1">退出时清空播放记录</check1>
           <check1 id="2079" pos="38,[15"  class="cls_login_check1">开启无痕浏览模式</check1>
-          <link name="btn_clearlist" pos="38,[20" colorText="#3184a9" font="size:12">立即清除隐私记录</link>
+          <link name="btn_clearlist" pos="38,[20" colorText="#FFAC5A" font="size:12">立即清除隐私记录</link>
         </window>
         <!--快捷键-->
         <window id="1004" pos="0,0,-0,-0" show="0">

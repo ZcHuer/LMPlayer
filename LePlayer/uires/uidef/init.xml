@@ -34,7 +34,7 @@
     <class name="cls_serarch" sbSkin="scrollbar" colorText="#666666" colorHover="#999999" font="size:12" margin-x="2" margin-y="2"/>
     <class name="cls_url" sbSkin="scrollbar" colorText="#666666" colorHover="#999999" font="size:12"  margin-x="0" margin-y="0"/>
     <class name="cls_download_edit" sbSkin="scrollbar" colorText="#666666" colorHover="#999999" font="size:12" margin-x="2" margin-y="2"/>
-    <class name="cls_list" closeSkin1="pop_close1" closeSkin2="pop_close" align="left" textOffset="20" colorTextPush="#00A8FF" colorTextHover="#00A8FF" colorText="#CCCCCC" cursor="hand"/>
+    <class name="cls_list" closeSkin1="pop_close1" closeSkin2="pop_close2" align="left" textOffset="20" colorTextPush="#00A8FF" colorTextHover="#00A8FF" colorText="#CCCCCC" cursor="hand"/>
     <class name="cls_list1" align="left" textOffset="20" focusSkin="pop_listitem" colorTextPush="#00A8FF" colorTextHover="#00A8FF" colorText="#CCCCCC" cursor="hand"/>
     <class name="cls_login" font="size:16" colorText="#ffffff" colorTextPush="#ffffff" colorTextHover="#ffffff" cursor="hand"/>
     <class name="cls_lg_edit" sbSkin="scrollbar" cueColor="#A2A2A5" colorText="#999999" font="size:14"/>
